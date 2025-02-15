@@ -1,0 +1,96 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/breakpoints';
+
+.container {
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: $light1;
+
+  @include sm {
+    min-height: 250px;
+    padding: 25px 20px;
+  }
+
+  @include md {
+    min-height: 300px;
+    padding: 30px 40px 35px;
+  }
+
+  @include lg {
+    padding: 30px 35px 35px;
+  }
+
+  @include xl {
+    padding: 30px 40px 35px;
+  }
+}
+
+.slash {
+  width: 5px;
+  height: 15px;
+  margin: auto 15px;
+  transform: rotate(30deg);
+  background-color: $dark3;
+
+  @include md {
+    height: 20px;
+    margin: 0 18px;
+  }
+}
+
+.tags {
+  margin: 0 -10px -10px 0;
+
+  @include md {
+    margin: 0 -15px -10px 0;
+  }
+
+  > div {
+    margin: 0 10px 10px 0;
+
+    @include md {
+      margin: 0 15px 10px 0;
+    }
+  }
+}
+
+.title {
+  max-width: 235px;
+  width: 100%;
+  margin: 0 auto 0;
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: $dark3;
+
+  @include md {
+    max-width: 100%;
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  @include lg {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 12px;
+  color: $light8;
+
+  @include md {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}

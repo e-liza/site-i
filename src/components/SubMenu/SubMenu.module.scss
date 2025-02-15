@@ -1,0 +1,89 @@
+@import '../../styles/variables.scss';
+
+.subMenu {
+  position: absolute;
+  height: calc(100% - 116px); //without button height with paddings
+  width: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  overflow: auto;
+  background-color: $light1;
+
+  .title {
+    font-weight: 500;
+    margin-bottom: 54px;
+
+    span {
+      margin-left: 16px;
+    }
+  }
+}
+
+.subMenuContent {
+  max-width: 276px;
+  margin-right: 17px;
+}
+
+.title {
+  display: flex;
+  font-size: 20px;
+  line-height: 16px;
+  color: $dark3;
+}
+
+.activeTitle {
+  font-weight: 500;
+}
+
+.backArrow {
+  transform: rotate(180deg);
+}
+
+.openArrow {
+  margin-left: 16px;
+}
+
+.titleUndeline {
+  padding-bottom: 6px;
+  border-bottom: 1px solid #091624;
+}
+
+.description {
+  margin-bottom: 69px;
+  padding-left: 16px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.subMenuItemsBlock {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 11px 0 28px;
+
+  .menuItem:nth-child(even) {
+    padding-left: 30px;
+  }
+}
+
+.menuItem {
+  flex: 1 0 50%;
+  margin-bottom: 45px;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: $dark3;
+
+  > a {
+    color: $dark3;
+  }
+}
+
+.activeMenuItem {
+  padding-left: 12px;
+  font-weight: 500;
+  border-left: solid 6px $red2;
+}

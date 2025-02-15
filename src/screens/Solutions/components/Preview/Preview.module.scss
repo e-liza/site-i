@@ -1,0 +1,243 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/breakpoints.scss';
+
+.root {
+  height: 275px;
+  margin: 0 0 -128px;
+  padding: 0 28px 0 26px;
+  position: relative;
+
+  @include rwhd($screen-xs-min, 667px) {
+    margin: 0 0 -120px;
+  }
+
+  @include rwhd($screen-xs-min, 682px) {
+    margin: 0 0 -100px;
+  }
+
+  @include sm {
+    margin: 0;
+    padding: 20px 0 0;
+  }
+
+  @include rwhd($screen-sm-min, 297px) {
+    padding: 35px 0 0;
+  }
+
+  @include rwhd($screen-sm-min, 667px) {
+    margin: 50px 38px -40px 0;
+    padding: 0;
+  }
+
+  @include md {
+    height: auto;
+    margin: 0 0 74px;
+    padding: 0;
+  }
+
+  @include rwhd($screen-md-min, 700px) {
+    margin: 0 0 74px;
+  }
+
+  @include rwhd($screen-md-min, 800px) {
+    margin: 0 0 74px;
+  }
+
+  @include rwhd($screen-md-min, 900px) {
+    margin: 0 0 74px;
+  }
+
+  @include lg {
+    margin: 0 100px 70px 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @include rwhd($screen-lg-min, 800px) {
+    margin: 0 100px 70px 0;
+  }
+
+  @include rwhd($screen-lg-min, 900px) {
+    margin: 0 100px 70px 0;
+  }
+
+  @include rwhd($screen-lg-min, 1500px) {
+    margin: 0 100px 70px 0;
+  }
+
+  @include xl {
+    margin: 0 100px 80px 0;
+  }
+}
+
+.group {
+  position: absolute;
+  height: 235px;
+  width: 321px;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -160px;
+
+  @include rwhd($screen-xs-min, 667px) {
+    height: 275px;
+  }
+
+  @include sm {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 295px;
+    height: 179px;
+  }
+
+  @include rwhd($screen-sm-min, 667px) {
+    width: 308px;
+    height: 260px;
+  }
+
+  @include md {
+    margin: 0 auto;
+    width: 747px;
+    height: 256px;
+  }
+
+  @include rwhd($screen-md-min, 700px) {
+    width: 764px;
+    height: 309px;
+  }
+
+  @include rwhd($screen-md-min, 800px) {
+    width: 770px;
+    height: 403px;
+  }
+
+  @include rwhd($screen-md-min, 900px) {
+    width: 854px;
+    height: 438px;
+  }
+
+  @include lg {
+    margin: 0;
+    width: 771px;
+    height: 268px;
+  }
+
+  @include rwhd($screen-lg-min, 700px) {
+    width: 812px;
+    height: 308px;
+  }
+
+  @include rwhd($screen-lg-min, 800px) {
+    width: 839px;
+    height: 364px;
+  }
+}
+
+.big {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 261px;
+  height: 179px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.04);
+
+  @include rwhd($screen-xs-min, 667px) {
+    width: 308px;
+    height: 211px;
+  }
+
+  @include md {
+    width: 440px;
+    height: 256px;
+  }
+
+  @include rwhd($screen-md-min, 700px) {
+    width: 504px;
+    height: 309px;
+  }
+
+  @include rwhd($screen-md-min, 800px) {
+    width: 594px;
+    height: 403px;
+  }
+
+  @include rwhd($screen-md-min, 900px) {
+    width: 645px;
+    height: 438px;
+  }
+
+  @include lg {
+    width: 412px;
+    height: 268px;
+  }
+
+  @include rwhd($screen-lg-min, 700px) {
+    width: 472px;
+    height: 308px;
+  }
+
+  @include rwhd($screen-lg-min, 800px) {
+    width: 537px;
+    height: 364px;
+  }
+}
+
+.small {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 308px;
+  width: 132px;
+  height: 132px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px -4px 30px rgba(0, 0, 0, 0.09);
+
+  @include sm {
+    height: 122px;
+  }
+
+  @include rwhd($screen-sm-min, 269px) {
+    width: 115px;
+    height: 107px;
+  }
+
+  @include md {
+    width: 324px;
+    height: 218px;
+  }
+
+  @include rwhd($screen-md-min, 700px) {
+    width: 298px;
+    height: 219px;
+  }
+
+  @include rwhd($screen-md-min, 800px) {
+    width: 311px;
+    height: 280px;
+  }
+
+  @include rwhd($screen-md-min, 900px) {
+    width: 344px;
+    height: 310px;
+  }
+
+  @include lg {
+    width: 360px;
+    height: 235px;
+  }
+
+  @include rwhd($screen-lg-min, 700px) {
+    width: 344px;
+    height: 246px;
+  }
+
+  @include rwhd($screen-lg-min, 800px) {
+    width: 328px;
+    height: 326px;
+  }
+}

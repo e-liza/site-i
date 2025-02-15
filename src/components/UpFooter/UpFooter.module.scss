@@ -1,0 +1,164 @@
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
+@import '../../styles/mixins';
+
+.root {
+  padding: 50px 52px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @include sm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 65px 30px 66px;
+  }
+
+  @include md {
+    padding: 90px 45px 96px 50px;
+  }
+
+  @include lg {
+    padding: 120px 202px 120px 200px;
+  }
+}
+
+.title {
+  font-family: $title-font;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 33px;
+  color: $light27;
+  text-align: center;
+  margin: 0 0 25px;
+
+  @include sm {
+    max-width: 252px;
+    flex: 1 0 47%;
+    margin: 0;
+    text-align: left;
+    font-size: 18px;
+    line-height: 33px;
+  }
+
+  @include md {
+    color: $light15;
+    max-width: 443px;
+    font-size: 32px;
+    line-height: 55px;
+    flex: 1 0 50%;
+  }
+
+  @include lg {
+    font-size: 36px;
+    line-height: 65px;
+    max-width: 524px;
+  }
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  @include sm {
+    align-items: flex-end;
+    margin: 0 0 0 20px;
+    min-height: 67px;
+    max-width: 339px;
+    flex: 1 0 53%;
+  }
+
+  @include md {
+    max-width: 439px;
+    margin: 0 0 0 46px;
+  }
+
+  @include lg {
+    margin: 0 0 0 84px;
+  }
+
+  .link {
+    max-width: 225px;
+    width: 100%;
+    margin: 0 auto;
+
+    @include sm {
+      max-width: 100%;
+      width: auto;
+      margin: 0 9px 0 0;
+    }
+    @include md {
+      margin-right: 22px;
+    }
+
+    @include lg {
+      margin-right: 0;
+    }
+  }
+}
+
+.description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0 0 31px;
+  color: $dark3;
+  text-align: center;
+  min-width: 270px;
+
+  @include sm {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    font-size: 13px;
+    line-height: 25px;
+    min-width: 335px;
+  }
+
+  @include md {
+    font-size: 17px;
+    line-height: 31px;
+  }
+
+  @include lg {
+    line-height: 33px;
+  }
+}
+
+.link {
+  color: $dark3;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding: 2px 0 2px 8px;
+  border-left: 8px solid $red2;
+  transition: none;
+
+  @include effects {
+    color: $red2;
+  }
+
+  @include sm {
+    position: absolute;
+    z-index: 1;
+    bottom: -4px;
+    right: 0;
+  }
+
+  @include md {
+    padding: 5px 0 5px 18px;
+    border-width: 12px;
+    bottom: -12px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @include lg {
+    padding-bottom: 6px;
+    border-width: 13px;
+    bottom: -11px;
+    right: -11px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}

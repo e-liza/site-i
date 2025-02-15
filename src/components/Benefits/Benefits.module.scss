@@ -1,0 +1,107 @@
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
+
+.root {
+  @include sm {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  @include lg {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-right: 3px;
+  }
+
+  @include xl {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .item {
+    @include sm {
+      flex: 1 1 45%;
+    }
+
+    @include lg {
+      flex: auto;
+    }
+
+    @include xl {
+      flex: 1 1 44%;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(odd) {
+      @include sm {
+        margin-right: 42px;
+      }
+
+      @include md {
+        margin-right: 74px;
+      }
+
+      @include lg {
+        margin-right: 0;
+      }
+
+      @include xl {
+        margin-right: 60px;
+      }
+    }
+
+    &:nth-child(3) {
+      @include xl {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.item {
+  margin-bottom: 40px;
+
+  @include md {
+    margin-bottom: 50px;
+  }
+
+  @include lg {
+    margin-bottom: 30px;
+  }
+
+  @include xl {
+    margin-bottom: 60px;
+  }
+}
+
+.title {
+  display: block;
+  margin-bottom: 20px;
+  font-family: $title-font;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: $green2;
+
+  @include lg {
+    margin-bottom: 15px;
+  }
+
+  @include xl {
+    max-width: 245px;
+    margin-bottom: 35px;
+  }
+}
+
+.description {
+  width: 100%;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  color: $dark3;
+}

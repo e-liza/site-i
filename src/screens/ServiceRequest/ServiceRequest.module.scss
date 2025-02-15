@@ -1,0 +1,219 @@
+@import '../../styles/breakpoints';
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.root {
+  margin-top: 60px;
+
+  @include sm {
+    padding-bottom: 40px;
+  }
+
+  @include rwd(834) {
+    margin-top: 80px;
+  }
+
+  @include md {
+    padding: 60px 100px;
+  }
+
+  @include lg {
+    @include clearfix;
+    padding: 60px 120px;
+    max-width: 1440px;
+    margin: 80px auto 0;
+  }
+
+  @include xl {
+    max-width: 1800px;
+    padding: 60px 270px;
+  }
+}
+
+.header {
+  padding: 40px;
+  background-color: $light1;
+
+  @include sm {
+    width: 100%;
+    background-color: transparent;
+    padding: 50px 40px;
+  }
+
+  @include rwhd($screen-sm-min, 297px) {
+    padding: 30px 40px;
+  }
+
+  @include rwhd($screen-sm-min, 500px) {
+    padding: 40px;
+  }
+
+  @include md {
+    float: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding: 0;
+  }
+
+  @include lg {
+    float: right;
+    width: 40%;
+    margin-bottom: 60px;
+    padding: 40px 0 0 90px;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  @include xl {
+    width: 39.7%;
+    margin-bottom: 60px;
+    padding: 40px 0 0 90px;
+  }
+}
+
+.title {
+  margin-bottom: 20px;
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: $dark3;
+
+  @include md {
+    margin-bottom: 0;
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  @include lg {
+    max-width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+.text {
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  color: $dark3;
+
+  @include md {
+    max-width: 481px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  @include lg {
+    max-width: 100%;
+  }
+
+  @include xl {
+    max-width: 525px;
+  }
+}
+
+.content {
+  @include lg {
+    float: left;
+    width: 60%;
+  }
+
+  @include xl {
+    width: 60.3%;
+  }
+}
+
+.submitMsg {
+  display: flex;
+  justify-content: center;
+  height: 362px;
+  padding: 10px 60px 50px;
+  background-color: $light1;
+
+  @include sm {
+    height: 313px;
+    margin: 0 80px 0 70px;
+    padding: 40px 100px 30px;
+  }
+  @include md {
+    height: 819px;
+    margin: 0;
+    padding: 220px 200px 60px;
+  }
+
+  @include lg {
+    padding: 200px 150px 60px;
+  }
+}
+
+.form {
+  padding: 0 40px 30px;
+  background-color: $light1;
+
+  @include sm {
+    padding: 40px 58px;
+  }
+
+  @include md {
+    padding: 60px 96px;
+  }
+
+  @include lg {
+    margin-bottom: 0;
+    padding: 60px 65px;
+  }
+}
+
+.footer {
+  padding: 40px;
+  text-align: center;
+
+  @include sm {
+    float: left;
+    width: 46%;
+    padding: 0 27px 0 0;
+  }
+
+  @include md {
+    float: none;
+    width: 100%;
+    padding: 0 0 10px;
+  }
+
+  @include lg {
+    float: right;
+    width: 40%;
+    padding: 0 0 0 90px;
+  }
+
+  @include xl {
+    height: 100%;
+    width: 39.7%;
+  }
+}
+
+.img {
+  width: 295px;
+  height: 350px;
+  margin: 0 auto;
+
+  @include sm {
+    display: none;
+  }
+
+  @include lg {
+    display: block;
+    width: 390px;
+    height: 520px;
+  }
+
+  @include xl {
+    width: 410px;
+    height: 520px;
+  }
+}

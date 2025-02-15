@@ -1,0 +1,50 @@
+@import '~normalize.css';
+@import './fonts';
+@import './variables';
+
+body {
+  font-family: $main-font;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  //recaptcha bage styles hack
+  .grecaptcha-badge {
+    width: 256px;
+    height: 60px;
+    display: block;
+    transition: right 0.3s ease 0s;
+    position: fixed;
+    bottom: 14px;
+    right: -186px;
+    box-shadow: grey 0px 0px 5px;
+    border-radius: 2px;
+    overflow: hidden;
+    visibility: initial !important;
+    z-index: 9999;
+  }
+  .grecaptcha-badge:hover {
+    right: 0;
+  }
+
+  .ant-notification {
+    z-index: 99999;
+  }
+}
+
+html,
+body,
+#root {
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}

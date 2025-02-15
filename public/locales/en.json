@@ -1,0 +1,952 @@
+{
+  "layout": {
+    "menu": {
+      "dropdown": {
+        "solutions": {
+          "name": "Solutions",
+          "description": "Global services for international HR and remote workforce management",
+          "items": {
+            "employee": {
+              "name": "Employee",
+              "description": "Consolidated management of global workforce"
+            },
+            "payroll": {
+              "name": "Payroll",
+              "description": "Compliant and accurate payroll management"
+            },
+            "business": {
+              "name": "Business",
+              "description": "Business intellegence for better decision making"
+            },
+            "mobile": {
+              "name": "Mobile",
+              "description": "Mobile application to enhance team connection"
+            },
+            "ivySupport": {
+              "name": "Ivy Support",
+              "description": "Global HR consulting and legal services"
+            },
+            "company": {
+              "name": "Company",
+              "description": "Global company and people management"
+            }
+          }
+        },
+        "company": {
+          "name": "Company",
+          "description": "We help companies grow globally in compliance with local regulations",
+          "items": {
+            "careers": {
+              "name": "Careers",
+              "description": "Join our team"
+            },
+            "aboutUs": {
+              "name": "About us",
+              "description": "We help companies expand and grow globally"
+            }
+          }
+        }
+      },
+      "insights": "Insights",
+      "prices": "Pricing",
+      "plans": "Plans",
+      "plansDescription": "Use the platform with our services or in autonomy",
+      "partnerProgram": "Partner Program",
+      "partnerProgramDescription": "Onboard your ecosystem and serve your clients"
+    },
+    "footerMenus": {
+      "solutions": {
+        "title": "solutions",
+        "items": {
+          "overview": "Overview",
+          "employee": "Employee",
+          "payroll": "Payroll",
+          "business": "Business",
+          "mobile": "Mobile",
+          "company": "Company",
+          "ivySupport": "Ivy Support"
+        }
+      },
+      "resources": {
+        "title": "resources",
+        "items": {
+          "insights": "Insights",
+          "dataSecurity": "Data security",
+          "termCond": "Terms and conditions",
+          "privPol": "Privacy policy"
+        }
+      },
+      "company": {
+        "title": "company",
+        "items": {
+          "aboutUs": "About us",
+          "careers": "Careers"
+        }
+      },
+      "contact": {
+        "title": "contact",
+        "items": {
+          "getInTouch": "Get in touch",
+          "reqService": "Request a service",
+          "reqDemo": "Request a demo"
+        }
+      },
+      "socials": "social"
+    },
+    "headerButton": {
+      "signIn": "Sign In",
+      "requestDemo": "Request a demo",
+      "getADemo": "get demo"
+    },
+    "forms": {
+      "pricingForm": {
+        "services": {
+          "title": "services",
+          "EOR": "EOR",
+          "RECRUITMENT": "Recruitment",
+          "INVITATION_LETTER": "Invitation Letter",
+          "GLOBAL_MOBILITY": "Global mobility",
+          "BUSINESS_ENTITY_SET_UP": "Business Entity Set Up",
+          "WORK_AND_RESIDENCE_PERMIT": "Work and Residence Permit"
+        },
+        "fields": {
+          "names": {
+            "fullName": "Full name",
+            "companyName": "Company name",
+            "companySizeSelect": "Company size",
+            "destinationCountry": "Destination",
+            "location": "Location",
+            "email": "Business email",
+            "phone": "Phone",
+            "addInfo": "Additional information"
+          },
+          "extraInfo": {
+            "companySize": "optional",
+            "destinationCountry": "optional",
+            "location": "optional",
+            "phone": "optional",
+            "addInfo": "optional"
+          },
+          "errors": {
+            "fullName": {
+              "notFilled": "Please enter your full name",
+              "maxLength": "Max length is 100 characters"
+            },
+            "companyName": {
+              "notFilled": "Please enter your company name",
+              "maxLength": "Max length is 100 characters"
+            },
+            "companySize": "Please select your company size",
+            "destinationCountry": "Please enter your destination country",
+            "location": {
+              "notFilled": "Please enter your location",
+              "maxLength": "Max length is 255 characters"
+            },
+            "email": {
+              "notFilled": "Please enter a valid email address",
+              "notCorrect": "The input is not valid email"
+            },
+            "phone": "Please enter a valid phone number",
+            "addInfo": "Max length is 255 characters."
+          }
+        },
+        "controls": {
+          "submit": "Send",
+          "link": "By submitting this form you agree to our Terms and Conditions and our Privacy Policy"
+        }
+      },
+      "jobPositionForm": {
+        "fields": {
+          "names": {
+            "fullName": "Full name",
+            "email": "Business email",
+            "phone": "Phone",
+            "linkedIn": "Linkedin profile",
+            "country": "Country",
+            "addInfo": "Additional information",
+            "letter": "attach cover letter",
+            "cv": "attach resume/cv"
+          },
+          "extraInfo": {
+            "addInfo": "optional",
+            "controls": "optional"
+          },
+          "errors": {
+            "fullName": {
+              "notFilled": "Please input your full name.",
+              "maxLength": "Max length is 100 characters."
+            },
+            "country": "Please input your country.",
+            "linkedIn": {
+              "notFilled": "Please input your LinkedIn.",
+              "notCorrect": "It's not URL.",
+              "length": "LinkedIn profile must be shorter than or equal to 255 characters"
+            },
+            "cv": {
+              "notFilled": "Please attach resume/cv.",
+              "wrongFormat": "Choose .pdf, .doc, .docx"
+            },
+            "letter": {
+              "wrongFormat": "Choose .pdf, .doc, .docx"
+            },
+            "email": {
+              "notFilled": "Please input your business email.",
+              "notCorrect": "The input is not valid email."
+            },
+            "phone": "Incorrect phone number.",
+            "addInfo": "Max length is 255 characters."
+          }
+        },
+        "controls": {
+          "submit": "Send"
+        }
+      },
+      "formErrors": {
+        "captchaError": {
+          "message": "Captcha error",
+          "description": "Some problem with captcha. Check your internet connection and try again."
+        }
+      }
+    },
+    "mainpage": {
+      "introBlock": {
+        "introCard": {
+          "header": "Connecting your global workforce",
+          "text": "Our technology simplifies global payroll, compliance and employee management",
+          "link": "Learn more about our services"
+        },
+        "introText": {
+          "tagline": "We create custom and performant solutions for the new world of work",
+          "text": "We combine technology and human soft skills in order to facilitate remote employee management by providing guidance on payroll, regulations and benefits in different countries"
+        }
+      },
+      "appBlock": {
+        "header": "Manage global remote workforce",
+        "text": "Our software simplifies payroll validation, request approvals and other tedious HR tasks by using cutting edge technology stack.",
+        "link": "Learn more about our software",
+        "appSolutions": {
+          "first": {
+            "header": "A virtual workspace for all the team members",
+            "text": "Easily manage your business and employee data from one accessible and secure place."
+          },
+          "second": {
+            "header": "Easy payroll validation",
+            "text": "Review and validate your payroll in few simple steps and ensure compliance and timeliness"
+          },
+          "third": {
+            "header": "Submit requests on the go",
+            "text": "Submit and validate leave and travel requests, expense claims and questions related to local laws in the destination country using our desktop or mobile solution."
+          }
+        }
+      },
+      "expertiseBlock": {
+        "headerBlock": {
+          "header": "Rely on our competence",
+          "link": "Learn more about our teams",
+          "content": {
+            "text1": "IVY teams consist of highly skilled experts in their fields that come from diverse backgrounds and nationalities.",
+            "text2": "We operate in multiple regions, providing local support to help our clients navigate the complexity of international compliance, employment and global recruitment."
+          }
+        },
+        "approachBlock": {
+          "header": "Get the most with our custom approach",
+          "text": "Each of our clients has a dedicated point of contact responsible for assisting their needs."
+        }
+      },
+      "whatWeDoBlock": {
+        "header": "We create custom yet robust solutions for the new world of work",
+        "text": "Managing international workforce is a complex task that requires a thorough understanding of local specificities."
+      },
+      "insights": {
+        "header": "Insights",
+        "link": "explore the insights"
+      },
+      "security": {
+        "header": {
+          "first": "Your data is safe with us",
+          "text": "Learn about our data security practices and compliances.",
+          "link": "Learn More"
+        }
+      }
+    },
+    "insights": {
+      "mainInsight": {
+        "link": "read more"
+      },
+      "all": "all",
+      "mobileMenu": {
+        "name": "Categories"
+      },
+      "footer": {
+        "link": "learn more about our services"
+      },
+      "recentInsights": {
+        "link": "see all articles"
+      }
+    },
+    "article": {
+      "relArticles": "related articles",
+      "link": "see all articles"
+    },
+    "thanksMessage": {
+      "text": "Our team will contact you shortly",
+      "messageStatus": "message sent",
+      "title1": "Thank you for your message",
+      "title2": "Thank you for your application"
+    },
+    "pricing": {
+      "form": {
+        "title": "Get in touch",
+        "text": "Please fill the information and our team will answer you shortly"
+      },
+      "questions": {
+        "first": {
+          "title": "Support",
+          "text": "Our teams will make sure you successfully use our platform"
+        },
+        "second": {
+          "title": "Easy start",
+          "text": "You can onboard your ecosystem in few clicks."
+        },
+        "third": {
+          "title": "Invoicing",
+          "text": "Billing is monthly based on services and number of users."
+        },
+        "fourth": {
+          "title": "Subscription format",
+          "text": "There is no minimum period for subscription."
+        }
+      }
+    },
+    "plans": {
+      "title": "Simple, transparent pricing",
+      "description": "Find the plan that suits your company’s needs.",
+      "startingAt": "Starting at",
+      "per": "per",
+      "month": "month",
+      "user": "user",
+      "getInTouch": "Get in touch",
+      "items": {
+        "plan1": {
+          "name": "Platform",
+          "type": "Platform Only",
+          "description": "Use the platform in total autonomy and onboard your ecosystem"
+        },
+        "plan2": {
+          "name": "Global Payroll",
+          "type": "Platform & Services",
+          "description": "Pay your team members regardless of their locations"
+        },
+        "plan3": {
+          "name": "Global PEO/EOR",
+          "type": "Platform & Services",
+          "description": "Get Employment of Record services anywhere in the world"
+        }
+      }
+    },
+    "comparisonTable": {
+      "title": "Feature Comparison",
+      "description": "Schedule a product demo to see it in action.",
+      "link": "Request a Demo",
+      "platformOnly": "Platform Only",
+      "platformAndServices": "Platform & Services",
+      "tables": {
+        "table1": {
+          "title": "Services",
+          "items": {
+            "item1": {
+              "title": "Global Employment Services",
+              "description": "Employ your teams members anywhere without local entity."
+            },
+            "item2": {
+              "title": "Global Payroll Services",
+              "description": "Pay your teams members anywhere."
+            }
+          }
+        },
+        "table2": {
+          "title": "Compliance",
+          "items": {
+            "item1": {
+              "title": "Payroll Automation",
+              "description": "Collect, Check and Process Pre Payroll data in few clicks."
+            },
+            "item2": {
+              "title": "Integrated Tools",
+              "description": "Ensure Global Compliance for all your branches thanks to our Integrated tools."
+            }
+          }
+        },
+        "table3": {
+          "title": "Communication",
+          "items": {
+            "item1": {
+              "title": "IAsk Chat",
+              "description": "Dedicated point of contact for your global Compliance. "
+            },
+            "item2": {
+              "title": "Request Management Tool",
+              "description": "Track Requests (Leaves, Expenses, Travel, OT & Shifts)"
+            },
+            "item3": {
+              "title": "HR Service Providers Management",
+              "description": "Digitized and secured communication with HR Service Providers. No more countless emails and scattered sources of information"
+            }
+          }
+        },
+        "table4": {
+          "title": "Business Intelligence",
+          "items": {
+            "item1": {
+              "title": "Consolidated Reporting",
+              "description": "Real time data and HR Analytics"
+            },
+            "item2": {
+              "title": "Employee Benefits Management",
+              "description": "Keep All HR Data in one place accessible by all teams members"
+            },
+            "item3": {
+              "title": "Centralized Billing",
+              "description": "Receive one invoice for your global HR costs"
+            },
+            "item4": {
+              "title": "HRIS Integration",
+              "description": "Custom integration with payroll calculation software"
+            }
+          }
+        }
+      }
+    },
+    "partnerProgram": {
+      "title": "Partner Program",
+      "description": " Become IVY Partner and benefit from our platform. IVY Partner Program has been developed for HR service providers.",
+      "advantage1": "payroll provider",
+      "advantage2": "eor / peo provider",
+      "advantage3": "Accounting firms",
+      "advantage4": "law firms",
+      "card": {
+        "title": "Free",
+        "type": "Platform Only",
+        "startingAt": "Starting at",
+        "prefix": "per",
+        "month": "month",
+        "user": "user",
+        "description": "Free use of our SaaS for your teams and 40% discount for your client users"
+      },
+      "question": "Why IVY?",
+      "answer": "Our platform allows you to  mirror your ecosystem, secures and automatises payroll operations and support the daily administrative tasks of all team members making your clients in confidence. ",
+      "benefits": {
+        "first": {
+          "title": "Technical Support",
+          "description": "Your dedicated point of contact is one click away to guide you through the platform. "
+        },
+        "second": {
+          "title": "Operational Support",
+          "description": "We are here to answer your business needs with our local expertise and consistent customer care."
+        },
+        "third": {
+          "title": "Custom Integration",
+          "description": "We provide custom integration of your payroll software on demand"
+        },
+        "fourth": {
+          "title": "Sales Support",
+          "description": "Profit from IVY Sales and Customer success teams support"
+        }
+      }
+    },
+    "demoRequest": {
+      "form": {
+        "title": "Schedule product demo",
+        "text": "Our team is here to help you explore our product and understand how it can benefit your business."
+      },
+      "benefits": {
+        "first": {
+          "title": "Payroll",
+          "text": "See how our software simplifies your payroll, assuring your employees get paid accurately and timely."
+        },
+        "second": {
+          "title": "Compliance",
+          "text": "Understand how we help you with local compliance and regulations in different countries."
+        },
+        "third": {
+          "title": "Requests",
+          "text": "Find out how we make communication with your team easy and accessible."
+        },
+        "fourth": {
+          "title": "More",
+          "text": "Experience all the additional features that our operating space offers."
+        }
+      }
+    },
+    "serviceRequest": {
+      "form": {
+        "title": "Request a service",
+        "text": "We will contact you shortly in order to learn about your unique requirements and provide you with a clear and handcrafted roadmap."
+      },
+      "additional": {
+        "title": "Let our team create a custom solution for you",
+        "text1": "We know that one application does not fit all, this is why we offer a custom-made solution for your business needs.",
+        "text2": "Our team will contact you in order to learn about your unique requirements and provide you with a clear and handcrafted roadmap."
+      }
+    },
+    "aboutUs": {
+      "headSection": {
+        "title": "We know what it takes to make your business work abroad",
+        "text": "Our teams consist of highly qualified and experienced individuals from diversified backgrounds and nationalities. We use Swiss quality and innovation to help our clients facilitate their business expansion strategy."
+      },
+      "expandingSection": {
+        "location": "IVY Solutions is based in Switzerland but operates worldwide",
+        "title": "Expanding your business abroad can be complicated but it does not have to be that way.",
+        "text": "IVY helps you through each step of expanding your business abroad whether it is setting up offices, obtaining permits, paying your employee or guaranteeing conformity with country-specific rules."
+      },
+      "navigateSection": {
+        "title": "Navigate international HR administrative complexity",
+        "text": "We help businesses with global expansion and workforce management while assuring compliance with local laws and regulations.",
+        "link": "LEARN MORE ABOUT OUR SERVICES"
+      },
+      "approachSection": {
+        "text1": "We believe that each business has its own unique needs and we strive to serve these needs in the best way possible.",
+        "text2": "User experience is our priority and we work hard everyday to offer intuitive and functional tools to our clients. Our best reward is when we simplify complexity without sacrificing effectiveness.",
+        "title": "Unique approach",
+        "titleAdditional": "We avoid generic solutions and treat each customer with a personal care."
+      },
+      "principlesSection": {
+        "intro": "Our mission is to understand our clients' needs and offer the best solution to answer these needs while enjoying the process and having fun when possible. We apply the same principles with our teams.",
+        "principles": {
+          "integrity": {
+            "title": "Integrity",
+            "text": "We are consistently open, honest and ethical, we are delivering our very best in all we do, holding ourselves accountable"
+          },
+          "performance": {
+            "title": "Performance",
+            "text": "We constantly provide flexible yet robust and premium solutions to our customers in a timely manner."
+          },
+          "commitment": {
+            "title": "Commitment",
+            "text": "We understand unique needs of each of our customers and fight together for their success."
+          },
+          "innovation": {
+            "title": "Innovation",
+            "text": "We are finding new ways to make our company better each day."
+          }
+        }
+      },
+      "joinUsSection": {
+        "title": "Join our team",
+        "text": "Start your global career journey and help us shape the working environment of tomorrow.",
+        "link": "SEE ALL AVAILABLE POSITIONS"
+      }
+    },
+    "careers": {
+      "headSection": {
+        "titleBlock": {
+          "title": "Join us",
+          "text": "We are always looking for talented professionals to work in our team."
+        },
+        "textBlock": {
+          "firstText": "We are a highly motivated group of people from diverse backgrounds that enjoys working efficiently and with passion while having fun when possible.",
+          "secondText": "At IVY, we believe in improving an everyday life experience, both through our services and daily interactions.",
+          "thirdText": "Join us if you are passionate about meaningful work that creates an impact."
+        }
+      },
+      "benefitsSection": {
+        "firstBenefits": {
+          "firstBenefit": "Dynamic work environment",
+          "secondBenefit": "Great teammates",
+          "thirdBenefit": "Work from anywhere"
+        },
+        "secondBenefits": {
+          "firstBenefit": "Cultural and gender diversity",
+          "secondBenefit": "Latest technology stack",
+          "thirdBenefit": "Continous learning opportunities"
+        }
+      },
+      "jobPositionSection": {
+        "title": "Open Positions",
+        "link": "see job description"
+      },
+      "nothingToShow": "Sorry, we have nothing to show you here"
+    },
+    "jobDescription": {
+      "emplType": "employment type",
+      "applyJobSection": {
+        "title": "Apply for this position"
+      },
+      "technologySection": {
+        "title": "Technology and human expertise",
+        "text": "We combine technology and human soft skills in order to deliver the best service to our clients.",
+        "link": "learn more about us"
+      }
+    },
+    "solutions": {
+      "solutions": "Solutions",
+      "overview": "Overview",
+      "employee": "Employee",
+      "payroll": "Payroll",
+      "business": "Business",
+      "mobile": "Mobile",
+      "ivySupport": "Ivy Support",
+      "businessPage": {
+        "title": "Business Intelligence",
+        "description": "Powerful and graphic tool to make better business decisions.",
+        "textBlock1": {
+          "title": "HR analytics",
+          "description": "Have a clear and detailed understanding of your business costs worldwide and your company structure with our visual reports and orgcharts."
+        },
+        "textBlock2": {
+          "title": "Modern cloud platform",
+          "description": "Profit from modern and secure cloud and avoid additional fees and installations."
+        },
+        "textBlock3": {
+          "title": "Settings",
+          "description": "Use our powerful settings to reflect your internal processes and organizational framework."
+        },
+        "textBlock4": {
+          "title": "Support",
+          "description": "Use our help with your initial setup, including integrating your existing company data."
+        },
+        "advantages": {
+          "first": "secure data access",
+          "second": "one digital workspace ",
+          "third": "dynamic orgcharts"
+        }
+      },
+      "footer": {
+        "title": "Navigate international HR administrative complexity",
+        "description": "We help businesses with global expansion and workforce management while assuring compliance with local laws and regulations.",
+        "link": "Learn more about our solutions"
+      },
+      "employeePage": {
+        "title": "Employee Management",
+        "description": "A collaborative and intuitive tool to empower your workforce.",
+        "advantages": {
+          "first": "Absence",
+          "second": "Expenses",
+          "third": "Travel"
+        },
+        "textBlock1": {
+          "title": "Request",
+          "description": "Submit and validate leave, expense, travel, OT and shift requests easily attaching related documents."
+        },
+        "textBlock2": {
+          "title": "Live chat",
+          "description": "Have an easy and convenient access to your team members wherever they are."
+        },
+        "textBlock3": {
+          "title": "Calendar",
+          "description": "See at one glance who is absent or on business travel and receive timely notifications for the request approval."
+        },
+        "textBlock4": {
+          "title": "Costs and benefits",
+          "description": "Provide different team members with a user-friendly interface to manage all employee related costs in accordance with local compliance. "
+        }
+      },
+      "mobilePage": {
+        "title": "Mobile",
+        "description": "A platform that is accessible in the office or on the go.",
+        "advantages": {
+          "first": "Requests",
+          "second": "Attachments",
+          "third": "Live chat"
+        },
+        "textBlock1": {
+          "title": "Notifications",
+          "description": "Receive payroll and requests related notifications on time whether you are in the office or on the go."
+        },
+        "textBlock2": {
+          "title": "Request management",
+          "description": "Allow your team members to submit, track and validate leave, expense, travel, OT and shift requests from their mobile devices."
+        },
+        "textBlock3": {
+          "title": "Calendar",
+          "description": "Have an always accessible and intuitive tool that helps you with employee management and HR planning."
+        },
+        "textBlock4": {
+          "title": "Assistance",
+          "description": "Consult with your dedicated point of contact from IVY if needed. "
+        }
+      },
+      "payrollPage": {
+        "title": "Payroll Management",
+        "description": "Easy and timely payroll that is compliant to local regulations.",
+        "advantages": {
+          "first": "Payroll",
+          "second": "Compliance",
+          "third": "Notifications"
+        },
+        "textBlock1": {
+          "title": "Easy payroll",
+          "description": "Validate payroll for your employees abroad in few simple steps and ensure they are paid on time."
+        },
+        "textBlock2": {
+          "title": "Automated reminders",
+          "description": "Never miss a payroll date by using our automated reminders for each step of the payroll cycle. "
+        },
+        "textBlock3": {
+          "title": "Built-in compliance",
+          "description": "Get support from our dedicated team of qualified payroll professionals to resolve any query quickly and efficiently."
+        },
+        "textBlock4": {
+          "title": "Data synchronization",
+          "description": "Avoid duplication of work by having your payroll connected to the other modules of the software."
+        }
+      },
+      "overviewPage": {
+        "title": "One multifunctional platform",
+        "description": "A solution that makes life easier for all the team members.",
+        "section1": {
+          "title": "Empower employees wherever they are",
+          "description": "Happy employees make successfull companies.",
+          "content": "Provide your employees with a practical tool that facilitates their daily tasks and allows them to submit requests on the go using our mobile or desktop solution."
+        },
+        "section2": {
+          "title": "Enable managers globally",
+          "description": "International business is complicated but it does not have to be this way.",
+          "content": "Give your managers means to monitor their direct reports and to keep the whole team in sync while avoiding extensive email traffic and laborous paperwork."
+        },
+        "section3": {
+          "title": "Support HR teams across the borders",
+          "description": "It makes a difference having a professional that guides you through international administrative complexity.",
+          "content": "Help your HR teams with international laws and compliance by automatizing tedious HR tasks while profiting from consistent support from IVY professionals."
+        },
+        "section4": {
+          "title": "Enhance executives worldwide",
+          "description": "Make the best of your time and concentrate only on what matters.",
+          "content": "Give executives a comprehensive data about your organization and related business costs globally keeping total transparency and control in managing their teams."
+        }
+      },
+      "ivySupportPage": {
+        "title": "Ivy Support",
+        "description": "Professional guidance for your company to reach its full potential.",
+        "paragraph1": {
+          "title": "IAsk",
+          "description": "Your dedicated point of contact is one click away to guide you through the solution, that is custom-made for your company and the country of your business activity."
+        },
+        "paragraph2": {
+          "title": "Added Value Services",
+          "description": "We are here to answer your business needs with our local expertise and consistent customer care."
+        },
+        "section1": {
+          "title": "Setup Abroad",
+          "description": "Establish your legal entity internationally using our network of professionals."
+        },
+        "section2": {
+          "title": "Work and Residence Permit",
+          "description": "Collect and submit the right documents to send your employees abroad."
+        },
+        "section3": {
+          "title": "Invitation Letter",
+          "description": "Get the invitation letter for your teams to travel abroad."
+        },
+        "section4": {
+          "title": "International Moblity",
+          "description": "Get help in settling your team members in a foreign country."
+        },
+        "section5": {
+          "title": "Recruitement",
+          "description": "Find the right candidate for your organization in a foreign country."
+        },
+        "section6": {
+          "title": "Global Employment Organization",
+          "description": "Employ your workforce anywhere in the world without legal entity."
+        },
+        "serviceRequest": "Request a service"
+      },
+      "companyPage": {
+        "title": "Company Management",
+        "description": "One workspace for all of your company branches and teams.",
+        "advantages": {
+          "first": "Branches",
+          "second": "People",
+          "third": "Files"
+        },
+        "textBlock1": {
+          "title": "Company data",
+          "description": "Access your company organization and employee records in our modern and secure cloud."
+        },
+        "textBlock2": {
+          "title": "Employee Data",
+          "description": "Let your employees update their own details to complete administrative tasks much faster and accurately."
+        },
+        "textBlock3": {
+          "title": "Documents",
+          "description": "Have your people information secured, up-to-date and easily accessible by all the authorized team members."
+        },
+        "textBlock4": {
+          "title": "Offboarding",
+          "description": "Manage tasks related to team member transfer and termination in a seamless and compliant way."
+        }
+      },
+      "company": "Company"
+    },
+    "security": {
+      "title": "Security Notice",
+      "section1": {
+        "title": "GDPR Compliance",
+        "block1": {
+          "text1": "As data processor, IVY Solutions is compliant with GDPR (General Data Protection Rules) for any personal data that is collected from anywhere in the world to perform our service. We believe that following the rules and regulations inherent to GDPR is key to deliver high class services and that ensuring the corresponding processes are applied allows better safety and security over our clients’ data.",
+          "text2": "The HR fields are impacted by the GDPR regulation as it contains an important amount of personal data. Through our application (Web and Mobile) and our services, we ensure that we collect only the necessary personal data from our clients. We also select partners that are GDPR compliant and therefore guarantee that our end to end solution is compliant.",
+          "text3": "Under GDPR, employees have the right to rectify, right to forget, right to object and their data must be available to them in digital format. At IVY Solutions, we have implemented processes that ensures the employees’ rights are respected. We collect only the minimum required data and its accessibility is controlled by the roles and permissions access rights designed in our applications."
+        }
+      },
+      "section2": {
+        "title": "ISO 27001 Compliance",
+        "block1": {
+          "text1": "IVY Solutions is applying ISO 27001 practices to its organization. The ISO 27001 sets the standards for Information Security Management System in order for an organization to ensure all data and information are under control and follow strict processes.",
+          "text2": "Being compliant with the standard is the assurance for our clients that IVY Solutions is cautious with its own data and therefore even more with our clients’ data."
+        }
+      },
+      "section3": {
+        "title": "SOC 2",
+        "block1": {
+          "text1": "IVY solution cloud server provider is SOC 2 compliant. System and Organization Controls (SOC) Reports are independent third-party examination reports that demonstrate how key compliance controls and objectives are achieved."
+        }
+      },
+      "section4": {
+        "title": "Privacy Policy",
+        "block1": {
+          "text1": "IVY Solutions attach great importance to protect its user’s data and privacy. This Policy sets out the following:",
+          "list1": {
+            "item1": "What information we collect and process;",
+            "item2": "Why we collect these information;",
+            "item3": "Who we share this information with;",
+            "item4": "How we secure your personal data;",
+            "item5": "How your data protection rights are handled;",
+            "item6": "How we comply with the data protection rules."
+          },
+          "text2": "All personal information is collected and processed in accordance with GDPR. As a global company, IVY Solutions works in multiple country outside of EU but nonetheless applies GDPR compliance for all its activity worldwide and impose its suppliers to follow it too."
+        },
+        "block2": {
+          "text1": "To perform our service, IVY Solutions is collecting personal information connected to you allowing us to identify our users. To this extent, data spectrum can be:",
+          "list1": {
+            "item1": "Name, home address, e-mail address, telephone number, passport or other personal ID card numbers and details, bank account details or other payment details;",
+            "item2": "Necessary details according to governmental authorities, insurance companies and other mandatory demands;",
+            "item3": "Information provided by your employer about you (payroll, benefits, planning);",
+            "item4": "Information on how you use our website and/or App;",
+            "item5": "The communications you exchange with us or through our applications in any type of form."
+          },
+          "title": "What personal data we collect "
+        },
+        "block3": {
+          "text1": "We may process your personal information for the purpose of conducting our services and your date may be used for the following purposes:",
+          "list1": {
+            "item1": "Delivering our services to you, your employers or any third party;",
+            "item2": "Reaching out to you if needed and manage our communication;",
+            "item3": "Using your banking details for financial transaction connected to your use of our service and detect possible fraud;",
+            "item4": "Supporting legal or administrative topic;",
+            "item5": "Allowing us to keep you informed on IVY Solutions latest insights. You can opt out at any time by updating your preferences."
+          },
+          "title": "Why we collect these information",
+          "text2": "Your information is kept for the time necessary to perform our service but not longer. We have to precise that we may need to keep some of the data for legal, administrative or accounting purposes. We destroy the data as per the EU regulation once retention of it is no longer needed."
+        },
+        "block4": {
+          "text1": "We may share your personal data for the purpose of conducting our business with :",
+          "list1": {
+            "item1": {
+              "title": "Service providers.",
+              "text": "Company that are having a lawful business relationship with IVY Solutions and that provide us services to you on our behalf, or that support IVY Solutions in delivering the services to you;"
+            },
+            "item2": {
+              "title": "Third Parties.",
+              "text": "Bank, Insurance, tax agencies and other benefit provider for the purpose of delivering our service."
+            },
+            "item3": {
+              "title": "Legal requirements.",
+              "text": "Government, regulators for compliance with legal requirements. Legal and other professional advisers, law courts and law enforcement bodies in all countries we work in."
+            }
+          },
+          "title": "Who we share your data with"
+        },
+        "block5": {
+          "text1": "IVY Solutions has procedures and policies that follows industry standards on data security and information management to safeguard from data loss, thefts, as well as cyber-attacks. IVY Solutions constantly review its standards and follow latest technological development to ensure best standards are used for its clients.",
+          "title": "How we secure your personal data"
+        },
+        "block6": {
+          "title": "Cookies",
+          "text1": "We use \"cookies\" on this site. A cookie is a piece of data stored on a site visitor's hard drive to help us improve your access to our site and identify repeat visitors to our site. For instance, when we use a cookie to identify you, you would not have to log in a password more than once, thereby saving time while on our site. Cookies can also enable us to track and target the interests of our users to enhance the experience on our site. Usage of a cookie is in no way linked to any personally identifiable information on our site, you can always disagree with the cookie policy and cookie do not capture any information from your computer."
+        },
+        "block7": {
+          "list1": {
+            "item1": "Request IVY Solutions about information we hold on you and how we are using it;",
+            "item2": "Lodge a data subject access request so that you can receive a digital copy of all the information we gathered on you;",
+            "item3": "Lodge a rectification request so that we can update any information on you;",
+            "item4": "Lodge a forget request so that we would delete all the information on you when there is no reason for us to keep them;",
+            "item5": "Lodge an object request preventing IVY solution to transfer any of your data to any third party or partners;",
+            "item6": "If you have any questions on how we handle your information, please feel free to contact our teams:"
+          },
+          "text1": "Under certain circumstances and depending on your location, by law you have the right to:",
+          "title": "How your data protection rights are handled"
+        },
+        "block8": {
+          "title": "Changes to privacy policy",
+          "text1": "Our Privacy Policy may be updated to reflect changes in ur practice. We would provide information on the changes by email and on this webpage."
+        }
+      },
+      "section5": {
+        "block1": {
+          "text1": "IVY Solutions SA and its subsidiaries and Affiliate (“IVY Solutions”) provides information and services on its internet site(s), its registered applications (Web and mobile) under the terms and conditions set below and by accessing or using IVY Solutions information and services you accept to bound to it."
+        },
+        "block2": {
+          "text1": "The information available on IVY Solutions sites and application is the property of IVY Solutions and by using it, you agree to not violate the rights. The information is protected by copyrights, trademark, rights of confidentiality and privacy and other intellectual property laws. Therefore, unless authorized by IVY Solutions, the users must not copy, download, reproduce, republish, broadcast, transmit, sell, license, create derivative in any possible ways. This information and use of the applications are available via a mobile device, the Internet, and may require software. IVY Solution is not responsible for providing the environment necessary to benefit its information and applications.",
+          "title": "Intellectual Property",
+          "text2": "Additionally, the website and applications may contain information from third party libraries, which are binding terms and condition of their owners. See open source library used here (attached the list)."
+        },
+        "block3": {
+          "text1": "Unless otherwise noted, all materials including without limitation the trademarks, trade names, domain names, logos, service marks, slogans, and other material that appears on our Sites, Applications and Services are registered and/or unregistered Trademarks of either IVY Solutions and/or its affiliates and/or its partners and/or third parties. Nothing contained on the Website should be construed as granting by implication, estoppel, or otherwise, any license or right to use any Trademark displayed on the Website without the explicit written consent of IVY Solution or its respective owner. Misuse of any Trademarks, or any other content, displayed on the Website, is prohibited. IVY Solutions reserves the right, without further notice, to seek justice by any possible means would its rights be violated.",
+          "title": "Trademark"
+        },
+        "block4": {
+          "text1": "Our Sites, Applications and Services may contain links to third party which are not under the area of control of IVY Solutions. We decline responsibilities or liabilities for the content or privacy practices of any such linked websites or any link or linking program at any time. IVY Solution does not imply any endorsement (or related products or services) of the material on our website or unless explicitly said otherwise. If you decide to access any of the third-party websites linked to the Website, you do so entirely at your own risk.",
+          "title": "Links to Third Party Websites"
+        },
+        "block5": {
+          "text1": "Access to, and use of, the Sites are subject to all applicable international, federal, state, provincial and local laws and regulations. Use of any Site in violation of any such laws or regulations is strictly prohibited.",
+          "title": "Compliance with laws and regulations"
+        },
+        "block6": {
+          "text1": "IVY Solutions Privacy policy is available on the Sites and Applications and is available upon request. By accessing or using the sites and Applications, its users agree with the content of the Privacy Policy.",
+          "title": "Privacy Policy"
+        },
+        "block7": {
+          "text1": "IVY Solutions allocate you with a limited, non-transferable, non-sub licensable, non-exclusive right to access and use the hosted Sites, Applications and Services. Nothing is this Terms and Conditions indicates that IVY Solutions should grant you access to Source Code of the Applications, Copy of the Sites or Details on business process for the Services. By accessing IVY Solutions Site or Applications, each User agrees as follows:",
+          "title": "Customer’s Rights & Responsibility",
+          "text2": "IVY Solutions will rapidly intervene on any correctly reported malfunction of its Applications or on any reported business failure if foreseen accordingly in the commercial agreement between parties.",
+          "list1": {
+            "item1": "User will use the Service to upload, transmit or otherwise distribute any content that is unlawful, defamatory, harassing, abusive, fraudulent, obscene, threatening, abusive, hateful, contains viruses, or is otherwise objectionable as reasonably determined by IVY Solutions;",
+            "item2": "User will not use the Service for any fraudulent or inappropriate purpose;",
+            "item3": "User will not modify, move, add to, delete or otherwise tamper with the information contained in the Sites or Applications;",
+            "item4": "User will not decompile, reverse engineer, disassemble or unlawfully use or reproduce any of the software, copyrighted or trademarked material, trade secrets, or other proprietary information contained in any Site;",
+            "item5": "User acknowledges that portions of the Sites are restricted and may only be accessed by authorized users, including portions which are password protected.  User agrees to access only those portions of the Sites to which IVY Solutions has expressly granted access.  User acknowledges that unauthorized access to such restricted areas is strictly prohibited and may lead to criminal prosecution."
+          }
+        },
+        "block8": {
+          "text1": "IVY Solutions do not guarantee that information provided on the website is up to date and information contained in such postings may have been superseded. IVY Solution assume no liability or responsibility for any errors or omissions in the information provided on the Website. The use of the Website is at your own risk. All Information available through the Website is provided on an “AS IS” basis. IVS Solutions makes no warranty that the Website will meet your requirements, be uninterrupted, secure or error free, free of viruses or other harmful components or destructive files. The content of the Website is subject to change without notice. IVY Solutions INFORMATION AND MATERIAL IN OUR SITES; APPLICATIONS AND SERVICES ARE PROVIDED FOR YOUR REVIEW IN ACCORDANCE WITH THE NOTICES; TERMS AND CONDITIONS SET FORTH IN. IVY Solutions OBLIGATIONS WITH RESPECT TO ITS SITES, APPLICATIONS AND SERVICES ARE GOVERNED SOLELY BY THE CONTRACTUAL AGREEMENTS UNDER WHICH THEY ARE PROVIDED AND NOTHING ON THIS WEBSITE SHOULD BE INTERPRETATED TO CHANGE SUCH AGREEMENTS. IN NO SITUATION IVY Solutions ASSUME ANY RESPONSIBILITY, AND WILL NOT BE LIABLE FOR, ANY DAMAGES TO, OR VIRUSES THAT MAY INFECT, YOUR COMPUTER EQUIPMENT OR OTHER PROPERTY ON ACCOUNT OF YOUR ACCESS TO IVY Solutions SITES; APPLICATIONS AND SERVICES.",
+          "title": "Disclaimer and Limitation of Liability"
+        },
+        "block9": {
+          "text1": "You agree to defend, indemnify and to hold IVY Solutions harmless from and against any and all actions, causes of action, suits, damages, liabilities, losses, claims, damages, costs and expenses, including attorney’s fees arising out of or in any way related to your violation of IVY Solutions’ Terms and Conditions from your access to the Sites, Applications and Services and any purchases through it.",
+          "title": "Indemnification"
+        },
+        "title": "Terms and conditions"
+      }
+    },
+    "errors": {}
+  },
+  "common": {
+    "error": {
+      "SERVER__ERROR": "Server error. Please try again later.",
+      "AUTH__UNAUTHORIZED": "Please log in.",
+      "AUTH__INVALID_CREDENTIALS": "Invalid email or password. Please check your data and try again later.",
+      "REQUEST__VALIDATION_EXISTS": "Entity with the same data already exists.",
+      "REQUEST__ENTITY_NOT_FOUND": "Entity was not found",
+      "FBM__PRODUCT_NOT_FOUND": "Product not found in source stock.",
+      "FBM__PRODUCT_CHANGED_SOURCE_AMOUNT": "Product amount in source stock changed during the shipment.",
+      "RECAPTCHA__INVALID_TOKEN": "Recaptcha error.",
+      "TRANSFER__WALLET_TO_REVERT_NOT_FOUND": "Wallet to revert not found.",
+      "FBM__SKU_DUPE_IN_ANOTHER_STOCK": "Product with the same SKU already exists.",
+      "SERVER__FACEBOOK_CONNECTION_FAILED": "Unable connect to facebook. Please try again later.",
+      "REQUEST__THROTTLED": "Request limit exceeded.",
+      "TRANSFER__NOT_ENOUGH_FUNDS": "Not enough money. Please check your balance and try again"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
+
+.checkBox {
+  padding: 1px 12px;
+  margin: 0;
+  border: 1px solid $light8;
+  font-family: $main_font;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $dark3;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+  outline: none;
+  background-color: transparent;
+
+  @include md {
+    padding: 3px 15px;
+    font-size: 14px;
+  }
+
+  &:focus {
+    background-color: $light29;
+  }
+}
+
+.notActiveCheckBox {
+  border: 1px solid $light8;
+}
+
+.activeCheckBox {
+  background-color: $light29;
+  border-color: $light29;
+}

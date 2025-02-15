@@ -1,0 +1,40 @@
+image: node:latest
+
+variables:
+  AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+  AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+  AWS_S3_DEPLOY_URL: $AWS_S3_DEPLOY_URL
+
+stages:
+  - build
+  - lint
+  - deploy-dev
+
+cache:
+  paths:
+    - node_modules/
+
+build:
+  stage: build
+  variables:
+    NODE_ENV: "production"
+  before_script:
+    - npm install
+  script:
+    - npm run-script build
+  artifacts:
+    paths:
+      - build/
+
+lint:
+  stage: lint
+  script:
+    - npm run-script lint
+
+
+deploy-dev:
+  stage: deploy-dev
+  only:
+    - dev
+  script:
+    - npm run-script deploy-dev

@@ -1,0 +1,150 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/breakpoints';
+@import '../../../../styles/mixins';
+
+.head {
+  display: none;
+
+  @include md {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 0 15px;
+    border-bottom: 1px solid $light10;
+    margin-bottom: 14px;
+  }
+
+  .headCell {
+    @include md {
+      flex-basis: 50%;
+      flex-grow: 1;
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 147.69%;
+      color: $dark1;
+    }
+
+    @include lg {
+      font-size: 32px;
+      line-height: 147.69%;
+    }
+  }
+
+  .cell {
+    @include md {
+      flex-basis: 25%;
+      font-size: 14px;
+      line-height: 40px;
+      text-transform: uppercase;
+      text-align: center;
+      color: $dark3;
+    }
+
+    @include lg {
+      font-size: 18px;
+      line-height: 147.69%;
+      text-align: left;
+    }
+  }
+}
+
+.row {
+  margin-bottom: 25px;
+
+  @include md {
+    display: flex;
+  }
+
+  .headCell {
+    font-weight: 500;
+    font-size: 16px;
+    color: $dark1;
+    background-color: $light22;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+
+    @include md {
+      flex-grow: 1;
+      flex-basis: 50%;
+      display: block;
+      background: none;
+      padding: 22px 20px 22px 0;
+      margin: 0;
+    }
+  }
+  .cellTitle {
+    @include md {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 147.69%;
+      color: $dark1;
+      margin-bottom: 14px;
+    }
+  }
+  .cellDescription {
+    display: none;
+
+    @include md {
+      display: block;
+      font-weight: 300;
+      font-size: 19px;
+      line-height: 35px;
+      color: $dark4;
+    }
+  }
+
+  .cell {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 15px;
+
+    @include md {
+      flex-basis: 25%;
+      justify-content: center;
+      padding: 0;
+    }
+
+    @include lg {
+      justify-content: flex-start;
+      padding-left: 15px;
+    }
+
+    span {
+      font-size: 14px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: $dark3;
+
+      @include md {
+        display: none;
+      }
+    }
+
+    .tag {
+      font-family: $title-font;
+      font-size: 11px;
+      line-height: 16px;
+      color: $light12;
+      padding: 5px 10px;
+      background-color: $light31;
+      text-transform: uppercase;
+
+      @include lg {
+        font-size: 18px;
+        line-height: 16px;
+      }
+    }
+
+    svg {
+      width: 15px;
+
+      @include md {
+        width: 20px;
+      }
+
+      @include lg {
+        width: 24px;
+      }
+    }
+  }
+}

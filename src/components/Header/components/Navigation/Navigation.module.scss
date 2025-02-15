@@ -1,0 +1,210 @@
+@import '../../../../styles/old-breakpoints';
+@import '../../../../styles/mixins';
+@import '../../../../styles/variables';
+
+.navPanel {
+  height: 100%;
+
+  @include rwd(667) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  hr {
+    position: absolute;
+    visibility: hidden;
+    text-align: left;
+    bottom: 0;
+    height: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    background: $light1;
+    border: 1px solid $dark3;
+    transition: 0.3s ease-in-out;
+    z-index: 1;
+
+    @include rwd(667) {
+      visibility: visible;
+    }
+  }
+
+  ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: auto 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+
+    @include rwd(834) {
+      font-size: 18px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      position: relative;
+      height: 100%;
+    }
+  }
+
+  a,
+  span {
+    color: $dark3;
+  }
+
+  li:not(:last-child) {
+    margin-right: 30px;
+
+    @include rwd(1024) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.subMenuTitle {
+  cursor: pointer;
+  height: 100%;
+
+  > a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.subMenuOpen {
+  position: relative;
+  z-index: 2;
+
+  @include effects {
+    .subMenuContainer {
+      display: flex;
+    }
+    .dropdownMenu {
+      display: flex;
+    }
+  }
+}
+
+.subMenuContainer {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 60px;
+  left: 0;
+  padding: 0 25px;
+  @include rwd(834) {
+    top: 80px;
+  }
+
+  @include rwd(1024) {
+    position: absolute;
+    top: 100%;
+    left: -80px;
+    width: 600px;
+  }
+
+  > div {
+    margin: 0 auto;
+  }
+}
+
+.dropdownMenu {
+  display: none;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  max-width: 642px;
+  padding: 45px 40px 0;
+  z-index: 10000;
+  background-color: $light1;
+  box-shadow: inset 1px 20px 15px -20px rgba(0, 0, 0, 0.1), 0px 7px 15px rgba(0, 0, 0, 0.1);
+
+  @include rwd(1024) {
+    width: 600px;
+    padding: 60px 80px 20px;
+  }
+
+  span {
+    display: block;
+    margin-bottom: 33px;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: $dark3;
+
+    @include rwd(1024) {
+      margin-bottom: 20px;
+      font-size: 19px;
+      line-height: 22px;
+    }
+  }
+
+  p {
+    display: block;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: $dark3;
+
+    @include rwd(1024) {
+      width: 175px;
+      font-size: 14px;
+      line-height: 150%;
+    }
+  }
+}
+
+.activeMenu {
+  display: flex;
+}
+
+.subMenuItem {
+  flex: 0 1 150px;
+  margin-bottom: 45px;
+  min-width: 150px;
+
+  @include rwd(1024) {
+    flex: 0 1 170px;
+    margin-bottom: 40px;
+  }
+
+  > a {
+    margin: 0;
+    padding: 0;
+  }
+
+  span {
+    font-weight: normal;
+  }
+
+  span:hover {
+    padding-left: 12px;
+    font-weight: 500;
+    border-left: solid 5px $red2;
+  }
+}
+
+.activeLink {
+  padding-left: 12px;
+  font-weight: 500;
+  border-left: solid 5px $red2;
+}
+
+.companySubMenu {
+  width: 408px;
+  padding: 60px 0 0 63px;
+
+  @include rwd(1024) {
+    width: 600px;
+    padding: 60px 80px 20px;
+  }
+}

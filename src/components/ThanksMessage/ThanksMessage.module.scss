@@ -1,0 +1,93 @@
+@import '../../styles/breakpoints';
+@import '../../styles/variables';
+
+.thanksMessageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  margin-bottom: 35px;
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  color: $dark3;
+
+  @include sm {
+    margin-bottom: 15px;
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  @include md {
+    margin-bottom: 35px;
+    font-size: 44px;
+    line-height: 68px;
+  }
+
+  @include lg {
+    font-size: 54px;
+    line-height: 68px;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 5px;
+    margin-top: 40px;
+    background-color: $dark3;
+
+    @include sm {
+      margin-top: 25px;
+    }
+    @include md {
+      margin-top: 55px;
+    }
+    @include lg {
+      margin-top: 75px;
+    }
+  }
+}
+
+.text {
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  color: $light8;
+
+  @include sm {
+    font-size: 16px;
+  }
+
+  @include md {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.status {
+  padding: 10px 0 9px 15px;
+  border-left: 10px solid $light29;
+  font-family: $title-font;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: $light8;
+
+  @include sm {
+    padding: 9px 0 8px 15px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  @include md {
+    padding: 8px 0 8px 15px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

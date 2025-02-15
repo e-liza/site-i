@@ -1,0 +1,234 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/breakpoints';
+@import '../../../../styles/mixins';
+
+.root {
+  display: flex;
+  margin: -5.5px 14.5px 0;
+  flex-wrap: wrap;
+  max-width: 1800px;
+
+  @include sm {
+    margin: -14px 36px 0;
+  }
+
+  @include md {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+.element {
+  width: 50%;
+  padding: 5.5px;
+
+  @include sm {
+    width: 33.3%;
+    padding: 14px;
+  }
+
+  @include md {
+    padding: 0;
+    width: auto;
+  }
+}
+
+.element0,
+.element1,
+.element2 {
+  @include md {
+    width: 33.3%;
+    float: left;
+    margin-bottom: 120px;
+
+    .advantage {
+      padding-right: 29px;
+    }
+
+    .title {
+      max-width: 165px;
+    }
+  }
+
+  @include lg {
+    margin-bottom: 140px;
+
+    .advantage {
+      padding-right: 58px;
+    }
+
+    .title {
+      max-width: 210px;
+    }
+  }
+
+  @include xl {
+    .advantage {
+      padding-right: 139px;
+    }
+  }
+}
+
+.element2 {
+  @include md {
+    .advantage {
+      padding-right: 80px;
+    }
+  }
+
+  @include lg {
+    .advantage {
+      padding-right: 120px;
+    }
+  }
+
+  @include xl {
+    .advantage {
+      padding-right: 170px;
+    }
+  }
+}
+
+.element3,
+.element4,
+.element5 {
+  @include md {
+    width: 49%;
+    padding-right: 65px;
+    padding-bottom: 80px;
+
+    .advantage {
+      max-width: 439px;
+    }
+  }
+
+  @include lg {
+    padding-right: 100px;
+    padding-bottom: 140px;
+
+    .advantage {
+      max-width: 570px;
+    }
+  }
+
+  @include xl {
+    .advantage {
+      max-width: 687px;
+    }
+  }
+}
+
+.advantage {
+  width: 100%;
+  height: 70px;
+  background-color: $light20;
+  padding: 15px 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include sm {
+    padding: 15px 19px;
+  }
+
+  @include md {
+    padding: 30px 80px;
+    height: 136px;
+    background-color: $light11;
+    justify-content: flex-start;
+  }
+
+  @include lg {
+    padding: 30px 100px 30px 120px;
+    height: 146px;
+  }
+
+  @include xl {
+    padding: 30px 167px 30px 170px;
+  }
+}
+
+.icon {
+  display: none;
+
+  @include md {
+    display: block;
+    min-width: 22px;
+    min-height: 22px;
+    margin-right: 35px;
+  }
+
+  @include lg {
+    min-width: 26px;
+    min-height: 26px;
+    margin-right: 45px;
+  }
+}
+
+.title {
+  text-align: center;
+  font-family: $title-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $dark3;
+
+  @include md {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 38px;
+    text-align: left;
+    text-transform: none;
+    max-width: 222px;
+  }
+
+  @include lg {
+    font-size: 28px;
+    line-height: 44px;
+    max-width: 280px;
+  }
+}
+
+.imageContainer {
+  width: 100%;
+  height: 200px;
+  margin: 14.5px 5.5px 0;
+
+  @include sm {
+    height: 260px;
+    margin: 16px 14px 0;
+  }
+
+  @include md {
+    position: absolute;
+    bottom: 80px;
+    right: 100px;
+    margin: 0;
+    width: 41%;
+    height: 568px;
+    min-width: 420px;
+  }
+
+  @include lg {
+    bottom: 140px;
+    right: 120px;
+    width: 45%;
+    height: 718px;
+    min-width: 650px;
+  }
+
+  @include xl {
+    right: 115px;
+    bottom: 90px;
+    width: 49%;
+    height: 818px;
+    min-width: 898px;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}

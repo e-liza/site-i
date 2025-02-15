@@ -1,0 +1,247 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/breakpoints';
+@import '../../../../styles/mixins';
+
+.root {
+  background-color: $light1;
+  padding: 40px 35px;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.1);
+
+  @include sm {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include md {
+    display: block;
+    height: 100%;
+  }
+
+  @include lg {
+    padding: 55px 41px 40px;
+  }
+}
+
+.header {
+  display: flex;
+  margin-bottom: 38px;
+
+  .name {
+    flex-grow: 1;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: $dark3;
+  }
+
+  .type {
+    max-width: 71px;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 14px;
+    color: $dark3;
+  }
+
+  @include sm {
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: 35px;
+
+    .name {
+      margin-bottom: 19px;
+    }
+
+    .type {
+      max-width: 100%;
+    }
+  }
+
+  @include md {
+    margin-bottom: 21px;
+    .name {
+      font-size: 24px;
+      line-height: 40px;
+      margin: 0;
+    }
+
+    .type {
+      font-size: 14px;
+      line-height: 40px;
+    }
+  }
+
+  @include lg {
+    .type {
+      font-size: 18px;
+      line-height: 40px;
+    }
+  }
+}
+
+.pricing {
+  margin-bottom: 38px;
+
+  @include sm {
+    flex-basis: 100%;
+    max-width: 244px;
+    margin-bottom: 16px;
+  }
+
+  @include md {
+    margin-bottom: 27px;
+  }
+}
+
+.pricingLabel {
+  font-size: 14px;
+  line-height: 16px;
+  color: $light30;
+  margin: 0 0 9px;
+
+  @include md {
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0 0 7px;
+  }
+}
+
+.price {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: $dark1;
+  margin: 0 11px 0 0;
+
+  span + span {
+    margin-left: 5px;
+  }
+
+  @include md {
+    font-size: 36px;
+    line-height: 62px;
+  }
+}
+
+.pricingDescription {
+  display: flex;
+  align-items: center;
+
+  @include md {
+    flex-wrap: wrap;
+  }
+}
+
+.perTime {
+  display: flex;
+  font-size: 16px;
+  line-height: 19px;
+  color: $light13;
+  margin: 0 11px 0 0;
+
+  &:before {
+    content: '/';
+    display: inline-block;
+    margin: 0 3px 0 0;
+  }
+
+  .prefix {
+    margin: 0 3px 0 0;
+  }
+
+  @include md {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+    flex-grow: 1;
+    margin: 0;
+
+    .prefix {
+      display: none;
+    }
+  }
+}
+
+.perUser {
+  display: flex;
+  font-size: 16px;
+  line-height: 19px;
+  color: $light13;
+
+  &:before {
+    content: '/';
+    display: inline-block;
+    margin: 0 3px 0 0;
+  }
+
+  .prefix {
+    margin: 0 3px 0 0;
+  }
+
+  @include md {
+    flex-basis: 100%;
+    font-size: 18px;
+    line-height: 21px;
+
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.description {
+  > span {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: $dark4;
+    margin-bottom: 33px;
+  }
+
+  @include sm {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+
+    > span {
+      flex-basis: 100%;
+      max-width: 244px;
+      margin-bottom: 0;
+    }
+
+    .buttonContainer {
+      flex-grow: 1;
+    }
+  }
+
+  @include md {
+    display: block;
+
+    > span {
+      font-size: 19px;
+      line-height: 30px;
+      margin-bottom: 38px;
+    }
+  }
+
+  @include lg {
+    > span {
+      max-width: 100%;
+    }
+  }
+}
+
+.button {
+  height: 30px;
+  // NOTE: copy/paste from header button
+  // TODO: need to refactor
+  padding: 8px 12px !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  letter-spacing: 0.02em !important;
+  text-transform: uppercase !important;
+  color: $light1 !important;
+  background-color: $green2 !important;
+}

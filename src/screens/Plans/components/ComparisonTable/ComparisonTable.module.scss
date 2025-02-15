@@ -1,0 +1,137 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/breakpoints';
+@import '../../../../styles/mixins';
+
+.root {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px 30px;
+
+  @include sm {
+    padding: 50px 55px 80px;
+  }
+
+  @include md {
+    padding: 75px 72px 80px;
+  }
+
+  @include lg {
+    padding: 105px 138px 100px;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    font-family: $title-font;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 38px;
+    color: $dark1;
+    margin-bottom: 16px;
+  }
+
+  .description {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    flex-grow: 1;
+  }
+
+  .link {
+    color: $dark3;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    padding: 2px 6px 2px 8px;
+    border-left: 8px solid $red2;
+    transition: none;
+    white-space: nowrap;
+    margin-bottom: -9px;
+
+    @include effects {
+      color: $red2;
+    }
+  }
+
+  @include sm {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 52px;
+
+    .title {
+      margin: 0;
+      flex-basis: 100%;
+      flex-grow: 1;
+      max-width: 220px;
+    }
+
+    .description {
+      flex-basis: 100%;
+      flex-grow: 1;
+      max-width: 300px;
+    }
+  }
+
+  @include md {
+    align-items: flex-start;
+
+    .title {
+      font-size: 42px;
+      line-height: 66px;
+      max-width: 100%;
+    }
+
+    .description {
+      font-size: 19px;
+      line-height: 35px;
+      display: block;
+      max-width: 440px;
+
+      > span {
+        display: inline-block;
+        margin-bottom: 18px;
+      }
+    }
+
+    .link {
+      display: block;
+      font-size: 14px;
+      line-height: 16px;
+      border-left: 13px solid $red2;
+      padding: 6px 0 6px 18px;
+      margin: 0;
+    }
+  }
+
+  @include lg {
+    .title {
+      font-size: 52px;
+      line-height: 70px;
+    }
+  }
+}
+
+.tables {
+  margin-top: 60px;
+
+  @include md {
+    margin-top: 75px;
+  }
+
+  @include lg {
+    margin-top: 110px;
+  }
+}
+
+.table {
+  @include md {
+    margin-bottom: 75px;
+  }
+}

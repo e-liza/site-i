@@ -1,0 +1,141 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/breakpoints.scss';
+
+.root {
+  padding: 40px 26px 33px 26px;
+
+  @include rwhd($screen-xs-min, 667px) {
+    padding: 54px 26px 57px 25px;
+  }
+
+  @include sm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 28px 45px 47px;
+  }
+
+  @include rwhd($screen-sm-min, 297px) {
+    padding: 67px 28px 56px 47px;
+  }
+
+  @include rwhd($screen-sm-min, 667px) {
+    padding: 100px 16px 0 47px;
+  }
+
+  @include md {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 30px;
+  }
+
+  @include rwhd($screen-md-min, 700px) {
+    padding: 0 50px 50px;
+  }
+
+  @include rwhd($screen-md-min, 800px) {
+    padding: 0 50px 45px;
+  }
+
+  @include rwhd($screen-md-min, 900px) {
+    padding: 0 85px 60px;
+  }
+
+  @include rwhd($screen-md-min, 1238px) {
+    padding: 0 85px 70px;
+  }
+
+  @include rwhd($screen-md-min, 1366px) {
+    padding: 0 85px 50px;
+  }
+
+  @include rwhd($screen-md-min, 1500px) {
+    padding: 0 85px 60px;
+  }
+
+  @include lg {
+    padding: 0 100px 40px;
+  }
+
+  @include rwhd($screen-lg-min, 700px) {
+    padding: 0 100px 50px;
+  }
+
+  @include rwhd($screen-lg-min, 800px) {
+    padding: 0 100px 45px;
+  }
+
+  @include rwhd($screen-lg-min, 900px) {
+    padding: 0 100px 70px;
+  }
+}
+
+.title {
+  font-family: $title-font;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0 0 11px;
+  color: $dark1;
+
+  @include rwhd($screen-xs-min, 667px) {
+    margin: 0 0 24px;
+  }
+
+  @include sm {
+    margin: 0 0 29px;
+  }
+
+  @include md {
+    font-size: 37px;
+    line-height: 55px;
+    max-width: 230px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  @include rwhd($screen-md-min, 900px) {
+    min-height: 95px;
+  }
+
+  @include lg {
+    font-size: 45px;
+    height: 47px;
+    line-height: 65px;
+    max-width: 100%;
+  }
+
+  @include rwhd($screen-lg-min, 800px) {
+    font-size: 48px;
+    line-height: 68px;
+    height: auto;
+    min-height: 121px;
+    max-width: 320px;
+  }
+}
+
+.description {
+  font-size: 17px;
+  line-height: 32px;
+  font-weight: normal;
+  margin: 0;
+
+  @include md {
+    font-size: 20px;
+    line-height: 38px;
+    max-width: 304px;
+  }
+
+  @include lg {
+    font-size: 22px;
+    line-height: 40px;
+    max-width: 100%;
+  }
+
+  @include rwhd($screen-lg-min, 700px) {
+    max-width: 320px;
+  }
+}

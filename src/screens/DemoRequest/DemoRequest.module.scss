@@ -1,0 +1,214 @@
+@import '../../styles/breakpoints';
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.root {
+  margin-top: 60px;
+
+  @include rwd(834) {
+    margin-top: 80px;
+  }
+
+  @include lg {
+    @include clearfix;
+    padding: 60px 120px;
+    max-width: 1440px;
+    margin: 80px auto 0;
+  }
+
+  @include xl {
+    max-width: 1800px;
+    padding: 60px 270px;
+  }
+}
+
+.header {
+  padding: 40px 40px 30px;
+  background-color: $light1;
+
+  @include sm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px 15px;
+    background-color: transparent;
+  }
+
+  @include rwhd($screen-sm-min, 297px) {
+    padding: 30px 40px;
+  }
+
+  @include rwhd($screen-sm-min, 500px) {
+    padding: 50px 40px 40px;
+  }
+
+  @include md {
+    padding: 60px 100px;
+  }
+
+  @include lg {
+    float: right;
+    width: 40%;
+    margin-bottom: 50px;
+    padding: 30px 0 0 90px;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  @include xl {
+    width: 39.7%;
+  }
+}
+
+.title {
+  margin: 0 -1px 20px 0;
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: $dark3;
+
+  @include sm {
+    max-width: 215px;
+    margin: 0;
+  }
+
+  @include md {
+    max-width: 217px;
+    margin-bottom: 0;
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  @include lg {
+    max-width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+.text {
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  color: $dark3;
+
+  @include sm {
+    max-width: 322px;
+  }
+
+  @include md {
+    max-width: 375px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  @include lg {
+    max-width: 100%;
+  }
+}
+
+.content {
+  @include md {
+    width: 100%;
+    padding: 0 100px 60px;
+  }
+
+  @include lg {
+    float: left;
+    width: 60%;
+    padding: 0;
+  }
+
+  @include xl {
+    width: 60.3%;
+  }
+}
+
+.form {
+  padding: 0 40px 30px;
+  background-color: $light1;
+
+  @include sm {
+    padding: 40px 58px;
+  }
+
+  @include md {
+    padding: 70px 96px 60px;
+  }
+
+  @include lg {
+    padding: 70px 65px 60px;
+  }
+}
+
+.submitMsg {
+  display: flex;
+  justify-content: center;
+  height: 362px;
+  padding: 20px 60px 50px;
+  background-color: $light1;
+
+  @include sm {
+    height: 313px;
+    margin: 0 80px 0 70px;
+    padding: 40px 100px 30px;
+  }
+  @include md {
+    height: 666px;
+    margin: 0;
+    padding: 140px 200px 60px;
+  }
+
+  @include lg {
+    padding: 120px 150px 60px;
+  }
+
+  > div {
+    max-width: 263px;
+
+    @include sm {
+      max-width: 316px;
+    }
+
+    @include md {
+      max-width: 404px;
+    }
+
+    @include lg {
+      max-width: 420px;
+    }
+  }
+}
+
+.footer {
+  padding: 40px;
+
+  @include sm {
+    padding: 40px 42px 10px 40px;
+  }
+
+  @include md {
+    width: 100%;
+    padding: 0 100px 10px;
+  }
+
+  @include lg {
+    float: right;
+    width: 40%;
+    padding: 0 0 0 90px;
+  }
+
+  @include xl {
+    width: 39.7%;
+    padding: 0 0 0 90px;
+  }
+}
+
+.benefitsFormSubmited {
+  @media (min-width: 667px) and (max-width: 1023px) {
+    width: 100%;
+    margin-top: 30px;
+  }
+}

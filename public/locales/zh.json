@@ -1,0 +1,826 @@
+{
+  "layout": {
+    "menu": {
+      "dropdown": {
+        "solutions": {
+          "name": "解決方案",
+          "description": "國際人力資源和遠程勞動力管理的全球服務",
+          "items": {
+            "employee": {
+              "name": "僱員",
+              "description": "統一管理全球員工"
+            },
+            "payroll": {
+              "name": "工資單",
+              "description": "合規準確的工資管理"
+            },
+            "business": {
+              "name": "商業",
+              "description": "商業智能，更好地制定決策"
+            },
+            "mobile": {
+              "name": "移動",
+              "description": "移動應用程序可增強團隊聯繫"
+            },
+            "ivySupport": {
+              "name": "常春藤支持",
+              "description": "全球人力資源諮詢和法律服務"
+            },
+            "company": {
+              "name": "公司",
+              "description": "全球公司和人員管理"
+            }
+          }
+        },
+        "company": {
+          "name": "公司",
+          "description": " 我們幫助公司遵守當地法規在全球範圍內發展",
+          "items": {
+            "careers": {
+              "name": "招賢納士",
+              "description": "加入我們的團隊"
+            },
+            "aboutUs": {
+              "name": "關於我們",
+              "description": "我們幫助公司在全球擴張和發展"
+            }
+          }
+        }
+      },
+      "insights": "見解",
+      "prices": "價錢"
+    },
+    "footerMenus": {
+      "pages": {
+        "title": "頁數",
+        "items": {
+          "solutions": "解決方案",
+          "pricing": "價錢",
+          "aboutUs": "關於我們",
+          "requestDemo": "申請演示",
+          "requestService": "要求服務"
+        }
+      },
+      "resources": {
+        "title": "資源",
+        "items": {
+          "insights": "見解",
+          "dataSecurity": "數據安全",
+          "termCond": "條款及細則",
+          "privPol": "隱私政策"
+        }
+      },
+      "company": {
+        "title": "公司",
+        "items": {
+          "careers": "招賢納士"
+        }
+      },
+      "contact": {
+        "title": "聯繫",
+        "items": {
+          "contactUs": "聯繫我們"
+        }
+      },
+      "socials": "社交",
+      "solutions": {
+        "items": {
+          "ivySupport": "Ivy Support"
+        }
+      }
+    },
+    "headerButton": {
+      "signIn": "登入",
+      "requestDemo": "申請演示",
+      "getADemo": "演示"
+    },
+    "forms": {
+      "pricingForm": {
+        "services": {
+          "title": "服務",
+          "PEO": "聚醚",
+          "RECRUITMENT": "招募",
+          "INVITATION_LETTER": "邀請函",
+          "CONCIERGE_SERVICE": "禮賓服務",
+          "BUSINESS_ENTITY_SET_UP": "業務實體設置",
+          "WORK_AND_RESIDENCE_PERMIT": "工作和居住許可證"
+        },
+        "fields": {
+          "names": {
+            "fullName": "全名",
+            "companyName": "公司名",
+            "companySizeSelect": {
+              "title": "公司規模",
+              "size": {
+                "small": "小",
+                "medium": "介質",
+                "above": "以上"
+              }
+            },
+            "destinationCountry": "目的地",
+            "location": "位置",
+            "email": "公司電郵",
+            "phone": "電話",
+            "addInfo": "附加信息"
+          },
+          "extraInfo": {
+            "destinationCountry": "您尋求擴大活動範圍的地方",
+            "location": "您的總部所在地",
+            "phone": "可選的",
+            "addInfo": "可選的"
+          },
+          "errors": {
+            "fullName": {
+              "notFilled": "請輸入您的全名",
+              "maxLength": "長度上限為100個字符"
+            },
+            "companyName": {
+              "notFilled": "請輸入您的公司名稱",
+              "maxLength": "長度上限為100個字符"
+            },
+            "companySize": "請選擇您的公司規模",
+            "destinationCountry": "請輸入您的目的地國家",
+            "location": {
+              "notFilled": "請輸入您的位置",
+              "maxLength": "最大長度為255個字符"
+            },
+            "email": {
+              "notFilled": "請輸入有效的電子郵件地址",
+              "notCorrect": "輸入的電子郵件無效"
+            },
+            "phone": "請輸入一個有效的電話號碼",
+            "addInfo": "最大長度為255個字符。"
+          }
+        },
+        "controls": {
+          "submit": "發送",
+          "link": "提交此表格即表示您同意我們的條款和條件以及我們的隱私政策"
+        }
+      },
+      "jobPositionForm": {
+        "fields": {
+          "names": {
+            "fullName": "全名",
+            "email": "公司電郵",
+            "phone": "電話",
+            "linkedIn": "Linkedin個人資料",
+            "country": "國家",
+            "addInfo": "附加信息",
+            "letter": "附上求職信",
+            "cv": "附簡歷/簡歷"
+          },
+          "extraInfo": {
+            "addInfo": "可選的",
+            "controls": "可選的"
+          },
+          "errors": {
+            "fullName": {
+              "notFilled": "請輸入您的全名。",
+              "maxLength": "長度上限為100個字符。"
+            },
+            "country": "請輸入您的國家",
+            "linkedIn": {
+              "notFilled": "請輸入您的LinkedIn。",
+              "notCorrect": "不是URL。",
+              "length": "LinkedIn個人資料必須小於或等於255個字符"
+            },
+            "cv": {
+              "notFilled": "請附上簡歷。",
+              "notCorrect": "選擇.pdf，.doc，.docx"
+            },
+            "letter": {
+              "notCorrect": "選擇.pdf，.doc，.docx"
+            },
+            "email": {
+              "notFilled": "請輸入您的公司電子郵件。",
+              "notCorrect": "輸入的電子郵件無效。"
+            },
+            "phone": "電話號碼不正確。",
+            "addInfo": "最大長度為255個字符。"
+          }
+        },
+        "controls": {
+          "submit": "發送"
+        }
+      },
+      "formErrors": {
+        "captchaError": {
+          "message": "驗證碼錯誤",
+          "description": " 驗證碼有些問題。檢查您的互聯網連接，然後重試。"
+        }
+      }
+    },
+    "mainpage": {
+      "appBlock": {
+        "header": "簡化您的工資單",
+        "text": "我們的軟件取代了人力資源部門的繁瑣查詢，並通過使用尖端技術堆棧簡化了薪資確認，請求批准和其他繁瑣的人力資源任務。",
+        "link": "了解有關我們軟件的更多信息",
+        "appSolutions": {
+          "first": {
+            "header": "所有團隊成員的虛擬工作區",
+            "text": "Web平台可從一個易於訪問且安全的位置輕鬆管理您的業務數據。"
+          },
+          "second": {
+            "header": "輕鬆進行工資核實",
+            "text": "在不離開儀表板的情況下查看並驗證您的工資單。"
+          },
+          "third": {
+            "header": "隨時隨地提交請求",
+            "text": "員工可使用的移動應用程序提交休假，差旅申請，費用索賠以及與目的地國家/地區的當地法律有關的特定問題。"
+          }
+        }
+      },
+      "expertiseBlock": {
+        "headerBlock": {
+          "header": "依靠我們的專業知識",
+          "link": "了解有關我們團隊的更多信息",
+          "content": {
+            "text1": "我們的團隊由來自不同背景和國籍的領域內的高技能專家組成。我們的所有團隊成員均經過精心挑选和培訓，以盡最大可能幫助您開展業務。",
+            "text2": "IVY在全球擁有多個區域服務中心。我們的支持團隊可幫助您應對國際擴張，本地合規，國際就業和招聘的複雜性。"
+          }
+        },
+        "contentBlock": {
+          "header": "充分利用我們的定制方法",
+          "text": "我們每個客戶都有專門的聯繫點，負責滿足他們提供高級服務的所有需求。"
+        }
+      },
+      "whatWeDoBlock": {
+        "header": "我們為新的工作世界創建定製而強大的解決方案",
+        "text": "管理國際勞動力是一項複雜的任務，需要透徹了解當地特點。"
+      },
+      "insights": {
+        "header": "見解",
+        "link": "探索見解"
+      },
+      "security": {
+        "header": {
+          "first": "您的數據對我們很安全",
+          "text": "了解我們的數據安全實踐和合規性。",
+          "link": "學到更多"
+        }
+      },
+      "introBlock": {
+        "introCard": {
+          "header": "連接您的全球勞動力"
+        },
+        "introText": {
+          "text": "我們結合技術和人的軟技能，以通過提供有關不同國家的薪資，法規和福利方面的指導來促進遠程員工管理"
+        }
+      }
+    },
+    "subscription": {
+      "inputField": {
+        "name": "電子郵件",
+        "extra": "與時事通訊保持最新"
+      },
+      "signUpButton": "註冊"
+    },
+    "insights": {
+      "mainInsight": {
+        "link": "閱讀更多"
+      },
+      "all": "所有",
+      "mobileMenu": {
+        "name": "分類目錄"
+      },
+      "footer": {
+        "link": "了解有關我們服務的更多信息"
+      },
+      "recentInsights": {
+        "link": "查看所有文章"
+      }
+    },
+    "article": {
+      "relArticles": "相關文章",
+      "link": "查看所有文章"
+    },
+    "thanksMessage": {
+      "text": "我們的團隊會盡快與您聯繫",
+      "messageStatus": "訊息已發送",
+      "title1": "感謝您的留言",
+      "title2": "謝謝您的申請"
+    },
+    "pricing": {
+      "form": {
+        "title": "獲取報價",
+        "text": "感謝您對IVY服務的關注。請填寫有關您的業務需求的以下信息，以幫助我們為您提供更好的服務。您應該在一個或兩個工作日內收到答复。"
+      },
+      "faq": {
+        "title": "常問問題。",
+        "questions": {
+          "first": {
+            "title": "訂閱格式是什麼？",
+            "answer": "訂閱沒有最短期限，只要您覺得不再需要該服務，就可以離開。"
+          },
+          "second": {
+            "title": "發票如何運作？",
+            "answer": "了解我們如何幫助您遵守當地法規 和不同國家的法規"
+          },
+          "third": {
+            "title": "如果我已經在國外有了解決方案，可以使用您的服務嗎？",
+            "answer": "是的，由於我們可以靈活地適應您的需求，因此該平台旨在為您的組織提供便利，而不管您現有的解決方案如何。"
+          }
+        }
+      }
+    },
+    "demoRequest": {
+      "form": {
+        "title": "安排產品演示",
+        "text": "請填寫以下有關您的業務的信息，我們的團隊會盡快與您聯繫。"
+      },
+      "advantages": {
+        "header": {
+          "title": "了解IVY如何為您的業務工作",
+          "text": "從一開始就獲得持續的客戶支持。我們的團隊將在您探索我們的產品時為您提供幫助，以使您快速了解它如何使您的業務受益。"
+        },
+        "items": {
+          "first": {
+            "title": "工資單",
+            "text": "了解我們的軟件如何簡化您的工資單，確保您的員工準確，及時地獲得薪水。"
+          },
+          "second": {
+            "title": "合規",
+            "text": "了解我們如何幫助您遵守不同國家/地區的當地法規和法規。"
+          },
+          "third": {
+            "title": "要求",
+            "text": "了解我們的平台如何使與您的團隊的溝通變得輕鬆便捷。"
+          },
+          "fourth": {
+            "title": "更多",
+            "text": "體驗我們的運營空間提供的所有其他功能。"
+          }
+        }
+      }
+    },
+    "serviceRequest": {
+      "form": {
+        "title": "服務請求"
+      },
+      "additional": {
+        "title": "讓我們的團隊為您創建定制解決方案",
+        "text1": "我們知道一個應用程序不能滿足所有需求，這就是為什麼我們提供滿足您業務需求的定制解決方案的原因。",
+        "text2": "我們的團隊將與您聯繫，以了解您的獨特要求並為您提供清晰的手工路線圖。"
+      }
+    },
+    "aboutUs": {
+      "headSection": {
+        "title": "我們知道使您的業務在國外運作需要什麼",
+        "text": "我們的團隊由來自不同背景和國籍的高素質和經驗豐富的人員組成。我們將瑞士的品質和創新相結合，以幫助我們的客戶簡化其業務擴展戰略。"
+      },
+      "expandingSection": {
+        "location": "IVY Solutions總部位於瑞士，但在全球範圍內運營",
+        "title": "“將您的業務擴展到國外可能會很棘手和復雜，但是不必那樣做。",
+        "text": "IVY可以幫助您完成將業務擴展到海外的每個步驟，無論是設立辦事處，獲得許可，尋找薪資提供者還是遵守特定國家/地區的規則。"
+      },
+      "navigateSection": {
+        "title": "應對國際人力資源管理的複雜性",
+        "text": "我們幫助企業進行全球擴張和員工管理，同時確保遵守當地法律法規。",
+        "link": "了解有關我們服務的更多信息"
+      },
+      "approachSection": {
+        "text1": "我們相信每個業務都有其獨特的需求，我們將努力以最佳方式滿足這些需求。",
+        "text2": "用戶體驗是我們的首要任務，我們每天都在努力為客戶提供直觀和實用的工具。最好的回報是，由於我們的人員和流程而簡化了複雜性。",
+        "title": "獨特的方法",
+        "titleAdditional": "我們避免使用通用的解決方案，並以個人護理方式對待每位客戶。"
+      },
+      "principlesSection": {
+        "intro": "我們的使命是了解客戶的需求，並提供最佳的解決方案來滿足這些需求，同時享受過程並在可能的情況下帶來樂趣。我們在團隊中採用相同的原則。",
+        "principles": {
+          "integrity": {
+            "title": "廉潔",
+            "text": "我們始終保持開放，誠實和道德，我們盡一切努力做到最好，對自己負責"
+          },
+          "performance": {
+            "title": "性能",
+            "text": "我們不斷為客戶及時提供靈活而強大的優質解決方案。"
+          },
+          "commitment": {
+            "title": "承諾",
+            "text": "我們了解每個客戶的獨特需求，並為他們的成功而奮鬥。"
+          },
+          "innovation": {
+            "title": "革新",
+            "text": "我們正在尋找使我們的公司每天變得更好的新方法。"
+          }
+        }
+      },
+      "joinUsSection": {
+        "title": "加入我們的團隊",
+        "text": "開始您的全球職業生涯，並幫助我們塑造明天的工作環境。",
+        "link": "查看所有可用位置"
+      }
+    },
+    "careers": {
+      "headSection": {
+        "titleBlock": {
+          "title": "加入我們",
+          "text": "我們一直在尋找有才華的專業人士在我們的團隊中工作。"
+        },
+        "textBlock": {
+          "firstText": "我們是一群積極進取的人，他們來自不同背景，喜歡高效地工作，充滿激情，並在可能的情況下玩樂。",
+          "secondText": "在IVY，我們相信通過我們的服務和日常互動來改善日常生活。",
+          "thirdText": "如果您熱衷於創造影響力的有意義的工作，請加入我們。"
+        }
+      },
+      "benefitsSection": {
+        "firstBenefits": {
+          "firstBenefit": "動態工作環境",
+          "secondBenefit": "偉大的隊友",
+          "thirdBenefit": "隨時隨地工作"
+        },
+        "secondBenefits": {
+          "firstBenefit": "文化和性別多樣性",
+          "secondBenefit": "最新技術棧",
+          "thirdBenefit": "持續學習的機會"
+        }
+      },
+      "jobPositionSection": {
+        "title": "空缺職位",
+        "link": "查看職位描述"
+      },
+      "nothingToShow": "抱歉，我們沒什麼可向您顯示"
+    },
+    "jobDescription": {
+      "emplType": "僱傭類型",
+      "applyJobSection": {
+        "title": "申請此職位"
+      },
+      "technologySection": {
+        "title": "技術和人類專業知識",
+        "text": "我們將技術和人的軟技能相結合，以便為客戶提供最佳服務。",
+        "link": "了解更多關於我們的信息"
+      }
+    },
+    "solutions": {
+      "solutions": "解決方案",
+      "overview": "總覽",
+      "employee": "僱員",
+      "payroll": "工資單",
+      "business": "商業",
+      "mobile": "移動",
+      "ivySupport": "常春藤支持",
+      "businessPage": {
+        "title": "商業情報",
+        "description": "強大的圖形工具，可以做出更好的業務決策。",
+        "textBlock1": {
+          "title": "人力資源分析",
+          "description": "借助我們的可視化報告和組織結構圖，您可以清楚，詳細地了解您在全球範圍內的業務成本和公司結構。"
+        },
+        "textBlock2": {
+          "title": "現代云平台",
+          "description": "從現代，安全的雲中獲利，避免額外的費用和安裝。"
+        },
+        "textBlock3": {
+          "title": "設定值",
+          "description": "使用我們強大的設置來反映您的內部流程和組織框架。"
+        },
+        "textBlock4": {
+          "title": "支持",
+          "description": "在初始設置中使用我們的幫助，包括集成現有公司數據。"
+        },
+        "advantages": {
+          "first": "安全的數據訪問",
+          "second": "一個數字工作區",
+          "third": "動態組織結構圖"
+        }
+      },
+      "footer": {
+        "title": "應對國際人力資源管理的複雜性",
+        "description": "我們幫助企業進行全球擴張和勞動力管理，同時確保遵守當地法律法規。",
+        "link": "了解有關我們解決方案的更多信息"
+      },
+      "employeePage": {
+        "title": "員工管理",
+        "description": "一種協作且直觀的工具，可增強您的員工能力。",
+        "advantages": {
+          "first": "缺席",
+          "second": "花費",
+          "third": "旅行"
+        },
+        "textBlock1": {
+          "title": "請求",
+          "description": "提交並驗證請假，費用，差旅，OT和輪班要求，輕鬆附加相關文檔。"
+        },
+        "textBlock2": {
+          "title": "在線聊天",
+          "description": "無論您身在何處，都可以輕鬆便捷地訪問您的團隊成員。"
+        },
+        "textBlock3": {
+          "title": "日曆",
+          "description": "一眼看到缺席者或出差者，並及時收到請求批准的通知。"
+        },
+        "textBlock4": {
+          "title": "成本與收益",
+          "description": "為不同的團隊成員提供易於使用的界面，以根據當地法規管理所有與員工相關的成本。"
+        }
+      },
+      "mobilePage": {
+        "title": "移動",
+        "description": "可在辦公室或旅途中訪問的平台。",
+        "advantages": {
+          "first": "要求",
+          "second": "附件",
+          "third": "在線聊天"
+        },
+        "textBlock1": {
+          "title": "通知事項",
+          "description": "無論您是在辦公室還是在旅途中，都可以接收工資單並及時請求相關通知。"
+        },
+        "textBlock2": {
+          "title": "要求管理",
+          "description": "允許您的團隊成員從其移動設備提交，跟踪和驗證請假，費用，差旅，OT和輪班請求。"
+        },
+        "textBlock3": {
+          "title": "日曆",
+          "description": "有一個始終可訪問且直觀的工具，可幫助您進行員工管理和人力資源規劃。"
+        },
+        "textBlock4": {
+          "title": "幫助",
+          "description": "如有需要，請諮詢IVY的專門聯繫點。"
+        }
+      },
+      "payrollPage": {
+        "title": "工資管理",
+        "description": "符合當地法規的簡單及時的工資單。",
+        "advantages": {
+          "first": "工資單",
+          "second": "合規",
+          "third": "通知事項"
+        },
+        "textBlock1": {
+          "title": "輕鬆工資",
+          "description": "只需幾個簡單的步驟即可驗證您在國外的員工的工資單，並確保他們按時付款。"
+        },
+        "textBlock2": {
+          "title": "自動提醒",
+          "description": "通過在工資週期的每個步驟使用我們的自動提醒功能，切勿錯過工資日期。"
+        },
+        "textBlock3": {
+          "title": "內建合規",
+          "description": "從我們合格的薪資專業人員的專業團隊獲得支持，以快速有效地解決任何查詢。"
+        },
+        "textBlock4": {
+          "title": "數據同步",
+          "description": "通過將工資單連接到軟件的其他模塊，避免重複工作。"
+        }
+      },
+      "overviewPage": {
+        "title": "一個多功能平台",
+        "description": "一種使所有團隊成員的生活更輕鬆的解決方案。",
+        "section1": {
+          "title": "無論員工身在何處，",
+          "description": "快樂的員工成就了成功的公司。",
+          "content": "為您的員工提供實用的工具，幫助他們完成日常工作，並允許他們使用我們的移動或桌面解決方案隨時隨地提交請求。"
+        },
+        "section2": {
+          "title": "在全球範圍內啟用經理",
+          "description": "國際業務很複雜，但不一定非要這樣。",
+          "content": "為您的經理提供手段來監控其直接報告並保持整個團隊同步，同時避免大量的電子郵件流量和繁瑣的文書工作。"
+        },
+        "section3": {
+          "title": "支持跨國人力資源團隊",
+          "description": "擁有可以指導您解決國際管理複雜問題的專業人員會有所不同。",
+          "content": "通過自動執行繁瑣的HR任務來幫助您的HR團隊遵守國際法和法規，同時從IVY專業人員的持續支持中受益。"
+        },
+        "section4": {
+          "title": "提升全球高管",
+          "description": "充分利用您的時間，只專注於重要的事情。",
+          "content": "為高管提供有關您的組織和全球相關業務成本的全面數據，從而在管理團隊時保持完全透明和控制。"
+        }
+      },
+      "ivySupportPage": {
+        "title": "IVY支持",
+        "description": "為貴公司發揮最大潛能的專業指導。",
+        "paragraph1": {
+          "title": "IAsk",
+          "description": "一鍵單擊即可聯繫您專門的聯繫人，以指導您完成該解決方案，該解決方案是為您的公司和業務活動所在國家/地區量身定制的。"
+        },
+        "paragraph2": {
+          "title": "增值服務",
+          "description": "我們在這里以我們當地的專業知識和始終如一的客戶服務來滿足您的業務需求。"
+        },
+        "section1": {
+          "title": "國外設置",
+          "description": "使用我們的專業人員網絡在國際上建立您的法律實體。"
+        },
+        "section2": {
+          "title": "工作和居住許可證",
+          "description": "收集並提交正確的文件以將您的員工發送到國外。"
+        },
+        "section3": {
+          "title": "邀請函",
+          "description": "獲取邀請信，以供您的團隊出國旅行。"
+        },
+        "section4": {
+          "title": "國際流動",
+          "description": "獲取幫助，以解決您的團隊成員在國外的問題。"
+        },
+        "section5": {
+          "title": "招募",
+          "description": "在國外為您的組織找到合適的候選人。"
+        },
+        "section6": {
+          "title": "全球就業組織",
+          "description": "在沒有法律實體的情況下在世界各地僱用您的員工。"
+        },
+        "serviceRequest": "要求服務"
+      },
+      "companyPage": {
+        "title": "公司管理",
+        "description": "所有公司分支機構和團隊的一個工作區。",
+        "advantages": {
+          "first": "分行",
+          "second": "人",
+          "third": "卷宗"
+        },
+        "textBlock1": {
+          "title": "公司資料",
+          "description": "在我們現代化的安全雲中訪問您的公司組織和員工記錄。"
+        },
+        "textBlock2": {
+          "title": "員工資料",
+          "description": "讓您的員工更新自己的詳細信息，以更快，更準確地完成管理任務。"
+        },
+        "textBlock3": {
+          "title": "文件資料",
+          "description": "確保所有授權團隊成員安全，最新且易於訪問您的人員信息。"
+        },
+        "textBlock4": {
+          "title": "舷外",
+          "description": "以無縫且合規的方式管理與團隊成員轉移和終止相關的任務。"
+        }
+      },
+      "company": "公司"
+    },
+    "errors": {},
+    "security": {
+      "section4": {
+        "block2": {
+          "text1": "為了執行我們的服務，IVY Solutions會收集與您連接的個人信息，以便我們識別我們的用戶。 就此而言，數據頻譜可以是：",
+          "list1": {
+            "item1": "姓名，家庭住址，電子郵件地址，電話號碼，護照或其他個人身份證號碼和詳細信息，銀行帳戶詳細信息或其他付款詳細信息；",
+            "item2": "根據政府部門，保險公司和其他強制性要求的必要詳細信息；",
+            "item3": "您的雇主提供的有關您的信息（工資，福利，計劃）；",
+            "item4": "有關您如何使用我們的網站和/或應用程序的信息；",
+            "item5": "您與我們或通過我們的應用程序交換的任何形式的通信。"
+          },
+          "title": "我們收集什麼個人數據"
+        },
+        "block3": {
+          "text1": "我們可能會出於進行服務的目的處理您的個人信息，並且您的日期可能會用於以下目的：",
+          "list1": {
+            "item1": "向您，您的雇主或任何第三方提供我們的服務；",
+            "item2": "必要時與您聯繫並管理我們的溝通；",
+            "item3": "使用您的銀行詳細信息進行與您使用我們服務相關的金融交易，並檢測可能的欺詐行為；",
+            "item4": "Вспомогательная юридическая или административная тема;",
+            "item5": "讓我們隨時為您提供有關IVY Solutions最新見解的信息。 您可以隨時通過更新首選項來退出。"
+          },
+          "title": "為什麼我們收集這些信息",
+          "text2": "您的信息將在執行我們的服務所需的時間內保留，但不會更長。 我們必須精確說明，出於法律，行政或會計目的，我們可能需要保留一些數據。 一旦不再需要保留數據，我們將根據歐盟法規銷毀數據。"
+        },
+        "block4": {
+          "text1": "為了與我們開展業務，我們可能會共享您的個人數據：",
+          "title": "我們與誰共享您的數據",
+          "list1": {
+            "item1": {
+              "title": "服務供應商。",
+              "text": "與IVY Solutions保持合法業務關係並代表我們向您提供服務的公司，或支持IVY Solutions向您提供服務的公司；"
+            },
+            "item2": {
+              "title": "第三方。",
+              "text": "銀行，保險，稅務機構和其他福利提供者，以提供我們的服務為目的。"
+            },
+            "item3": {
+              "title": "法律要求。",
+              "text": "政府，監管機構遵守法律要求。 我們工作所在的所有國家/地區的法律和其他專業顧問，法院和執法機構。"
+            }
+          }
+        },
+        "block5": {
+          "text1": "IVY Solutions的程序和政策遵循有關數據安全性和信息管理的行業標準，以防止數據丟失，被盜和網絡攻擊。 IVY Solutions不斷審查其標準並跟踪最新技術發展，以確保為客戶使用最佳標準。",
+          "title": "我們如何保護您的個人數據"
+        },
+        "block6": {
+          "title": "Cookies",
+          "text1": "我們在本網站上使用“ cookies”。 Cookie是存儲在網站訪問者硬盤上的一條數據，可幫助我們改善您對我們網站的訪問權限並確定重複訪問我們網站的訪問者。 例如，當我們使用Cookie來識別您的身份時，您無需多次登錄密碼，從而節省了在我們網站上的時間。 Cookies還可以使我們跟踪並確定用戶的興趣，以增強我們網站的體驗。 Cookie的使用絕不與我們網站上的任何個人身份信息相關聯，您始終可以不同意cookie政策，並且cookie不會從您的計算機中捕獲任何信息。"
+        },
+        "block7": {
+          "text1": "在某些情況下，並取決於您所在的位置，根據法律，您有權：",
+          "title": "如何處理您的數據保護權利",
+          "list1": {
+            "item2": "提出數據主題訪問請求，以便您可以接收我們收集到的所有信息的數字副本；",
+            "item3": "提出更正請求，以便我們可以更新有關您的任何信息；",
+            "item4": "提出忘記請求，以便我們在沒有理由保留這些信息時將其刪除。",
+            "item5": "提出防止IVY解決方案的對象請求，以將您的任何數據傳輸給任何第三方或合作夥伴；",
+            "item6": "如果您對我們如何處理您的信息有任何疑問，請隨時與我們的團隊聯繫：",
+            "item1": "請求有關我們掌握的有關您的信息以及我們如何使用這些信息的IVY解決方案；"
+          }
+        },
+        "block8": {
+          "title": "隱私政策變更",
+          "text1": "我們的隱私政策可能會更新，以反映您的做法的變化。 我們將通過電子郵件和此網頁提供有關更改的信息。"
+        },
+        "block1": {
+          "list1": {
+            "item1": "我們收集和處理哪些信息；",
+            "item2": "為什麼我們收集這些信息；",
+            "item3": "我們與誰共享此信息；",
+            "item4": "我們如何保護您的個人數據；",
+            "item5": "如何處理您的數據保護權利；",
+            "item6": "我們如何遵守數據保護規則。"
+          },
+          "text1": "IVY Solutions非常重視保護其用戶數據和隱私。 本政策規定了以下內容：",
+          "text2": "所有個人信息均根據GDPR收集和處理。 作為一家全球性公司，IVY Solutions在歐盟以外的多個國家/地區工作，但仍然在全球範圍內將GDPR合規性應用於其所有活動，並要求其供應商也遵循它。"
+        },
+        "title": "隱私政策"
+      },
+      "section5": {
+        "block1": {
+          "text1": "IVY Solutions SA及其子公司和關聯公司（以下簡稱“ IVY Solutions”）根據以下規定的條款和條件，以及通過訪問或使用IVY Solutions信息，在其互聯網站點，其註冊的應用程序（Web和移動設備）上提供信息和服務。 您接受的綁定服務。"
+        },
+        "block2": {
+          "text1": "IVY Solutions站點和應用程序上提供的信息是IVY Solutions的財產，並且通過使用它，您同意不侵犯權利。 該信息受版權，商標，保密權和隱私權以及其他知識產權法的保護。 因此，除非得到IVY Solutions的授權，否則用戶不得以任何可能的方式複制，下載，重製，重新發布，廣播，傳輸，出售，許可，創建衍生產品。 這些信息和應用程序的使用可通過移動設備，Internet獲得，並且可能需要軟件。 IVY Solution不負責提供有益於其信息和應用程序的環境。",
+          "title": "知識產權",
+          "text2": "此外，網站和應用程序可能包含來自第三方庫的信息，這些信息是其所有者的約束條款和條件。 請參閱此處使用的開放源代碼庫（隨附列表）。"
+        },
+        "block3": {
+          "text1": "除非另有說明，否則所有材料，包括但不限於商標，商標名稱，域名，徽標，服務標記，標語以及出現在我們網站，應用程序和服務上的其他材料，都是IVY Solutions和/或以下公司的註冊和/或未註冊商標。 或其關聯公司和/或其合作夥伴和/或第三方。 未經IVY Solution或其各自所有者的明確書面同意，不得以暗示，禁止反言或其他方式授予本網站上包含的任何內容的任何許可或使用該網站上顯示的任何商標的許可。 禁止濫用網站上顯示的任何商標或任何其他內容。 IVY Solutions保留在不進一步通知的情況下，在其權利受到侵犯時以任何可能的方式尋求正義的權利。",
+          "title": "商標"
+        },
+        "block4": {
+          "text1": "我們的站點，應用程序和服務可能包含指向第三方的鏈接，這些鏈接不在IVY Solutions的控制範圍內。 我們隨時拒絕對任何此類鏈接網站或任何鏈接或鏈接程序的內容或隱私慣例承擔任何責任或義務。 IVY Solution並不意味著我們網站上材料的任何背書（或相關產品或服務），除非另有明確說明。 如果您決定訪問鏈接到本網站的任何第三方網站，則後果自負。",
+          "title": "鏈接到第三方網站"
+        },
+        "block5": {
+          "text1": "網站的訪問和使用受所有適用的國際，聯邦，州，省和地方法律和法規的約束。 嚴格禁止違反任何此類法律或法規使用任何網站。",
+          "title": "遵守法律法規"
+        },
+        "block6": {
+          "text1": "IVY Solutions隱私政策可在網站和應用程序上獲得，也可根據要求提供。 通過訪問或使用網站和應用程序，其用戶同意隱私政策的內容。",
+          "title": "隱私政策"
+        },
+        "block7": {
+          "text1": "IVY Solutions為您分配了有限的，不可轉讓的，不可再許可的，非排他性的訪問和使用託管站點，應用程序和服務的權利。 本條款和條件並不表示IVY Solutions應該授予您訪問應用程序的源代碼，網站的副本或服務業務流程的詳細信息的權限。 通過訪問IVY Solutions網站或應用程序，每個用戶均同意如下：",
+          "title": "客戶的權利與責任",
+          "text2": "如果雙方之間的商業協議中有相應的規定，IVY Solutions會迅速乾預其應用程序的任何正確報告的故障或任何報告的業務故障。",
+          "list1": {
+            "item1": "用戶將使用服務上載，傳輸或以其他方式分發任何非法，誹謗，騷擾，辱罵，欺詐，淫穢，威脅，辱罵，仇恨，包含病毒或IVY Solutions合理確定為令人反感的內容；",
+            "item2": "用戶不得將本服務用於任何欺詐或不當目的；",
+            "item3": "用戶不得修改，移動，添加，刪除或以其他方式篡改網站或應用程序中包含的信息；",
+            "item4": "用戶不得對任何網站中包含的任何軟件，版權或商標材料，商業機密或其他專有信息進行反編譯，反向工程，反彙編或非法使用或複制；",
+            "item5": "用戶承認站點的某些部分受到限制，並且只能由授權用戶訪問，包括受密碼保護的部分。 用戶同意僅訪問IVY Solutions明確授予訪問權的網站部分。 用戶承認嚴格禁止未經授權進入此類限制區域，並可能導致刑事訴訟。"
+          }
+        },
+        "block8": {
+          "text1": "IVY Solutions不保證網站上提供的信息是最新的，並且此類發布中包含的信息可能已被取代。 IVY Solution對網站上所提供信息的任何錯誤或遺漏不承擔任何責任。使用本網站的風險自負。通過網站可獲得的所有信息均按“原樣”提供。 IVS Solutions不保證本網站將滿足您的要求，不間斷，安全或無錯誤，不包含病毒或其他有害組件或破壞性文件。本網站的內容如有更改，恕不另行通知。 IVY Solutions在我們網站上的信息和材料；已根據通知提供應用程序和服務供您審核；條款和條件。 IVY Solutions對於其站點，應用程序和服務的義務僅由提供它們的合同協議負責，並且不解釋本網站的任何更改此類協議的權利。 IVY Solutions在任何情況下均不承擔任何責任，也不會對因您訪問IVY Solutions網站而對計算機設備或其他財產造成的任何損害或病毒造成任何損害承擔責任；應用程序和服務。",
+          "title": "免責聲明和責任限制"
+        },
+        "block9": {
+          "text1": "您同意就任何及所有訴訟，訴訟因由，訴訟，損害賠償，責任，損失，索賠，損害，成本和費用（包括因或以任何方式產生的律師費）進行辯護，賠償並使IVY Solutions免受損害 與您通過訪問網站，應用程序和服務以及通過其進行的任何購買而違反IVY Solutions的條款和條件有關。",
+          "title": "保障"
+        },
+        "title": "條款和條件"
+      },
+      "section1": {
+        "block1": {
+          "text1": "作為數據處理器，IVY Solutions符合GDPR（通用數據保護規則）的要求，該數據適用於從世界任何地方收集的用於執行我們服務的任何個人數據。 我們認為，遵循GDPR固有的規則和法規是提供高質量服務的關鍵，並且確保應用相應的流程可以更好地保護客戶數據。",
+          "text2": "HR字段受GDPR法規的影響，因為它包含大量的個人數據。 通過我們的應用程序（Web和移動）和服務，我們確保僅從客戶那裡收集必要的個人數據。 我們還選擇符合GDPR的合作夥伴，因此保證我們的端到端解決方案符合要求。",
+          "text3": "根據GDPR，員工有權糾正，遺忘，提出異議的權利，並且他們的數據必須以數字格式提供給他們。 在IVY Solutions，我們實施了確保尊重員工權利的流程。 我們僅收集所需的最少數據，其可訪問性由我們應用程序中設計的角色和權限訪問權限控制。"
+        },
+        "title": "GDPR合規"
+      },
+      "section2": {
+        "block1": {
+          "text1": "IVY Solutions在組織中採用ISO 27001慣例。 ISO 27001為信息安全管理系統設定了標準，以便組織可以監視所有數據和信息並遵循嚴格的程序。",
+          "text2": "遵守該標準為我們的客戶保證了IVY Solutions對自己的數據持謹慎態度，因此對我們的客戶的數據持謹慎態度。"
+        },
+        "title": "符合ISO 27001"
+      },
+      "section3": {
+        "block1": {
+          "text1": "IVY解決方案雲服務器提供商符合SOC 2。 系統和組織控制（SOC）報告是獨立的第三方檢查報告，顯示瞭如何實現關鍵的合規控制和目標。"
+        },
+        "title": "SOC 2"
+      },
+      "title": "安全公告"
+    }
+  },
+  "common": {
+    "error": {
+      "SERVER__ERROR": "服务器错误。 请稍后再试。",
+      "AUTH__UNAUTHORIZED": "请登录。",
+      "AUTH__INVALID_CREDENTIALS": "电子邮件或密码无效。 请检查您的数据并稍后重试。",
+      "REQUEST__VALIDATION_EXISTS": "具有相同数据的实体已经存在。",
+      "REQUEST__ENTITY_NOT_FOUND": "未找到实体",
+      "FBM__PRODUCT_NOT_FOUND": "产品未在源库存中找到。",
+      "FBM__PRODUCT_CHANGED_SOURCE_AMOUNT": "发货期间源库存中的产品数量发生变化。",
+      "RECAPTCHA__INVALID_TOKEN": "验证码错误。",
+      "TRANSFER__WALLET_TO_REVERT_NOT_FOUND": "钱包恢复找不到。",
+      "FBM__SKU_DUPE_IN_ANOTHER_STOCK": "具有相同的SKU的产品已经存在。",
+      "SERVER__FACEBOOK_CONNECTION_FAILED": "无法连接到facebook。 请稍后再试。",
+      "REQUEST__THROTTLED": "超出请求限制。",
+      "TRANSFER__NOT_ENOUGH_FUNDS": "钱不够 请检查您的余额，然后再试一次"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import '../../styles/old-breakpoints';
+@import '../../styles/variables';
+
+.buttonContainer {
+  position: relative;
+}
+
+.buttonLabel {
+  display: block;
+  height: 40px;
+  padding: 12px 0;
+  background-color: $light9;
+  font-size: 14px;
+  line-height: 16px;
+  white-space: nowrap;
+  text-align: center;
+  text-transform: uppercase;
+  color: $dark3;
+  box-sizing: border-box;
+  z-index: 2;
+
+  &:active,
+  &:focus {
+    border-color: $light29;
+    background-color: $light29;
+  }
+}
+
+.disabled {
+  color: $light15;
+}
+
+.input {
+  width: 1px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.input:focus ~ label {
+  border-color: $light29;
+  background-color: $light29;
+}

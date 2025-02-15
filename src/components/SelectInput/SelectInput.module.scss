@@ -1,0 +1,167 @@
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
+
+.inputContainer {
+  position: relative;
+
+  :global(.ant-select-focused) ~ label {
+    top: 0;
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+.formSelect {
+  display: block;
+  :global(.ant-select-selection) {
+    height: 48px;
+    padding: 23px 0 8px;
+    border: none;
+    border-bottom: 1px solid $dark3;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none !important;
+    outline: none;
+  }
+
+  :global(.ant-select-arrow) {
+    top: auto;
+    right: 21px;
+    bottom: 14px;
+  }
+
+  :global(.ant-select-open) {
+    background-color: $green1;
+  }
+
+  :global(.ant-select-search__field) {
+    height: 17px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 17px;
+    padding: 0;
+  }
+
+  :global(.ant-select-selection .has-error) {
+    border-bottom: 1px solid $red6 !important;
+  }
+
+  :global(.ant-select-selection__rendered) {
+    margin: 0 !important;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: $dark4;
+
+    li {
+      height: 17px !important;
+      margin: 0 18px 0 0 !important;
+    }
+  }
+
+  :global(.ant-select-selection__choice) {
+    height: auto !important;
+    margin-top: 0 !important;
+    padding-left: 0;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 15px !important;
+    color: $dark3;
+    background: none;
+    border: none;
+
+    i {
+      font-size: 15px;
+    }
+    path {
+      fill: $dark4;
+    }
+  }
+
+  :global(.ant-select-arrow-icon) {
+    font-size: 12px;
+    color: $dark3;
+  }
+
+  &.ant-select-open {
+    background-color: $dark4;
+  }
+
+  &:focus ~ label {
+    top: 0;
+    font-size: 10px !important;
+
+    @include md {
+      font-size: 12px !important;
+    }
+  }
+}
+
+.dropDown {
+  border-radius: 0 !important;
+
+  :global(.ant-select-dropdown-menu) {
+    padding: 0;
+  }
+
+  :global(.ant-select-dropdown-menu-item) {
+    color: $dark4;
+    padding: 5px 0 5px 25px;
+    font-weight: 300;
+    font-size: 14px !important;
+    line-height: 14px !important;
+    text-transform: uppercase;
+    @include md {
+      font-size: 14px !important;
+    }
+
+    span {
+      display: inline-block;
+      padding: 8px 0;
+    }
+
+    i {
+      display: none !important;
+    }
+  }
+
+  :global(.ant-select-dropdown-menu-item-selected) {
+    font-weight: normal;
+    background-color: $light29 !important;
+  }
+
+  :global(.ant-select-dropdown-menu-item-active) {
+    background-color: $light29 !important;
+  }
+
+  :global(.ant-select-dropdown-menu-item:hover:not(.ant-select-dropdown-menu-item-disabled)) {
+    background-color: transparent;
+  }
+}
+
+.inputLabel {
+  position: absolute !important;
+  top: 23px;
+  left: 0px;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: $dark3;
+  pointer-events: none;
+  transition: top 0.3s, font-size 0.3s;
+}
+
+.active {
+  top: 0;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.hidden {
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: 0;
+  outline: 0;
+}

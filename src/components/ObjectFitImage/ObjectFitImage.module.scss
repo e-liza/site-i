@@ -1,0 +1,75 @@
+.contain {
+  object-fit: cover;
+
+  &.top {
+    object-position: top;
+    /* stylelint-disable */
+    font-family: 'object-fit: contain; object-position: top;';
+    /* stylelint-enable */
+  }
+  &.right {
+    object-position: right;
+    /* stylelint-disable */
+    font-family: 'object-fit: contain; object-position: right;';
+    /* stylelint-enable */
+  }
+
+  &.left {
+    object-position: left;
+    /* stylelint-disable */
+    font-family: 'object-fit: contain; object-position: left;';
+    /* stylelint-enable */
+  }
+
+  &.bottom {
+    object-position: bottom;
+    /* stylelint-disable */
+    font-family: 'object-fit: contain; object-position: bottom;';
+    /* stylelint-enable */
+  }
+
+  &.center {
+    object-position: center;
+    /* stylelint-disable */
+    font-family: 'object-fit: contain; object-position: center;';
+    /* stylelint-enable */
+  }
+}
+
+.cover {
+  object-fit: cover;
+
+  &.top {
+    object-position: top;
+    /* stylelint-disable */
+    font-family: 'object-fit: cover; object-position: top;';
+    /* stylelint-enable */
+  }
+  &.right {
+    object-position: right;
+    /* stylelint-disable */
+    font-family: 'object-fit: cover; object-position: right;';
+    /* stylelint-enable */
+  }
+
+  &.left {
+    object-position: left;
+    /* stylelint-disable */
+    font-family: 'object-fit: cover; object-position: left;';
+    /* stylelint-enable */
+  }
+
+  &.bottom {
+    object-position: bottom;
+    /* stylelint-disable */
+    font-family: 'object-fit: cover; object-position: bottom;';
+    /* stylelint-enable */
+  }
+
+  &.center {
+    object-position: center;
+    /* stylelint-disable */
+    font-family: 'object-fit: cover; object-position: center;';
+    /* stylelint-enable */
+  }
+}

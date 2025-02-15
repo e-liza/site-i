@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+
+.button {
+  background-color: $dark3 !important;
+  padding: 6px 14px;
+  border-radius: 0 !important;
+  font: normal normal normal 14px/17px $main_font !important;
+  font-size: 16px !important;
+  line-height: 19px !important;
+  color: $light9 !important;
+  cursor: pointer !important;
+  border: none !important;
+  transition: none !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}

@@ -1,0 +1,42 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/breakpoints';
+
+.title {
+  display: block;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $green1;
+
+  @include md {
+    margin-bottom: 35px;
+  }
+}
+
+.list {
+  display: flex;
+}
+
+.item {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+
+  @include md {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

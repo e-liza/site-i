@@ -1,0 +1,40 @@
+@import '../../../../styles/breakpoints';
+@import '../../../../styles/variables';
+
+.menu {
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+
+  .menuItem:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.menuTitle {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $green1;
+
+  @include sm {
+    margin-bottom: 35px;
+  }
+}
+
+.menuItem {
+  margin-bottom: 22px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+
+  a {
+    color: $light16;
+  }
+}
+
+.mail {
+  text-decoration: underline;
+}

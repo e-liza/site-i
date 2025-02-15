@@ -1,0 +1,32 @@
+image: node:12.16.1
+
+options:
+  size: 2x
+
+definitions:
+  services:
+    docker:
+      memory: 7128
+
+pipelines:
+  default:
+    - parallel:
+        - step:
+            name: Build
+            caches:
+              - node
+            script:
+              - npm install
+              - npm run build
+        - step:
+            name: Code linting
+            script:
+              - npm install eslint
+              - npm run lint
+            caches:
+              - node
+  branches:
+    dev:
+      - step:
+          script:
+          - echo "Skip this branch"

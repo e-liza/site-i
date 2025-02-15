@@ -1,0 +1,91 @@
+@import '../../../../styles/breakpoints';
+@import '../../../../styles/variables';
+
+.root {
+  @include sm {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .benefit {
+    margin-bottom: 40px;
+
+    @include sm {
+      flex: 1 1 40%;
+      margin-bottom: 30px;
+    }
+
+    @include md {
+      margin-bottom: 50px;
+    }
+
+    @include lg {
+      flex: auto;
+    }
+  }
+
+  .benefit:last-child {
+    margin-bottom: 0;
+  }
+
+  .benefit:nth-child(odd) {
+    @include sm {
+      margin-right: 49px;
+    }
+
+    @include md {
+      margin-right: 90px;
+    }
+    @include lg {
+      margin-right: 0;
+    }
+  }
+}
+
+.benefit {
+  position: relative;
+  padding-left: 33px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  color: $dark3;
+
+  @include sm {
+    padding-left: 28px;
+  }
+
+  @include md {
+    padding-left: 35px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  @include xl {
+    padding-left: 55px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    top: 8px;
+    left: 0;
+    background-color: $green2;
+
+    @include sm {
+      top: 12px;
+    }
+
+    @include md {
+      width: 10px;
+      height: 10px;
+      top: 18px;
+    }
+
+    @include lg {
+      top: 8px;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "name": "ivy-landing",
+  "version": "0.0.1",
+  "private": true,
+  "homepage": "https://e-liza.github.io/site-i",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy:staging": "./deploy-staging.sh $ver",
+    "deploy:production": "./deploy-production.sh $ver",
+    "https": "HTTPS=true react-scripts start",
+    "analyze": "npm run build && source-map-explorer 'build/static/js/*.js'",
+    "check-types": "tsc",
+    "check-types:cache": "tsc --project tsconfig.cache.json",
+    "lint:eslint": "eslint --ignore-path .gitignore --ext .ts --ext .tsx",
+    "lint:stylelint": "stylelint src/**/*.scss src/**/*.module.scss",
+    "lint:eslint:cache": "eslint --ignore-path .gitignore --ext .ts --ext .tsx --cache",
+    "lint:stylelint:cache": "stylelint src/**/*.scss src/**/*.module.scss --cache",
+    "lint": "npm run lint:eslint src/ && npm run lint:stylelint &&  npm run check-types",
+    "lint:cache": "concurrently \"npm run lint:eslint:cache src/\" \"npm run lint:stylelint:cache\" \"npm run check-types:cache\"",
+    "lint:fix": "npm run lint:eslint src/ -- --fix && npm run lint:stylelint -- --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:cache",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "scope-empty": [
+        2,
+        "never"
+      ],
+      "scope-case": [
+        2,
+        "always",
+        "upper-case"
+      ],
+      "references-empty": [
+        2,
+        "never"
+      ]
+    },
+    "parserPreset": {
+      "parserOpts": {
+        "referenceActions": null,
+        "issuePrefixes": [
+          "IVY-"
+        ]
+      }
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all",
+      "ie 11"
+    ],
+    "development": [
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 3 safari version",
+      "ie 11"
+    ]
+  },
+  "dependencies": {
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
+    "@juggle/resize-observer": "^3.4.0",
+    "@types/classnames": "^2.3.4",
+    "@types/node": "^22.13.0",
+    "@types/object-fit-images": "^3.2.5",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@types/react-google-recaptcha": "^2.1.9",
+    "@types/react-helmet": "^6.1.11",
+    "@types/react-router": "^5.1.20",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/smoothscroll-polyfill": "^0.3.4",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
+    "antd": "^5.23.3",
+    "axios": "^1.7.9",
+    "class-validator": "^0.14.1",
+    "classnames": "^2.5.1",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.4",
+    "gh-pages": "^6.3.0",
+    "husky": "^9.1.7",
+    "i18next": "^24.2.2",
+    "i18next-browser-languagedetector": "^8.0.2",
+    "i18next-xhr-backend": "^3.2.2",
+    "normalize.css": "^8.0.1",
+    "object-fit-images": "^3.2.4",
+    "prettier": "^3.4.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-google-recaptcha": "^3.1.0",
+    "react-helmet": "^6.1.0",
+    "react-i18next": "^15.4.0",
+    "react-router": "^7.1.5",
+    "react-router-dom": "^7.1.5",
+    "react-scripts": "5.0.1",
+    "sass": "^1.83.4",
+    "smoothscroll-polyfill": "^0.4.4",
+    "source-map-explorer": "^2.5.3",
+    "stylelint": "^16.14.1",
+    "stylelint-config-css-modules": "^4.4.0",
+    "stylelint-config-recommended": "^15.0.0",
+    "stylelint-config-recommended-scss": "^14.1.0",
+    "stylelint-prettier": "^5.0.3",
+    "stylelint-scss": "^6.11.0",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

@@ -1,0 +1,20 @@
+@import '../../styles/variables.scss';
+@import '../../styles/breakpoints.scss';
+@import '../../styles/mixins.scss';
+
+.root {
+  padding-top: 120px;
+  color: $dark3;
+
+  @include sm {
+    padding-top: 60px;
+  }
+
+  @include rwd(834) {
+    padding-top: 80px;
+  }
+}
+
+.footer {
+  background: $light9;
+}

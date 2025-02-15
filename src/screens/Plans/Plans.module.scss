@@ -1,0 +1,169 @@
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
+@import '../../styles/mixins';
+
+.root {
+  padding-top: 60px;
+  background-color: $light11;
+
+  @include rwd(834) {
+    padding-top: 80px;
+  }
+}
+
+.header {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 30px 57px;
+
+  @include sm {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 55px 34px;
+  }
+
+  @include md {
+    padding: 70px 85px 60px;
+  }
+
+  @include lg {
+    padding: 80px 100px 70px;
+  }
+}
+
+.headerTitle {
+  font-family: $title-font;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark1;
+  margin-bottom: 24px;
+
+  @include sm {
+    max-width: 200px;
+    margin-bottom: 0;
+  }
+
+  @include md {
+    font-size: 37px;
+    line-height: 55px;
+    max-width: 381px;
+  }
+
+  @include lg {
+    font-size: 48px;
+    line-height: 68px;
+    max-width: 535px;
+  }
+}
+
+.headerDescription {
+  font-family: $main-font;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 32px;
+  color: $dark3;
+  display: flex;
+  align-items: center;
+
+  .headerIcon {
+    width: 18px;
+    height: 18px;
+  }
+
+  span {
+    flex-grow: 1;
+    margin-left: 24px;
+  }
+
+  @include sm {
+    max-width: 275px;
+  }
+
+  @include md {
+    position: relative;
+    padding-left: 40px;
+    font-size: 20px;
+    line-height: 38px;
+    max-width: 329px;
+
+    .headerIcon {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+    }
+
+    span {
+      margin-left: 0;
+    }
+  }
+
+  @include lg {
+    font-size: 22px;
+    line-height: 40px;
+    padding-left: 66px;
+    padding-top: 7px;
+    max-width: 386px;
+
+    .headerIcon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.plans {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px 60px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @include sm {
+    padding: 0 0 50px;
+  }
+
+  @include md {
+    flex-direction: row;
+    padding: 0 72px 75px;
+  }
+
+  @include lg {
+    padding: 0 100px 85px;
+  }
+}
+
+.plan {
+  @include sm {
+    width: 100%;
+    max-width: 542px;
+    margin: 0 auto;
+  }
+}
+
+.plan + .plan {
+  margin-top: 50px;
+
+  @include sm {
+    margin-top: 35px;
+  }
+
+  @include md {
+    margin-top: 0;
+    margin-left: 28px;
+  }
+
+  @include lg {
+    margin-left: 64px;
+  }
+}
+
+.tables {
+  background-color: $light1;
+}

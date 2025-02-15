@@ -1,0 +1,39 @@
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
+
+.root {
+  background-color: $light1;
+  padding-top: 60px;
+
+  @include rwd(834) {
+    padding-top: 80px;
+  }
+}
+
+.header {
+  @include sm {
+    margin: 0 0 10px;
+  }
+}
+
+.content {
+  margin: 0 0 20px;
+
+  @include sm {
+    margin: 0 0 40px;
+  }
+
+  @include lg {
+    margin: 0;
+  }
+}
+
+.insightsContainer {
+  background-color: $light11;
+}
+
+.insights {
+  position: relative;
+  max-width: 1800px;
+  margin: 0 auto;
+}

@@ -1,0 +1,68 @@
+@import '../../styles/variables';
+@import '../../styles/old-breakpoints';
+
+.textAreaContainer {
+  position: relative;
+  min-height: 48px;
+  display: flex;
+  align-items: flex-end;
+  padding-top: 17px;
+}
+
+.textArea {
+  min-height: 31px !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  border: none;
+  border-bottom: 1px solid $dark3;
+  border-radius: 0;
+  padding-left: 0;
+  outline: none;
+  background-color: transparent !important;
+  resize: none;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px !important;
+  color: $dark3;
+}
+
+.filled {
+  border-color: $dark3 !important;
+  box-shadow: none !important;
+}
+
+.textArea:focus {
+  border-color: $dark3 !important;
+  box-shadow: none !important;
+}
+
+.textArea:hover {
+  border-bottom: 1px solid $dark3 !important;
+  box-shadow: none !important;
+}
+
+.textArea:focus ~ label {
+  top: 0;
+  font-size: 12px !important;
+  line-height: 12px !important;
+}
+
+.textAreaLabel {
+  position: absolute !important;
+  left: 0px;
+  top: 23px;
+  font-size: 14px !important;
+  line-height: 17px !important;
+  text-transform: uppercase;
+  color: $dark3;
+  pointer-events: none;
+  transition: top 0.3s, font-size 0.3s;
+}
+
+.active {
+  top: 0px;
+  bottom: auto;
+  font-weight: normal;
+  font-size: 12px !important;
+  line-height: 12px !important;
+}

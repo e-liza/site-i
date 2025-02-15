@@ -1,0 +1,55 @@
+@import '../../styles/variables';
+@import '../../styles/old-breakpoints';
+
+.infoBlockContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  @include lg {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+.infoBlockText {
+  @include lg {
+    padding-right: 30%;
+  }
+}
+
+.infoBlockText > p {
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+  color: $red2;
+}
+
+.infoBlockImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  z-index: 3;
+  @include md {
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
+  @include lg {
+    margin-bottom: 0;
+    margin-left: 6%;
+  }
+}
+
+.imageCell > img {
+  max-width: 100%;
+}
+
+.infoBlockImageContainer > *:not(:last-child) {
+  margin-bottom: 15px;
+  @include md {
+    margin-bottom: 0;
+    margin-right: 60px;
+  }
+}

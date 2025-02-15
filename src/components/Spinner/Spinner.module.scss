@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+@import '../../styles/old-breakpoints.scss';
+
+.loadIcon {
+  font-size: 70px;
+  color: $red2;
+
+  @include md {
+    font-size: 100px;
+  }
+}

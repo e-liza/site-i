@@ -1,0 +1,112 @@
+@import '../../styles/old-breakpoints';
+@import '../../styles/variables';
+
+.sliderContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  padding: 10px 20px;
+  @include lg {
+    padding: 65px 110px 30px;
+  }
+}
+
+.content > p:first-child {
+  font-family: $main-font;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.content > p:last-child {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.sliderContainer > *:nth-child(2) {
+  width: 90%;
+}
+
+.sliderContainer > *:nth-child(2) > *:first-child > *:first-child > *:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  margin: 0 7px !important;
+  width: 15px;
+  height: 100%;
+}
+.left {
+  margin: 0 7px !important;
+  width: 15px;
+  height: 100%;
+  transform: rotate(180deg);
+}
+
+.companies {
+  display: flex;
+  justify-content: center;
+  margin-top: 33px;
+}
+
+.companies > *:first-child {
+  position: relative;
+}
+
+.companies > *:first-child > *:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.companyImgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 130px;
+  border: 1px solid $red2;
+  margin: 15px 15px;
+  @include lg {
+    margin: 0 15px;
+  }
+}
+
+.indicatorBlock {
+  position: relative;
+}
+
+.indicatorLine {
+  display: none;
+  border-style: none;
+  border-top: 1px solid $light8;
+  margin: 0;
+  margin-bottom: 34px;
+  @include lg {
+    display: block;
+  }
+}
+
+.indicatorSquare {
+  display: none;
+  position: absolute;
+  top: -47px;
+  z-index: 10;
+  width: 25px;
+  height: 25px;
+  border-right: 1px solid $light8;
+  border-bottom: 1px solid $light8;
+  background-color: $light10;
+  transform: rotate(45deg);
+  transition: 0.3s ease-out;
+  @include lg {
+    display: block;
+  }
+}

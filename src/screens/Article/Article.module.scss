@@ -1,0 +1,925 @@
+@import '../../styles/variables';
+@import '../../styles/breakpoints.scss';
+@import '../../styles/mixins.scss';
+
+.root {
+  position: relative;
+  min-height: 500px;
+  padding-top: 60px;
+  background-color: $light1;
+
+  @include sm {
+    background: none;
+  }
+
+  @include rwd(834) {
+    padding-top: 80px;
+  }
+}
+
+.spinner {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.link {
+  color: $dark3;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding: 2px 0 2px 8px;
+  border-left: 8px solid $red2;
+  transition: none;
+
+  @include effects {
+    color: $red2;
+  }
+
+  @include md {
+    padding: 5px 0 5px 18px;
+    border-width: 12px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @include lg {
+    padding-bottom: 6px;
+    border-width: 13px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.articleHeadSection {
+  background-color: $light1;
+}
+
+.articleHeadBlock {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.articleImgContainer {
+  height: 215px;
+  background-size: cover;
+  background-position: center;
+
+  @include sm {
+    height: 295px;
+  }
+
+  @include md {
+    height: 400px;
+  }
+
+  @include lg {
+    height: 440px;
+  }
+}
+
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 35px;
+  margin-bottom: 25px;
+
+  @include md {
+    margin-bottom: 10px;
+  }
+
+  @include lg {
+    padding-top: 50px;
+    margin-bottom: 24px;
+  }
+}
+
+.tag {
+  margin: 0 15px 15px 0;
+  padding: 5px 10px;
+  background-color: $light9;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $dark3;
+
+  @include md {
+    margin: 0 15px 15px 0;
+    font-size: 14px;
+  }
+
+  @include lg {
+    font-weight: normal;
+  }
+
+  > .tag:last-child {
+    margin-right: 0;
+  }
+}
+
+.titleContainer {
+  margin-bottom: 40px;
+  padding: 0 30px;
+
+  h1 {
+    margin-bottom: 15px;
+    padding: 0;
+    font-family: $title-font;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: $dark1;
+
+    @include sm {
+      font-size: 32px;
+      line-height: 150%;
+    }
+
+    @include md {
+      font-size: 40px;
+      line-height: 60px;
+    }
+
+    @include lg {
+      margin-bottom: 25px;
+      font-size: 60px;
+      line-height: 130%;
+    }
+  }
+
+  span {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    line-height: 13px;
+    color: $light8;
+
+    @include md {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+
+  @include sm {
+    padding: 0 45px;
+  }
+
+  @include md {
+    padding: 0 100px;
+  }
+
+  @include lg {
+    margin-bottom: 50px;
+    padding: 0 120px;
+  }
+
+  @include xl {
+    padding: 0 244px;
+  }
+}
+
+.articleIntro {
+  padding: 0 30px 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @include sm {
+    padding: 0 45px 40px;
+  }
+
+  @include md {
+    padding: 0 100px 50px;
+  }
+
+  @include lg {
+    padding: 0 120px 60px;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    margin-bottom: 30px;
+    width: 100%;
+    border-bottom: 1px solid $dark4;
+
+    @include md {
+      margin-bottom: 35px;
+    }
+
+    @include lg {
+      margin-bottom: 39px;
+    }
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid $dark4;
+
+    @include sm {
+      margin: 0 20px;
+    }
+
+    @include md {
+      margin: 0 80px;
+    }
+
+    @include lg {
+      margin: 0 120px;
+    }
+  }
+
+  p {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 175%;
+    margin-bottom: 30px;
+    text-align: center;
+    color: $dark4;
+
+    @include sm {
+      padding: 0 20px;
+      font-size: 20px;
+      line-height: 175%;
+    }
+
+    @include md {
+      font-size: 22px;
+      line-height: 185%;
+      padding: 0 80px;
+    }
+
+    @include lg {
+      padding: 0 120px;
+      margin-bottom: 40px;
+      font-size: 27px;
+      line-height: 165%;
+    }
+  }
+}
+
+.articleContentSection {
+  background-color: $light1;
+}
+
+.articleContentBlock {
+  position: relative;
+  margin: auto;
+  display: flex;
+  padding: 0 30px 10px;
+  background-color: $light1;
+  max-width: 1440px;
+
+  @include sm {
+    padding: 0 65px 20px;
+  }
+
+  @include md {
+    min-height: 250px;
+    padding: 0 180px 55px;
+  }
+
+  @include lg {
+    padding: 0 240px 60px;
+  }
+}
+
+.socialPanel {
+  display: none;
+  visibility: hidden; // TODO: remove this line when customer say to display social panel
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @include md {
+    display: flex;
+    flex-direction: column;
+    padding-top: 13px;
+    left: 80px;
+  }
+
+  @include lg {
+    left: 120px;
+  }
+
+  > a {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+.articleContent {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  width: 100%;
+  margin: 0 auto;
+
+  @include xs {
+    max-width: 400px;
+  }
+
+  @include sm {
+    max-width: 460px;
+  }
+
+  @include md {
+    max-width: 560px;
+  }
+
+  @include lg {
+    max-width: 680px;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 175%;
+    color: $dark3;
+    margin-bottom: 30px;
+
+    @include sm {
+      font-size: 18px;
+      line-height: 180%;
+    }
+
+    @include md {
+      font-size: 19px;
+      line-height: 190%;
+      margin-bottom: 35px;
+    }
+
+    @include lg {
+      font-size: 21px;
+      line-height: 190%;
+      margin-bottom: 40px;
+    }
+  }
+
+  h2 {
+    padding: 10px 0 0;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 150%;
+    color: $dark3;
+
+    @include sm {
+      font-size: 22px;
+      line-height: 100%;
+    }
+
+    @include md {
+      font-size: 28px;
+      line-height: 165%;
+      padding: 15px 0 0;
+      margin-bottom: 35px;
+    }
+
+    @include lg {
+      font-size: 35px;
+      line-height: 190%;
+      padding: 20px 0 0;
+      margin-bottom: 40px;
+    }
+  }
+
+  h3 {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: normal;
+    color: $dark3;
+
+    @include sm {
+      font-size: 20px;
+      line-height: 100%;
+    }
+
+    @include md {
+      font-size: 22px;
+      line-height: 165%;
+    }
+
+    @include lg {
+      margin-bottom: 35px;
+      font-size: 26px;
+      line-height: 190%;
+    }
+  }
+
+  h4 {
+    font-size: 16px;
+    line-height: 175%;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: bold;
+
+    @include sm {
+      line-height: 165%;
+    }
+
+    @include md {
+      font-size: 19px;
+      line-height: 190%;
+    }
+
+    @include lg {
+      font-size: 22px;
+      margin-bottom: 40px;
+    }
+
+    @include xl {
+      line-height: 165%;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+
+    @include lg {
+      margin-bottom: 40px;
+    }
+  }
+
+  samp {
+    font-family: $main-font;
+    display: block;
+    margin-bottom: 25px;
+    font-size: 13px;
+    line-height: 165%;
+    color: $dark3;
+    max-width: 400px;
+
+    @include sm {
+      font-size: 15px;
+      line-height: 165%;
+    }
+
+    @include md {
+      max-width: 400px;
+      font-size: 15px;
+      line-height: 26px;
+    }
+
+    @include lg {
+      font-size: 18px;
+      line-height: 185%;
+      max-width: 605px;
+    }
+  }
+
+  hr {
+    margin: 30px 0 40px;
+    border: 1px solid $dark4;
+
+    @include md {
+      margin: 35px 0 50px;
+    }
+
+    @include lg {
+      margin: 40px 0 60px;
+    }
+  }
+
+  blockquote {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 175%;
+    margin: 35px 0;
+    padding: 0 0 0 30px;
+    border-left: 6px solid $red2;
+    color: $dark4;
+
+    @include sm {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 175%;
+      padding: 0 0 0 40px;
+      margin: 30px 0;
+    }
+
+    @include md {
+      margin: 50px 0;
+      padding: 0 0 0 45px;
+      font-size: 22px;
+      line-height: 175%;
+    }
+
+    @include lg {
+      margin: 60px 0;
+      padding: 0 0 0 55px;
+      font-size: 26px;
+      line-height: 175%;
+    }
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  ul {
+    list-style: none;
+    @include md {
+      font-size: 22px;
+    }
+  }
+
+  li {
+    position: relative;
+    padding: 0 0 0 28px;
+    margin-bottom: 30px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 8px;
+      background: $dark4;
+      top: 12px;
+      left: 0;
+    }
+
+    @include sm {
+      p {
+        font-size: 16px;
+        line-height: 180%;
+      }
+      padding: 0 0 0 38px;
+    }
+
+    @include md {
+      p {
+        font-size: 18px;
+        line-height: 190%;
+      }
+      padding: 0 35px 0 53px;
+    }
+
+    @include lg {
+      p {
+        font-size: 19px;
+        line-height: 185%;
+      }
+      padding: 0 45px 0 72px;
+    }
+  }
+
+  ul,
+  ol {
+    margin-bottom: 35px;
+    padding: 0;
+
+    @include md {
+      margin-bottom: 50px;
+    }
+
+    @include lg {
+      margin-bottom: 63px;
+      padding: 0 90px 0 42px;
+    }
+  }
+}
+
+i {
+  font-style: italic;
+}
+
+.navigateSection {
+  background-color: $light9;
+}
+
+.navigateBlock {
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0 35px;
+  margin: 0 auto;
+
+  @include md {
+    max-width: 1440px;
+    padding: 65px 0 60px;
+    align-items: center;
+  }
+
+  @include lg {
+    flex-direction: row;
+    align-items: stretch;
+    padding: 113px 86px 105px 70px;
+  }
+  @include xl {
+    padding: 113px 147px 105px 173px;
+  }
+
+  > h2 {
+    margin-bottom: 20px;
+    font-family: $title_font;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    color: $light15;
+
+    @include md {
+      max-width: 678px;
+      margin-bottom: 25px;
+      font-size: 28px;
+      line-height: 42px;
+    }
+
+    @include lg {
+      max-width: none;
+      flex: 1 1 585px;
+      padding-right: 20px;
+      font-size: 37px;
+      line-height: 64px;
+      text-align: left;
+    }
+  }
+}
+
+.navigateContent {
+  display: flex;
+  flex-direction: column;
+
+  @include md {
+    align-items: center;
+  }
+
+  @include lg {
+    max-width: 535px;
+    flex: 1 1 535px;
+    align-items: stretch;
+  }
+
+  > p {
+    margin-bottom: 25px;
+    padding: 0 37px;
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    color: $dark3;
+
+    @include md {
+      max-width: 700px;
+      margin-bottom: 40px;
+      padding: 0;
+      font-size: 17px;
+      line-height: 28px;
+    }
+
+    @include lg {
+      max-width: none;
+      margin-top: 11px;
+      margin-bottom: 53px;
+      text-align: left;
+    }
+  }
+
+  > a {
+    align-self: center;
+    padding-right: 21px;
+
+    @include md {
+      padding-right: 29px;
+    }
+
+    @include lg {
+      align-self: flex-start;
+    }
+  }
+}
+
+.relArticlesSectionContainer {
+  background-color: $light11;
+  margin-top: 30px;
+}
+
+.relArticlesSection {
+  max-width: 1440px;
+  position: relative;
+  margin: 0 auto;
+  padding: 15px 30px 98px;
+
+  @include sm {
+    padding: 50px 45px;
+  }
+
+  @include md {
+    padding: 60px 100px;
+  }
+
+  @include lg {
+    padding: 80px 120px;
+  }
+}
+
+.relArticlesHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+
+  @include sm {
+    margin-bottom: 40px;
+  }
+
+  @include lg {
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    font-family: $title-font;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $dark3;
+
+    @include sm {
+      font-size: 17px;
+    }
+
+    @include md {
+      font-size: 18px;
+    }
+
+    @include lg {
+      font-size: 19px;
+    }
+  }
+
+  a {
+    position: absolute;
+    bottom: 45px;
+    left: 35px;
+
+    @include sm {
+      position: static;
+    }
+  }
+}
+
+.relArticlesContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -10px;
+
+  @include sm {
+    justify-content: space-between;
+    margin: 0 -18.5px;
+  }
+
+  @include md {
+    margin: 0 -26px;
+  }
+
+  @include lg {
+    margin: 0 -22.5px;
+  }
+
+  > :last-child {
+    display: none;
+
+    @include lg {
+      display: flex;
+    }
+  }
+}
+
+.insightCardContainer {
+  width: 100%;
+  min-height: 200px;
+  margin: 0 0 20px;
+
+  @include sm {
+    margin: 0;
+    min-height: 250px;
+    width: 50%;
+    padding: 0 18.5px;
+  }
+
+  @include md {
+    min-height: 300px;
+    padding: 0 26px;
+  }
+
+  @include lg {
+    width: 33.3%;
+    padding: 0 22.5px;
+  }
+}
+
+.insightCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: $light1;
+
+  @include sm {
+    padding: 25px;
+  }
+
+  @include md {
+    padding: 30px 40px 35px;
+  }
+
+  @include lg {
+    padding: 30px 35px 35px;
+  }
+}
+
+.insightTag {
+  margin: 0 10px 10px 0;
+  padding: 0 10px;
+  background-color: $light9;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $dark3;
+
+  @include md {
+    margin: 0 15px 15px 0;
+    font-size: 14px;
+  }
+
+  @include lg {
+    font-weight: normal;
+  }
+}
+
+.insightTagsBlock {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px -10px 0;
+
+  @include md {
+    margin: 0 -15px -15px 0;
+  }
+}
+
+.insightTitle {
+  font-family: $title-font;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  padding: 0 30px;
+  color: $dark3;
+  text-align: center;
+
+  @include sm {
+    padding: 0;
+  }
+
+  @include md {
+    font-size: 22px;
+    line-height: 150%;
+  }
+
+  @include lg {
+    font-size: 24px;
+    line-height: 150%;
+  }
+}
+
+.info {
+  display: flex;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 24px;
+  color: $light8;
+
+  @include md {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.slash {
+  width: 5px;
+  height: 17px;
+  margin: auto 18px;
+  transform: rotate(30deg);
+  background-color: $dark3;
+
+  @include md {
+    height: 20px;
+  }
+}

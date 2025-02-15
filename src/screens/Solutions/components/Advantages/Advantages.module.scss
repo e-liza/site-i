@@ -1,0 +1,178 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/breakpoints.scss';
+
+.root {
+  display: flex;
+  padding: 30px 20px;
+  justify-content: space-around;
+
+  @include sm {
+    flex-direction: column;
+    padding: 0 51px 0 40px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  @include md {
+    padding: 0;
+    align-items: flex-start;
+  }
+
+  @include lg {
+    flex-direction: row;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 51px 0 48px;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100vw;
+      background: $light24;
+      z-index: 1;
+      top: 0;
+      left: calc((-100vw + 1440px) / 2);
+    }
+  }
+
+  @include xl {
+    &:before {
+      left: calc((-100vw + 1460px) / 2);
+    }
+  }
+}
+
+.rootReverse {
+  @include sm {
+    .item {
+      order: 1;
+
+      &:last-child {
+        order: 0;
+        margin: 0 0 70px;
+      }
+
+      &:nth-child(2) {
+        margin: 0;
+      }
+    }
+  }
+
+  @include md {
+    .item {
+      &:last-child {
+        margin: 0 0 50px;
+      }
+    }
+  }
+
+  @include lg {
+    .item {
+      &:last-child {
+        margin: 0;
+      }
+      &:first-child {
+        padding: 0 95px 0 45px;
+      }
+
+      &:nth-child(2) {
+        padding: 0 100px 0 0;
+      }
+
+      &:nth-child(3) {
+        padding: 0 50px 0 100px;
+      }
+    }
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 22px;
+
+  @include sm {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: $light1;
+    padding: 0;
+    height: 70px;
+    width: 238px;
+    margin: 0 0 70px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  @include md {
+    margin: 0 0 50px;
+    width: 313px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  @include lg {
+    margin: 0;
+    margin-left: -20px;
+    height: auto;
+    width: auto;
+    background: none;
+    position: relative;
+    z-index: 2;
+    flex-basis: 33%;
+    padding: 0;
+
+    &:first-child {
+      padding: 0 50px 0 100px;
+    }
+
+    &:nth-child(2) {
+      padding: 0 95px 0 45px;
+    }
+
+    &:nth-child(3) {
+      padding: 0 100px 0 0;
+    }
+  }
+}
+
+.icon {
+  margin: 0 0 18px;
+  width: 15px;
+  height: 15px;
+
+  @include sm {
+    margin: 0 14px 0 0;
+    width: 10px;
+    height: 10px;
+  }
+
+  @include lg {
+    margin: 0 45px 0 0;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.text {
+  color: $light15;
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @include sm {
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark3;
+  }
+}

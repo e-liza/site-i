@@ -1,0 +1,286 @@
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
+
+.formContainer {
+  position: relative;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  :global(.ant-form-explain) {
+    margin-top: 8px;
+    padding: 0;
+    min-height: 0;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 12px;
+    color: $red2;
+  }
+
+  :global(.ant-form-explain ~ .ant-form-extra) {
+    display: none;
+  }
+
+  :global(.ant-form-extra) {
+    min-height: 0;
+    margin-top: 6px;
+    padding: 0;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: $light8;
+  }
+
+  :global(.ant-col) {
+    position: static;
+  }
+
+  :global(.ant-form-item) {
+    position: static;
+    margin-bottom: 0;
+  }
+
+  :global(.ant-form-item-control) {
+    position: static;
+    line-height: normal;
+    margin-bottom: 25px;
+
+    @include sm {
+      margin-bottom: 0;
+    }
+  }
+
+  :global(.ant-form-item-control.has-error) {
+    :global(.ant-form-item-children) {
+      > div {
+        > div {
+          > div {
+            border-color: $red2 !important;
+          }
+        }
+      }
+
+      input {
+        border-color: $red2 !important;
+      }
+    }
+  }
+}
+
+.singleInRow {
+  margin-right: 0 !important;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+
+  @include sm {
+    flex-direction: row;
+    margin-bottom: 25px;
+  }
+
+  @include md {
+    margin-bottom: 40px;
+  }
+
+  :global(.ant-form-item) {
+    @include sm {
+      flex: 1 1;
+    }
+  }
+
+  :global(.ant-form-item):first-child {
+    @include sm {
+      margin-right: 51px;
+    }
+
+    @include md {
+      margin-right: 50px;
+    }
+  }
+}
+
+.fieldsWithInfo {
+  margin-bottom: 0;
+}
+
+.formTextArea {
+  height: unset;
+
+  :global(.ant-form-item-control) {
+    margin-bottom: 0;
+  }
+}
+
+.fileValueBlock {
+  padding-top: 30px;
+
+  @include md {
+    padding-top: 40px;
+  }
+  .fileValue {
+    margin-bottom: 25px;
+
+    @include sm {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.clearFile {
+  width: 14px;
+  height: 14px;
+  min-width: 14px;
+
+  line {
+    stroke: $red7;
+  }
+}
+
+.fileValue {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: $dark3;
+
+  @include md {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .clearFile {
+    margin-left: 25px;
+  }
+}
+
+.formControls {
+  margin-bottom: 0;
+}
+
+.contorlsRow {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @include sm {
+    flex-direction: row;
+  }
+
+  :global(.ant-form-item-control) {
+    margin-bottom: 0;
+  }
+
+  :global(.ant-form-item) {
+    margin-bottom: 30px;
+  }
+
+  :global(.ant-form-item):first-child {
+    margin-bottom: 8px;
+
+    @include sm {
+      margin: 0 15px 0 0;
+    }
+  }
+
+  :global(.ant-form-item):last-child {
+    margin-bottom: 0;
+
+    @include sm {
+      margin: 0 0 0 auto;
+    }
+  }
+}
+
+.сontrolsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 30px 17px 0 0;
+}
+
+.link {
+  font-family: $main_font;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color: $light8;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $red2;
+  }
+}
+
+.sendButtonsContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.sendButton {
+  height: 40px !important;
+  width: 100%;
+  padding: 12px 32px !important;
+  background-color: transparent !important;
+  font-family: $main_font !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  text-align: center;
+  text-transform: uppercase !important;
+  color: $dark3 !important;
+  border: 1px solid $dark3 !important;
+  box-sizing: border-box !important;
+
+  @include sm {
+    width: 120px;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $light29 !important;
+    background-color: $light29 !important;
+  }
+}
+
+.cvButton {
+  @include sm {
+    width: 190px;
+  }
+}
+
+.letterButton {
+  @include sm {
+    width: 211px;
+  }
+}
+
+.onLoadContainer {
+  position: absolute;
+  top: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: $light1;
+
+  :global(.ant-spin) {
+    position: static;
+    margin: auto;
+  }
+}
+
+.loadOverlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $light1;
+  opacity: 0.5;
+}

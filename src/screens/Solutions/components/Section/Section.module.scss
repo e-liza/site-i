@@ -1,0 +1,347 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/breakpoints.scss';
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include sm {
+    align-items: flex-start;
+  }
+
+  @include md {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  @include rwhd($screen-md-min, 800px) {
+    align-items: center;
+  }
+
+  @include lg {
+    align-items: center;
+  }
+}
+
+.rootReverse {
+  @include md {
+    flex-direction: row-reverse;
+
+    .image {
+      margin: 0 0 0 50px;
+    }
+
+    .imageContainer {
+      justify-content: flex-end;
+    }
+  }
+
+  @include rwhd($screen-md-min, 700px) {
+    .image {
+      margin: 0 0 0 53px;
+    }
+  }
+
+  @include rwhd($screen-md-min, 800px) {
+    .image {
+      margin: 0 0 0 61px;
+    }
+  }
+
+  @include rwhd($screen-md-min, 900px) {
+    .image {
+      margin: 0 0 0 89px;
+    }
+
+    .title {
+      max-width: 290px;
+    }
+  }
+
+  @include lg {
+    .image {
+      margin: 0;
+    }
+  }
+
+  @include rwhd($screen-lg-min, 700px) {
+    .text {
+      padding: 0 75px 0 0;
+    }
+  }
+
+  @include rwhd($screen-lg-min, 800px) {
+    .text {
+      padding: 0 100px 0 0;
+    }
+  }
+
+  @include rwhd($screen-lg-min, 900px) {
+    .text {
+      padding: 0 190px 0 0;
+    }
+
+    .imageContainer {
+      justify-content: flex-end;
+    }
+  }
+  @include rwhd($screen-lg-min, 900px) {
+    .title {
+      max-width: 290px;
+    }
+  }
+}
+
+.image {
+  width: 315px;
+  height: 215px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 0 30px;
+  color: $dark1;
+
+  @include rwhd($screen-xs-min, 667px) {
+    width: 315px;
+    height: 215px;
+  }
+
+  @include sm {
+    width: 505px;
+    height: 340px;
+    margin: 0 0 40px;
+  }
+
+  @include md {
+    margin: 0 50px 0 0;
+    width: 380px;
+    height: 256px;
+  }
+
+  @include rwhd($screen-md-min, 700px) {
+    width: 415px;
+    height: 280px;
+    margin: 0 53px 0 0;
+  }
+
+  @include rwhd($screen-md-min, 800px) {
+    width: 495px;
+    height: 340px;
+    margin: 0 61px 0 0;
+  }
+
+  @include rwhd($screen-md-min, 900px) {
+    margin: 0 89px 0 0;
+  }
+
+  @include lg {
+    width: 420px;
+    height: 270px;
+    margin: 0;
+  }
+
+  @include rwhd($screen-lg-min, 700px) {
+    width: 490px;
+    height: 310px;
+  }
+
+  @include rwhd($screen-lg-min, 800px) {
+    width: 535px;
+    height: 360px;
+  }
+
+  @include rwhd($screen-lg-min, 900px) {
+    width: 600px;
+    height: 405px;
+    margin: 4px 0 0;
+  }
+}
+
+.text {
+  @include md {
+    flex-basis: 494px;
+    flex-grow: 1;
+  }
+
+  @include lg {
+    flex-basis: 50%;
+    max-width: 100%;
+  }
+
+  @include rwhd($screen-lg-min, 700px) {
+    padding: 0 0 0 75px;
+  }
+
+  @include rwhd($screen-lg-min, 800px) {
+    padding: 0 0 0 100px;
+  }
+
+  @include rwhd($screen-lg-min, 900px) {
+    padding: 0 0 0 190px;
+  }
+}
+
+.imageContainer {
+  @include sm {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  @include md {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  @include lg {
+    flex-basis: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  @include rwhd($screen-lg-min, 900px) {
+    justify-content: flex-start;
+  }
+}
+
+.title {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 170%;
+  padding: 0 0 20px;
+  border-bottom: 1px solid $dark1;
+  margin: 0 0 30px;
+  color: $dark1;
+
+  @include md {
+    font-size: 24px;
+    line-height: 170%;
+    padding: 0;
+    border-bottom: 0;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 200px;
+      height: 3px;
+      margin: 25px 0 0;
+      background: $dark3;
+    }
+  }
+
+  @include rwhd($screen-md-min, 700px) {
+    margin: 0 0 50px;
+  }
+
+  @include rwhd($screen-md-min, 800px) {
+    font-size: 26px;
+    line-height: 170%;
+    max-width: 330px;
+
+    &:after {
+      margin: 35px 0 0;
+    }
+  }
+
+  @include lg {
+    margin: 0 0 50px;
+    font-size: 28px;
+    line-height: 100%;
+
+    &:after {
+      margin: 25px 0 0;
+    }
+  }
+
+  @include rwhd($screen-lg-min, 700px) {
+    font-size: 30px;
+    line-height: 52px;
+    margin: 0 0 60px;
+
+    &:after {
+      margin: 35px 0 0;
+    }
+  }
+
+  @include rwhd($screen-lg-min, 800px) {
+    max-width: 100%;
+  }
+
+  @include rwhd($screen-lg-min, 900px) {
+    max-width: 100%;
+
+    &:after {
+      margin: 40px 0 0;
+    }
+  }
+
+  @include rwhd($screen-lg-min, 1000px) {
+    max-width: 100%;
+
+    &:after {
+      margin: 40px 0 0;
+    }
+  }
+}
+
+.description {
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0 0 15px;
+  color: $dark1;
+
+  @include md {
+    font-size: 19px;
+    line-height: 33px;
+  }
+
+  @include rwhd($screen-md-min, 700px) {
+    line-height: 35px;
+    margin: 0 0 20px;
+  }
+
+  @include rwhd($screen-md-min, 800px) {
+    margin: 0 0 25px;
+  }
+
+  @include lg {
+    margin: 0 0 25px;
+  }
+
+  @include rwhd($screen-lg-min, 700px) {
+    margin: 0 0 30px;
+  }
+
+  @include rwhd($screen-lg-min, 900px) {
+    margin: 0 0 35px;
+  }
+
+  @include rwhd($screen-lg-min, 1000px) {
+    margin: 0 0 35px;
+  }
+}
+
+.content {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: $dark1;
+  margin: 0;
+
+  @include md {
+    font-size: 19px;
+    line-height: 35px;
+  }
+
+  @include rwhd($screen-md-min, 800px) {
+    max-width: 358px;
+  }
+
+  @include lg {
+    max-width: 100%;
+  }
+}

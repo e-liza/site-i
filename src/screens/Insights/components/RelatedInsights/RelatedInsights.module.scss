@@ -1,0 +1,158 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/breakpoints';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px 35px;
+
+  @include sm {
+    align-items: center;
+    padding: 0 45px 40px;
+  }
+
+  @include md {
+    padding: 0 100px 40px;
+  }
+
+  @include lg {
+    padding: 0 120px 50px;
+  }
+
+  @include xl {
+    padding: 0 270px 40px;
+  }
+
+  .link {
+    position: absolute;
+    bottom: 35px;
+    left: 30px;
+
+    @include sm {
+      position: static;
+    }
+  }
+}
+
+.title {
+  font-family: $title-font;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: $dark3;
+
+  @include sm {
+    font-size: 17px;
+    line-height: 17px;
+  }
+
+  @include md {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @include lg {
+    font-size: 19px;
+    line-height: 28px;
+  }
+}
+
+.link {
+  padding: 2px 0 2px 8px;
+  border-left: solid 7px $red2;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $dark3;
+
+  @include md {
+    padding: 5px 0 5px 18px;
+    border-width: 12px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @include lg {
+    padding-bottom: 6px;
+    border-width: 13px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $red2;
+    cursor: pointer;
+  }
+}
+
+.content {
+  padding: 0 20px 78px;
+
+  @include sm {
+    display: flex;
+    padding: 0 45px 50px;
+  }
+
+  @include md {
+    padding: 0 100px 60px;
+  }
+
+  @include lg {
+    padding: 0 120px 80px;
+  }
+
+  @include xl {
+    padding: 0 270px 80px;
+  }
+
+  > a {
+    display: flex;
+    margin-bottom: 20px;
+
+    @include sm {
+      flex: 1 1 45%;
+      margin-bottom: 0;
+    }
+
+    @include lg {
+      flex: 1 1 30%;
+    }
+  }
+
+  > a:first-child {
+    @media (min-width: 667px) and (max-width: 1023px) {
+      margin-right: 37px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      margin-right: 52px;
+    }
+  }
+
+  > a:last-child {
+    display: none;
+
+    @include lg {
+      display: flex;
+    }
+  }
+
+  > a:not(:last-child) {
+    @include lg {
+      margin-right: 45px;
+    }
+
+    @include xl {
+      margin-right: 51px;
+    }
+  }
+}

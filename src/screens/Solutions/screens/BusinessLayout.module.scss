@@ -1,0 +1,601 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/breakpoints.scss';
+@import '../../../styles/mixins.scss';
+
+$container-width: 1440px;
+
+.root {
+  display: flex;
+  flex-direction: column;
+  max-width: $container-width;
+  margin: 0 auto;
+
+  @include sm {
+    display: block;
+  }
+
+  @include md {
+    display: grid;
+    grid-template-columns: 57% 43%;
+    grid-template-rows: auto;
+  }
+
+  @include lg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+.menu {
+  position: fixed;
+  left: 0;
+  top: 60px;
+  width: 100%;
+  z-index: 2;
+
+  @include sm {
+    position: static;
+    padding: 20px 50px 0;
+    grid-row: 1;
+    grid-column: 1/3;
+  }
+
+  @include rwhd($screen-sm-min, 297px) {
+    padding: 35px 50px 0;
+  }
+
+  @include rwhd($screen-sm-min, 667px) {
+    padding: 50px 50px 0;
+  }
+
+  @include md {
+    padding: 30px 50px;
+  }
+
+  @include rwhd($screen-md-min, 700px) {
+    padding: 40px 50px 50px;
+  }
+
+  @include rwhd($screen-md-min, 900px) {
+    padding: 60px 50px 70px;
+  }
+
+  @include rwhd($screen-md-min, 1238px) {
+    padding: 50px;
+  }
+
+  @include rwhd($screen-md-min, 1366px) {
+    padding: 60px 50px 70px;
+  }
+
+  @include lg {
+    padding: 40px 90px;
+  }
+
+  @include rwhd($screen-lg-min, 700px) {
+    padding: 50px 90px;
+  }
+
+  @include rwhd($screen-lg-min, 800px) {
+    padding: 60px 90px 50px;
+  }
+
+  @include rwhd($screen-lg-min, 900px) {
+    padding: 70px 90px 80px;
+  }
+
+  @include lg {
+    grid-column: 1/4;
+  }
+}
+
+.header {
+  @include sm {
+    float: left;
+    width: 50%;
+  }
+
+  @include md {
+    float: none;
+    width: 100%;
+    grid-row: 2/3 !important;
+    grid-column: 1/3 !important;
+  }
+
+  @include lg {
+    grid-column: 1/4 !important;
+  }
+}
+
+.preview {
+  @include sm {
+    float: left;
+    width: 50%;
+  }
+
+  @include md {
+    float: none;
+    grid-row: 3 !important;
+    grid-column: 1/3;
+    width: 100%;
+  }
+
+  @include lg {
+    grid-column: 2/4 !important;
+  }
+}
+
+.textBlock {
+  background: $light1;
+  padding: 0 41px 50px;
+
+  @include sm {
+    background: none;
+    padding: 0;
+  }
+}
+
+.mobileRoot {
+  .header {
+    @include sm {
+      width: 45%;
+
+      > div {
+        padding-top: 50px;
+        padding-right: 30px;
+      }
+    }
+
+    @include rwhd($screen-sm-min, 297px) {
+      > div {
+        padding-top: 60px;
+      }
+    }
+
+    @include rwhd($screen-sm-min, 500px) {
+      > div {
+        padding-top: 100px;
+      }
+    }
+
+    @include md {
+      width: 100%;
+
+      > div {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+
+    @include lg {
+      p {
+        max-width: 320px;
+      }
+    }
+  }
+
+  .textBlock1 {
+    padding-top: 137px;
+
+    @include rwhd($screen-xs-min, 682px) {
+      padding-top: 152px;
+    }
+
+    @include sm {
+      padding-top: 0;
+    }
+  }
+
+  .preview {
+    padding: 0 18px;
+    margin-bottom: -112px;
+    position: relative;
+    z-index: 1;
+
+    @include sm {
+      padding: 10px 0 0;
+      margin-bottom: -16px;
+    }
+
+    @include rwhd($screen-sm-min, 297px) {
+      padding-top: 20px;
+    }
+
+    @include rwhd($screen-sm-min, 500px) {
+      padding-top: 50px;
+    }
+
+    @include md {
+      padding: 0;
+      margin-top: -16px;
+      margin-bottom: 70px;
+    }
+
+    @include rwhd($screen-md-min, 800px) {
+      margin-top: 30px;
+    }
+
+    @include rwhd($screen-md-min, 900px) {
+      margin-top: 40px;
+    }
+
+    @include rwhd($screen-md-min, 1238px) {
+      margin-top: 20px;
+    }
+
+    @include rwhd($screen-md-min, 1366px) {
+      margin-top: 40px;
+    }
+
+    @include lg {
+      margin-top: -40px;
+      margin-bottom: 90px;
+    }
+
+    @include rwhd($screen-lg-min, 700px) {
+      margin-top: -50px;
+    }
+
+    @include rwhd($screen-lg-min, 800px) {
+      margin-top: -50px;
+    }
+
+    @include rwhd($screen-lg-min, 900px) {
+      margin-top: -85px;
+    }
+  }
+}
+
+.textBlock1 {
+  padding-top: 90px;
+
+  @include sm {
+    width: 100%;
+    clear: both;
+    padding: 0 78px 30px 43px;
+  }
+
+  @include md {
+    grid-row: 4;
+    grid-column: 1/2;
+    padding: 0 80px 50px 85px;
+  }
+
+  @include lg {
+    padding: 0 0 70px 100px;
+    grid-row: 3;
+    grid-column: 1/2;
+    align-self: center;
+  }
+
+  @include xl {
+    padding: 0 0 70px 100px;
+  }
+}
+
+.textBlock2 {
+  @include sm {
+    float: left;
+    width: 50%;
+    padding: 0 0 30px 43px;
+  }
+
+  @include md {
+    float: none;
+    width: 100%;
+    grid-row: 5;
+    grid-column: 1/2;
+    padding: 0 107px 50px 85px;
+  }
+
+  @include lg {
+    padding: 0 50px 85px 100px;
+    grid-row: 4;
+    grid-column: 1/2;
+  }
+}
+
+.textBlock3 {
+  padding-top: 37px;
+
+  @include sm {
+    float: left;
+    width: 50%;
+    padding: 0 0 30px 43px;
+  }
+
+  @include md {
+    float: none;
+    width: 100%;
+    padding: 0 107px 118px 85px;
+    grid-row: 6;
+    grid-column: 1/2;
+  }
+
+  @include lg {
+    padding: 0 95px 85px 45px;
+    grid-row: 4;
+    grid-column: 2/3;
+  }
+}
+
+.textBlock4 {
+  @include sm {
+    width: 100%;
+    clear: both;
+    padding: 0 80px 40px 43px;
+  }
+
+  @include md {
+    padding: 0 85px 50px 0;
+    grid-row: 4;
+    grid-column: 2/3;
+  }
+
+  @include lg {
+    padding: 0 100px 85px 0;
+    grid-row: 4;
+    grid-column: 3/4;
+  }
+}
+
+.employeeRoot {
+  .textBlock2 {
+    @include lg {
+      padding: 0 70px 85px 100px;
+    }
+  }
+  .textBlock3 {
+    @include lg {
+      max-width: 400px;
+      padding: 0 70px 85px 0;
+
+      p {
+        max-width: 324px;
+      }
+    }
+  }
+  .textBlock4 {
+    @include lg {
+      p {
+        max-width: 423px;
+      }
+    }
+  }
+  @include lg {
+    grid-template-columns: 1fr 0.8fr 1.2fr;
+    grid-template-rows: auto;
+  }
+}
+
+.businessRoot {
+  .textBlock1 {
+    @include md {
+      grid-row: 4;
+      grid-column: 1/2;
+    }
+
+    @include lg {
+      padding: 0 0 70px 100px;
+      grid-row: 3;
+      grid-column: 1/2;
+      align-self: center;
+    }
+  }
+  .textBlock2 {
+    @include md {
+      grid-row: 4;
+      grid-column: 2/3;
+      padding: 0 85px 50px 0;
+    }
+
+    @include lg {
+      padding: 0 50px 85px 100px;
+      grid-row: 4;
+      grid-column: 1/2;
+    }
+  }
+  .textBlock3 {
+    @include md {
+      grid-row: 5;
+      grid-column: 1/2;
+      padding: 0 107px 50px 85px;
+    }
+
+    @include lg {
+      padding: 0 95px 85px 45px;
+      grid-row: 4;
+      grid-column: 2/3;
+    }
+  }
+  .textBlock4 {
+    @include md {
+      grid-row: 6;
+      grid-column: 1/2;
+      padding: 0 107px 118px 85px;
+    }
+
+    @include lg {
+      padding: 0 100px 85px 0;
+      grid-row: 4;
+      grid-column: 3/4;
+    }
+  }
+}
+
+.imageGroup {
+  width: 339px;
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+
+  .image1,
+  .image3 {
+    box-shadow: 0px 13px 20px rgba(181, 189, 201, 0.35);
+  }
+
+  .image1 {
+    margin-top: 33px;
+    width: 106px;
+    height: 148px;
+  }
+
+  .image2 {
+    width: 129px;
+    height: 250px;
+  }
+
+  .image3 {
+    margin-top: 108px;
+    width: 110px;
+    height: 120px;
+  }
+
+  @include md {
+    width: 572px;
+    height: 340px;
+
+    .image1 {
+      margin-top: 39px;
+      width: 195px;
+      height: 270px;
+    }
+
+    .image2 {
+      width: 176px;
+      height: 340px;
+    }
+
+    .image3 {
+      margin-top: 98px;
+      width: 204px;
+      height: 221px;
+    }
+  }
+
+  @include rwhd($screen-md-min, 700px) {
+    width: 666px;
+    height: 410px;
+
+    .image1 {
+      margin-top: 59px;
+      width: 217px;
+      height: 300px;
+    }
+
+    .image2 {
+      width: 212px;
+      height: 410px;
+    }
+
+    .image3 {
+      margin-top: 128px;
+      width: 240px;
+      height: 260px;
+    }
+  }
+
+  @include rwhd($screen-md-min, 800px) {
+    width: 694px;
+    height: 464px;
+
+    .image1 {
+      margin-top: 79px;
+    }
+
+    .image2 {
+      width: 240px;
+      height: 464px;
+    }
+
+    .image3 {
+      margin-top: 168px;
+    }
+  }
+
+  @include lg {
+    width: 573px;
+    height: 340px;
+
+    .image1 {
+      margin-top: 38px;
+      width: 195px;
+      height: 270px;
+    }
+
+    .image2 {
+      width: 176px;
+      height: 340px;
+    }
+
+    .image3 {
+      margin-top: 98px;
+      width: 204px;
+      height: 221px;
+    }
+  }
+
+  @include rwhd($screen-lg-min, 700px) {
+    width: 666px;
+    height: 410px;
+
+    .image1 {
+      margin-top: 59px;
+      width: 217px;
+      height: 300px;
+    }
+
+    .image2 {
+      width: 212px;
+      height: 410px;
+    }
+
+    .image3 {
+      margin-top: 128px;
+      width: 240px;
+      height: 260px;
+    }
+  }
+
+  @include rwhd($screen-lg-min, 800px) {
+    width: 694px;
+    height: 464px;
+
+    .image1 {
+      margin-top: 79px;
+    }
+
+    .image2 {
+      width: 240px;
+      height: 464px;
+    }
+
+    .image3 {
+      margin-top: 168px;
+    }
+  }
+}
+
+.advantages {
+  @include sm {
+    float: right;
+    width: 50%;
+  }
+
+  @include md {
+    float: none;
+    width: 100%;
+    grid-row: 5/7;
+    grid-column: 2/3;
+    align-self: flex-start;
+    justify-self: start;
+  }
+
+  @include lg {
+    position: static;
+    width: 100%;
+    grid-row: 5;
+    grid-column: 1/4;
+  }
+}

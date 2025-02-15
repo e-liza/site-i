@@ -1,0 +1,147 @@
+@import '../../styles/old-breakpoints';
+@import '../../styles/variables';
+
+.containerWithPddings {
+  padding: 80px 13.9% 0;
+}
+
+.insightsContainer {
+  background-color: $light11;
+}
+
+.mainInsight {
+  display: grid;
+  @include lg {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+.insightImgContainer {
+  justify-self: center;
+  border-top: solid 9px $red2;
+  max-width: 520px;
+  @include lg {
+    justify-self: flex-end;
+  }
+}
+
+.mainInsightContent {
+  padding-top: 20px;
+  @include lg {
+    max-width: 520px;
+    justify-self: flex-start;
+    padding: 0 5px 0 65px;
+  }
+}
+
+.insightInfo {
+  margin-bottom: 5px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: $light8;
+}
+
+.insightTitle {
+  margin-bottom: 10px;
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 38px;
+  color: $dark3;
+}
+
+.insightText {
+  margin-bottom: 20px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark3;
+}
+
+.link {
+  margin-top: 10px;
+  font-family: $main-font, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: $dark3;
+}
+
+.link > *:first-child {
+  margin-left: 7px;
+}
+
+.insightsGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  padding-bottom: 95px;
+}
+
+.insightItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px -21px;
+  max-width: 1080px;
+}
+
+.insightItem {
+  flex: 0 1 320px;
+  max-width: 320px;
+  margin: 0px 20px;
+  margin-bottom: 30px;
+  border-top: solid 9px $red2;
+}
+
+.insightItemImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.insightItemInfo {
+  margin: 16px 0 8px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: $light8;
+}
+
+.insightItemTitle {
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.loadButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.loadButton {
+  height: 40px !important;
+  padding: 11px 37px !important;
+  font-family: $main-font !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 17px !important;
+  border: 1px solid $dark3 !important;
+  box-sizing: border-box !important;
+  background-color: transparent !important;
+  color: $dark3 !important;
+}

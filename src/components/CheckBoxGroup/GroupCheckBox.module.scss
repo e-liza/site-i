@@ -1,0 +1,32 @@
+@import '../../styles/old-breakpoints';
+@import '../../styles/variables';
+
+.group {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include lg {
+    flex-direction: row;
+    justify-content: unset;
+    align-items: unset;
+  }
+}
+
+.group > * {
+  margin: 0 10px 10px 0;
+
+  @include rwd(1024) {
+    margin-right: 15px;
+  }
+}
+
+.title {
+  margin-bottom: 15px;
+  font-family: $main_font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $light14;
+}

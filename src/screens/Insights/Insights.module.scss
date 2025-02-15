@@ -1,0 +1,192 @@
+@import '../../styles/old-breakpoints';
+@import '../../styles/variables';
+
+.root {
+  width: 100%;
+  padding-top: 120px;
+
+  @include rwd(667) {
+    padding-top: 60px;
+  }
+
+  @include rwd(834) {
+    padding-top: 80px;
+  }
+}
+
+.mobileFilter {
+  position: fixed;
+  left: 0;
+  top: 60px;
+  width: 100%;
+  z-index: 2;
+}
+
+.desktopFilter {
+  display: none;
+
+  @include rwd(667) {
+    display: block;
+    padding: 40px 45px 29px;
+  }
+
+  @include rwd(1024) {
+    padding: 50px 100px 40px;
+  }
+
+  @include rwd(1440) {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 70px 100px 50px;
+  }
+
+  @include rwd(1800) {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 70px 270px 50px;
+  }
+}
+
+.insights {
+  @include rwd(667) {
+    padding: 0 45px;
+  }
+
+  @include rwd(1024) {
+    padding: 0 100px;
+  }
+
+  @include rwd(1440) {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 120px;
+  }
+
+  @include rwd(1800) {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 270px;
+  }
+}
+
+.mainInsight {
+  margin-bottom: 30px;
+
+  @include rwd(667) {
+    margin-bottom: 35px;
+  }
+
+  @include rwd(1024) {
+    margin-bottom: 45px;
+  }
+
+  @include rwd(1440) {
+    margin-bottom: 50px;
+  }
+}
+
+.insightsGrid {
+  padding: 0 20px 0;
+
+  @include rwd(667) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  > a {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+
+    @include rwd(667) {
+      max-width: calc(
+        (100% - 37px) / 2
+      ); // max-width of one insight item without margins between items
+      flex: 1 1 45%;
+      margin-bottom: 35px;
+    }
+    @include rwd(1024) {
+      max-width: calc(
+        (100% - 52px) / 2
+      ); // max-width of one insight item without margins between items
+      margin-bottom: 45px;
+    }
+
+    @include rwd(1440) {
+      max-width: calc(
+        (100% - 90px) / 3
+      ); // max-width of one insight item without margins between items
+      flex: 1 1 30%;
+      margin: 0 45px 50px 0;
+    }
+
+    @include rwd(1800) {
+      margin: 0 51px 50px 0;
+    }
+  }
+
+  a:nth-child(odd) {
+    @media (min-width: 667px) and (max-width: 1023px) {
+      margin-right: 37px;
+    }
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      margin-right: 52px;
+    }
+  }
+
+  a:nth-child(3n) {
+    @include rwd(1440) {
+      margin-right: 0;
+    }
+  }
+
+  > a:last-child {
+    @media (max-width: 667) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 40px;
+
+  @include rwd(667) {
+    padding: 15px 0 50px;
+  }
+
+  @include rwd(1024) {
+    padding: 5px 0 50px;
+  }
+
+  @include rwd(1440) {
+    padding: 10px 0 70px;
+  }
+}
+
+.recent {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @include rwd(1800) {
+    max-width: 1800px;
+  }
+}
+
+.footer {
+  background-color: $light9;
+}
+
+.spinner {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.alert {
+  margin: 15px 0;
+}

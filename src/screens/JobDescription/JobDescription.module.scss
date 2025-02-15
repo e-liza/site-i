@@ -1,0 +1,590 @@
+@import '../../styles/breakpoints';
+@import '../../styles/variables';
+
+.jobSection {
+  padding-top: 60px;
+  background-color: $light1;
+
+  @include rwd(834) {
+    padding-top: 80px;
+  }
+}
+
+.jobBlock {
+  padding: 40px 0;
+  min-height: 300px;
+  position: relative;
+
+  @include sm {
+    padding: 50px 0;
+  }
+
+  @include md {
+    padding: 80px 0;
+  }
+
+  @include lg {
+    padding: 120px 0 80px;
+  }
+}
+
+.jobTitleContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 30px 0;
+  background-color: $light11;
+
+  @include sm {
+    margin-bottom: 50px;
+    padding: 35px 0;
+  }
+
+  @include md {
+    margin-bottom: 60px;
+    padding: 40px 0;
+  }
+
+  @include lg {
+    margin-bottom: 80px;
+  }
+
+  > h1 {
+    font-family: $title-font;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: $dark3;
+
+    @include sm {
+      font-size: 32px;
+      line-height: 35px;
+    }
+
+    @include md {
+      font-size: 40px;
+      line-height: 44px;
+    }
+
+    @include lg {
+      font-size: 60px;
+      line-height: 66px;
+    }
+  }
+}
+
+.jobIntro {
+  padding: 0 30px 30px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: $dark4;
+
+  @include sm {
+    padding: 0 50px 30px;
+    font-size: 20px;
+    line-height: 33px;
+  }
+
+  @include md {
+    padding: 0 100px 40px;
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+  @include lg {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 270px 40px;
+    font-size: 27px;
+    line-height: 45px;
+  }
+
+  @include xl {
+    max-width: 1800px;
+    padding: 0 420px 40px;
+  }
+}
+
+.infoBlock {
+  margin-bottom: 40px;
+  padding: 0 30px;
+
+  @include sm {
+    margin-bottom: 50px;
+    padding: 0 50px;
+  }
+
+  @include md {
+    margin-bottom: 60px;
+    padding: 0 100px;
+  }
+
+  @include lg {
+    max-width: 1440px;
+    margin: 0 auto 80px;
+    padding: 0 270px;
+  }
+
+  @include xl {
+    max-width: 1800px;
+    padding: 0 420px;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid $dark3;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    margin: 0 10px;
+    border-bottom: 1px solid $dark3;
+
+    @include sm {
+      margin: 0 15px;
+    }
+
+    @include md {
+      margin: 0 70px;
+    }
+
+    @include lg {
+      margin: 0 30px;
+    }
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 25px 0;
+
+  @include sm {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 15px;
+  }
+
+  @include md {
+    padding: 30px 66px 30px 74px;
+  }
+
+  @include lg {
+    padding: 40px 30px;
+  }
+}
+
+.location {
+  font-size: 13px;
+  line-height: 13px;
+  color: $light8;
+
+  @include md {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.employmentType {
+  margin-bottom: 15px;
+  padding: 0 10px;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $dark3;
+  background-color: $light9;
+
+  @include sm {
+    margin-bottom: 0;
+  }
+
+  @include md {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.jobContent {
+  padding: 0 40px;
+  font-size: 16px;
+  line-height: 30px;
+  color: $dark3;
+
+  @include sm {
+    padding: 0 65px;
+  }
+
+  @include md {
+    padding: 0 170px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @include lg {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 372px 0 300px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  @include xl {
+    max-width: 1800px;
+    padding: 0 582px 0 450px;
+  }
+
+  ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0 0 40px 0;
+
+    @include sm {
+      padding-bottom: 50px;
+    }
+
+    @include md {
+      padding-bottom: 60px;
+    }
+
+    @include lg {
+      padding-bottom: 80px;
+    }
+
+    li {
+      position: relative;
+      margin-bottom: 20px;
+      padding-left: 38px;
+
+      @include sm {
+        margin-bottom: 30px;
+        padding-left: 48px;
+      }
+
+      @include md {
+        margin-bottom: 40px;
+        padding-left: 88px;
+      }
+
+      &::before {
+        content: '\2022';
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: $dark3;
+        font-weight: bold;
+        font-size: 25px;
+        margin-right: 30px;
+
+        @include md {
+          left: 30px;
+        }
+      }
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h2 {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 28px;
+    color: $dark3;
+
+    @include sm {
+      margin-bottom: 30px;
+      font-size: 22px;
+      line-height: 33px;
+    }
+
+    @include md {
+      margin-bottom: 40px;
+      font-size: 28px;
+      line-height: 42px;
+    }
+
+    @include lg {
+      font-size: 35px;
+      line-height: 58px;
+    }
+  }
+}
+
+.applyJobSection {
+  background-color: $light1;
+}
+
+.applyJobTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+  background-color: $light11;
+
+  @include sm {
+    padding: 30px 0;
+  }
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  svg {
+    height: 18px;
+    width: 18px;
+    margin-right: 18px;
+
+    @include sm {
+      height: 20px;
+      width: 20px;
+      margin-right: 30px;
+    }
+
+    @include md {
+      height: 22px;
+      width: 22px;
+      margin-right: 35px;
+    }
+
+    @include lg {
+      height: 25px;
+      width: 25px;
+      margin-right: 45px;
+    }
+  }
+
+  span {
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: $dark3;
+
+    @include sm {
+      font-size: 20px;
+      line-height: 34px;
+    }
+
+    @include md {
+      font-size: 24px;
+      line-height: 38px;
+    }
+
+    @include lg {
+      font-size: 28px;
+      line-height: 44px;
+    }
+  }
+}
+
+.plus {
+  fill: $red2;
+}
+
+.applyJobForm {
+  margin: 0 auto;
+  max-width: 550px;
+  width: 100%;
+  padding: 40px;
+
+  @include sm {
+    padding: 50px 0;
+  }
+
+  @include md {
+    padding: 60px 0 82px;
+  }
+
+  @include lg {
+    padding: 80px 0;
+  }
+
+  @include xl {
+    padding: 80px 0;
+  }
+}
+
+.submitMsg {
+  display: flex;
+  justify-content: center;
+  height: 412px;
+  padding: 50px 60px;
+  background-color: $light1;
+
+  @include sm {
+    height: 313px;
+    padding: 40px 193px 30px 158px;
+  }
+  @include md {
+    height: 556px;
+    padding: 80px 347px 82px 267px;
+  }
+
+  @include lg {
+    height: 686px;
+    padding: 120px 260px 102px 180px;
+  }
+
+  > div {
+    max-width: 263px;
+
+    @include sm {
+      max-width: 316px;
+    }
+
+    @include md {
+      max-width: 410px;
+    }
+
+    @include lg {
+      max-width: 470px;
+    }
+  }
+}
+
+.technologySection {
+  background-color: $light9;
+}
+
+.technologyBlock {
+  margin: 0 auto;
+  padding: 35px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include md {
+    padding: 50px 0;
+  }
+
+  @include lg {
+    padding: 65px 0;
+  }
+
+  h2 {
+    margin-bottom: 25px;
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: $dark3;
+
+    @include sm {
+      font-size: 20px;
+    }
+
+    @include md {
+      margin-bottom: 30px;
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    @include lg {
+      margin-bottom: 35px;
+      font-size: 28px;
+      line-height: 42px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 150px;
+      margin: 18px auto 0;
+      background-color: $dark3;
+
+      @include sm {
+        width: 200px;
+      }
+
+      @include md {
+        margin-top: 25px;
+      }
+
+      @include lg {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  p {
+    max-width: 315px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    color: $dark3;
+
+    @include sm {
+      max-width: 100%;
+      margin-bottom: 18px;
+      font-size: 14px;
+      line-height: 23px;
+    }
+
+    @include md {
+      margin-bottom: 40px;
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    @include lg {
+      margin-bottom: 40px;
+      font-size: 18px;
+    }
+  }
+}
+
+.link {
+  padding: 2px 0 2px 8px;
+  border-left: 7px solid $red2;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: $dark3;
+
+  @include md {
+    padding: 5px 0 5px 18px;
+    border-width: 12px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @include lg {
+    padding: 5px 0 6px 18px;
+    border-width: 13px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $red2;
+  }
+}
+
+.spinner {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.alert {
+  margin: 15px;
+}

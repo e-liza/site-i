@@ -1,0 +1,1529 @@
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
+
+$hero-img-color: linear-gradient(180deg, #edeeee 0%, #eeefef 100%);
+
+.homeHeadSection {
+  margin: 60px auto 0;
+
+  @include rwd(834) {
+    margin-top: 80px;
+  }
+
+  @include lg {
+    max-width: 1800px;
+  }
+}
+
+.firstIntroBlock {
+  position: relative;
+
+  @include sm {
+    display: flex;
+    align-items: flex-start;
+    background: $hero-img-color;
+  }
+}
+
+.introImgContainer {
+  position: relative;
+  height: 336px;
+  background: url('../../assets/home/heroImg.jpg');
+  background-repeat: no-repeat;
+  background-size: 896px;
+  background-position: right -51px bottom;
+
+  @include sm {
+    position: absolute;
+    width: 631px;
+    top: 0px;
+    right: 0;
+    height: 209px;
+    background-size: cover;
+    background-position: bottom -14px right 0;
+  }
+
+  @media (min-width: 667px) and (min-height: 297px) {
+    height: 237px;
+    background-position: bottom 0 right 0;
+  }
+
+  @media (min-width: 667px) and (min-height: 320px) {
+    height: 264px;
+  }
+
+  @include md {
+    width: 100%;
+    height: 520px;
+    background-size: 1120px;
+    background-position: bottom 0 right -70px;
+  }
+
+  @media (min-width: 1024px) and (min-height: 700px) {
+    background-size: 1359px;
+    height: 620px;
+    background-position: bottom 0 right -65px;
+  }
+
+  @media (min-width: 1024px) and (min-height: 800px) {
+    background-size: 1800px;
+    height: 720px;
+    background-position: bottom -60px right -125px;
+  }
+
+  @media (min-width: 1024px) and (min-height: 900px) {
+    background-size: 1800px;
+    height: 820px;
+    background-position: bottom 0 right -119px;
+  }
+
+  @include lg {
+    max-height: none;
+    height: 100%;
+    background-size: 1574px;
+    background-position: bottom -49px right 0;
+  }
+
+  @media (min-width: 1440px) and (min-height: 700px) {
+    width: 1800px;
+    background-size: 1800px;
+    background-position: bottom -58px right 0;
+  }
+
+  @media (min-width: 1440px) and (min-height: 800px) {
+    width: 1800px;
+    background-position: right bottom;
+  }
+
+  @include xl {
+    width: 1683px;
+    background-position: right 0 bottom -73px;
+  }
+
+  @media (min-width: 1800px) and (min-height: 700px) {
+    width: 100%;
+    background-position: right 0 bottom -50px;
+  }
+
+  @media (min-width: 1800px) and (min-height: 800px) {
+    background-position: right 0 bottom 0;
+  }
+}
+
+.introCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  padding: 30px 20px 40px;
+
+  @media (min-width: 320px) and (min-height: 667px) {
+    padding: 30px 20px 40px;
+  }
+
+  @media (min-width: 320px) and (min-height: 682px) {
+    padding: 40px 20px;
+  }
+
+  @include sm {
+    max-width: 375px;
+    align-items: flex-start;
+    padding: 15px 0 15px 60px;
+  }
+
+  @media (min-width: 667px) and (min-height: 297px) {
+    padding: 25px 0 18px 60px;
+  }
+
+  @media (min-width: 667px) and (min-height: 320px) {
+    padding: 30px 0 30px 60px;
+  }
+
+  @include md {
+    max-width: 693px;
+    padding: 50px 0 50px 45px;
+  }
+
+  @media (min-width: 1024px) and (min-height: 700px) {
+    padding: 100px 0 50px 45px;
+  }
+
+  @media (min-width: 1024px) and (min-height: 800px) {
+    padding: 100px 0 80px 45px;
+  }
+
+  @media (min-width: 1024px) and (min-height: 900px) {
+    padding: 130px 0 150px 45px;
+  }
+
+  @include lg {
+    max-width: 733px;
+    padding: 30px 0 30px 50px;
+  }
+
+  @media (min-width: 1440px) and (min-height: 700px) {
+    padding: 60px 0 50px 50px;
+  }
+
+  @media (min-width: 1440px) and (min-height: 800px) {
+    padding: 100px 0 60px 85px;
+  }
+
+  @media (min-width: 1440px) and (min-height: 900px) {
+    padding: 120px 0 120px 85px;
+  }
+
+  @include xl {
+    max-width: 981px;
+    margin-bottom: 0;
+    padding: 50px 0 50px 160px;
+  }
+
+  @media (min-width: 1800px) and (min-height: 700px) {
+    padding: 80px 0 80px 160px;
+  }
+
+  @media (min-width: 1800px) and (min-height: 800px) {
+    padding: 100px 0 100px 160px;
+  }
+
+  @media (min-width: 1800px) and (min-height: 900px) {
+    padding: 120px 0 100px 160px;
+  }
+
+  @media (min-width: 1800px) and (min-height: 1000px) {
+    padding: 150px 0 120px 100px;
+  }
+
+  h1 {
+    width: 100%;
+    margin-bottom: 35px;
+    padding: 0 10px;
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 39px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $dark1;
+
+    @media (min-width: 320px) and (min-height: 667px) {
+      margin-bottom: 25px;
+    }
+
+    @include sm {
+      max-width: 100%;
+      margin-bottom: 15px;
+      text-align: left;
+      padding: 0;
+    }
+
+    @media (min-width: 667px) and (min-height: 297px) {
+      margin-bottom: 26px;
+    }
+
+    @media (min-width: 667px) and (min-height: 320px) {
+      margin-bottom: 26px;
+    }
+
+    @include md {
+      max-width: 100%;
+      margin-bottom: 30px;
+      font-size: 55px;
+      line-height: 88px;
+    }
+
+    @media (min-width: 1024px) and (min-height: 700px) {
+      margin-bottom: 60px;
+    }
+
+    @media (min-width: 1024px) and (min-height: 800px) {
+      margin-bottom: 110px;
+    }
+
+    @include lg {
+      margin: 0 0 20px 0;
+      font-size: 60px;
+      line-height: 106px;
+    }
+
+    @media (min-width: 1440px) and (min-height: 700px) {
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: 1440px) and (min-height: 800px) {
+      margin: 0 0 70px 0;
+    }
+
+    @media (min-width: 1440px) and (min-height: 900px) {
+      margin: 0 0 110px 0;
+    }
+
+    @include xl {
+      margin-bottom: 30px;
+      font-size: 63px;
+      line-height: 105px;
+    }
+
+    @media (min-width: 1800px) and (min-height: 700px) {
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: 1800px) and (min-height: 800px) {
+      margin-bottom: 80px;
+    }
+
+    @media (min-width: 1800px) and (min-height: 900px) {
+      margin-bottom: 120px;
+    }
+
+    @media (min-width: 1800px) and (min-height: 1000px) {
+      margin-bottom: 110px;
+      font-size: 70px;
+    }
+  }
+
+  p {
+    max-width: 335px;
+    margin-bottom: 30px;
+    font-family: $title-font;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: $dark6;
+
+    @include sm {
+      margin-bottom: 15px;
+      padding: 0;
+      font-size: 15px;
+      line-height: 26px;
+    }
+
+    @media (min-width: 667px) and (min-height: 297px) {
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: 667px) and (min-height: 320px) {
+      margin-bottom: 30px;
+    }
+
+    @include md {
+      max-width: 377px;
+      padding: 0;
+      margin-bottom: 50px;
+      font-size: 25px;
+      line-height: 46px;
+      background-color: inherit;
+    }
+
+    @media (min-width: 1024px) and (min-height: 700px) {
+      margin-bottom: 70px;
+    }
+
+    @media (min-width: 1024px) and (min-height: 800px) {
+      margin-bottom: 90px;
+    }
+
+    @include lg {
+      max-width: 100%;
+      margin-bottom: 30px;
+      font-size: 36px;
+      line-height: 56px;
+    }
+
+    @media (min-width: 1440px) and (min-height: 700px) {
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: 1440px) and (min-height: 800px) {
+      margin-bottom: 80px;
+    }
+
+    @media (min-width: 1440px) and (min-height: 900px) {
+      margin-bottom: 70px;
+      line-height: 58px;
+    }
+
+    @include xl {
+      margin-bottom: 30px;
+      font-size: 36px;
+      line-height: 60px;
+    }
+
+    @media (min-width: 1800px) and (min-height: 700px) {
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: 1800px) and (min-height: 800px) {
+      margin-bottom: 80px;
+    }
+
+    @media (min-width: 1800px) and (min-height: 900px) {
+      margin-bottom: 120px;
+    }
+
+    @media (min-width: 1800px) and (min-height: 1000px) {
+      margin-bottom: 80px;
+      font-size: 42px;
+      line-height: 68px;
+    }
+  }
+}
+
+.link {
+  display: block;
+  padding: 2px 0 2px 8px;
+  border-left: 7px solid $red2;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: $dark3;
+
+  @include md {
+    padding: 5px 0 5px 18px;
+    border-width: 12px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @include lg {
+    padding: 5px 0 6px 18px;
+    font-size: 16px;
+    line-height: 19px;
+    border-width: 13px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $red2;
+  }
+}
+
+.secondIntroBlock {
+  display: flex;
+  flex-direction: column;
+  background-color: $light11;
+
+  @include md {
+    flex-direction: row;
+    padding: 45px 50px;
+  }
+
+  @include lg {
+    padding: 52px 70px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include xl {
+    padding: 52px 160px;
+  }
+}
+
+.tagline {
+  padding: 30px;
+  font-family: $title-font;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  color: $light21;
+  background-color: $light24;
+
+  @include sm {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  @include md {
+    flex: 1 1 50%;
+    margin-right: 74px;
+    padding: 0;
+    font-size: 28px;
+    line-height: 53px;
+    text-align: left;
+    text-transform: uppercase;
+    background-color: initial;
+  }
+
+  @include lg {
+    margin-right: 120px;
+    font-size: 28px;
+    line-height: 59px;
+  }
+
+  @include xl {
+    flex: 1 1 590px;
+    margin-right: 110px;
+  }
+
+  p {
+    margin-bottom: 0;
+
+    @include sm {
+      max-width: 432px;
+      margin: 0 auto;
+    }
+
+    @include md {
+      max-width: initial;
+      margin: 0;
+    }
+  }
+}
+
+.textBlock {
+  padding: 40px 50px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: $dark4;
+
+  @include sm {
+    text-align: center;
+    padding: 35px 0;
+  }
+
+  @include md {
+    flex: 1 1 50%;
+    padding: 0;
+    font-size: 19px;
+    line-height: 38px;
+    text-align: left;
+  }
+
+  @include xl {
+    flex: 1 1 780px;
+  }
+  p {
+    margin-bottom: 0;
+
+    @include sm {
+      max-width: 517px;
+      margin: 0 auto;
+    }
+
+    @include md {
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+}
+
+.appSection {
+  background-color: $light22;
+
+  @include sm {
+    background-color: $light11;
+  }
+
+  @include md {
+    background-color: $light9;
+  }
+}
+
+.appBlock {
+  max-width: 1440px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+
+  @include xl {
+    max-width: 1800px;
+  }
+}
+
+.appBlockHeader {
+  display: flex;
+  flex-direction: column;
+
+  @include md {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    padding: 60px 50px 32px 85px;
+  }
+
+  @media (min-width: 1024px) and (min-height: 1238px) {
+    padding-top: 90px;
+  }
+
+  @media (min-width: 1024px) and (min-height: 1366px) {
+    padding-top: 50px;
+  }
+
+  @include lg {
+    padding: 60px 70px 45px;
+  }
+
+  @include xl {
+    padding: 60px 250px 45px;
+  }
+}
+
+.appSectionTitle {
+  display: flex;
+  justify-content: center;
+  padding: 30px 40px;
+  background-color: $light1;
+
+  @include sm {
+    width: 100%;
+    justify-content: center;
+    padding: 40px 0;
+  }
+
+  @include md {
+    flex: 1 1 465px;
+    margin-right: 70px;
+    width: auto;
+    justify-content: inherit;
+    padding: 0;
+    background-color: inherit;
+    margin-bottom: 0;
+  }
+
+  @include lg {
+    flex: 1 1 647px;
+    margin-right: 53px;
+  }
+
+  svg {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin: auto 25px auto 0;
+
+    @include md {
+      width: 26px;
+      height: 26px;
+      margin: 0 40px 0 0;
+    }
+
+    @include lg {
+      width: 30px;
+      height: 30px;
+    }
+
+    @include xl {
+      margin-right: 22px;
+    }
+
+    path {
+      fill: $red2;
+    }
+  }
+
+  h2 {
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 38px;
+    color: $dark1;
+
+    @include sm {
+      font-size: 24px;
+      line-height: 38px;
+    }
+
+    @include md {
+      padding-top: 5px;
+      font-size: 42px;
+      line-height: 66px;
+    }
+
+    @include lg {
+      font-size: 52px;
+      line-height: 83px;
+    }
+  }
+}
+
+.appHeaderText {
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 40px 60px;
+
+  @include sm {
+    max-width: 667px;
+    padding: 40px 50px 50px 100px;
+  }
+
+  @include md {
+    flex: 1 1 354px;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  @include lg {
+    flex: 1 1 600px;
+  }
+
+  a {
+    align-self: flex-end;
+
+    @include sm {
+      align-self: flex-start;
+    }
+
+    @include md {
+      align-self: flex-end;
+      margin-bottom: 55px;
+    }
+
+    @include lg {
+      margin-bottom: 50px;
+    }
+
+    @include xl {
+      margin-top: 18px;
+    }
+  }
+}
+
+.appBlockItalicText {
+  margin-bottom: 0;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: $dark3;
+
+  @include sm {
+    margin-bottom: 40px;
+  }
+
+  @include md {
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 38px;
+  }
+
+  @include lg {
+    font-size: 20px;
+    line-height: 38px;
+  }
+
+  @include xl {
+    top: 270px;
+    right: 215px;
+  }
+}
+
+.appSolutions {
+  padding: 0 25px 60px;
+
+  @include sm {
+    padding: 0 50px 50px 30px;
+  }
+
+  @include md {
+    padding: 0 85px 50px 50px;
+  }
+
+  @include lg {
+    padding: 0 70px 38px 85px;
+  }
+
+  @include xl {
+    padding: 0 250px 43px;
+  }
+}
+
+.solutionImgContainer {
+  position: relative;
+}
+
+.solutionTextContainer {
+  text-align: start;
+  @include sm {
+    flex: 1 1 218px;
+  }
+
+  @include md {
+    flex: auto;
+  }
+
+  span {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: $dark1;
+
+    @include sm {
+      margin-bottom: 40px;
+    }
+
+    @include md {
+      font-size: 22px;
+      line-height: 34px;
+    }
+
+    @include lg {
+      margin-bottom: 45px;
+      font-size: 26px;
+      line-height: 36px;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: $dark3;
+
+    @include md {
+      font-size: 19px;
+      line-height: 35px;
+    }
+  }
+}
+
+.bigImg {
+  box-shadow: -5px 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+.smallImg {
+  box-shadow: -5px 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+.solutionItem1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+
+  @include sm {
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
+
+  @include md {
+    margin-bottom: 30px;
+  }
+
+  @include lg {
+    margin-bottom: 0;
+  }
+
+  .solutionImgContainer {
+    width: 270px;
+    height: 227px;
+    margin: 0 auto 40px;
+
+    @include rwd(375) {
+      width: 325px;
+      height: 227px;
+    }
+
+    @include sm {
+      flex: 0 0 325px;
+      margin: 0 44px 0 0;
+    }
+
+    @include md {
+      flex: 0 0 444px;
+      width: 444px;
+      height: 311px;
+      margin-right: 70px;
+    }
+
+    @include lg {
+      flex: 0 0 660px;
+      width: 660px;
+      height: 460px;
+      margin-right: 150px;
+    }
+
+    @include xl {
+      margin-right: 165px;
+    }
+
+    .bigImg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 270px;
+      height: 154px;
+
+      @include rwd(375) {
+        width: 300px;
+        height: 178px;
+      }
+
+      @include sm {
+        left: auto;
+        right: 0;
+      }
+
+      @include md {
+        width: 410px;
+        height: 238px;
+      }
+
+      @include lg {
+        width: 637px;
+        height: 369px;
+      }
+    }
+
+    .smallImg {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 140px;
+      height: 79px;
+
+      @include sm {
+        left: 0;
+        right: auto;
+      }
+
+      @include md {
+        width: 180px;
+        height: 102px;
+      }
+
+      @include lg {
+        width: 342px;
+        height: 193px;
+      }
+    }
+  }
+
+  .solutionTextContainer {
+    padding: 0 10px 0 15px;
+
+    @include sm {
+      padding: 0;
+    }
+
+    @include md {
+      padding: 58px 0 0 0;
+    }
+
+    @include lg {
+      padding: 95px 55px 0 0;
+    }
+
+    @include xl {
+      padding-right: 0;
+    }
+  }
+}
+
+.solutionItem2 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+
+  @include sm {
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
+
+  @include md {
+    flex-direction: row-reverse;
+    margin-bottom: 65px;
+  }
+
+  @include lg {
+    margin: -38px 0 29px;
+  }
+
+  .solutionImgContainer {
+    width: 270px;
+    height: 169px;
+    margin: 0 auto 40px;
+
+    @include rwd(375) {
+      width: 325px;
+      height: 200px;
+    }
+
+    @include sm {
+      flex: 0 0 325px;
+      margin: 0 44px 0 0;
+    }
+
+    @include md {
+      flex: 0 0 373px;
+      width: 373px;
+      height: 226px;
+      margin: 0;
+    }
+
+    @include lg {
+      flex: 0 0 610px;
+      width: 610px;
+      height: 370px;
+    }
+
+    .bigImg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .solutionTextContainer {
+    padding: 0 10px 0 15px;
+
+    @include sm {
+      padding: 0;
+    }
+
+    @include md {
+      margin-right: 110px;
+      padding: 40px 0 0 50px;
+    }
+
+    @include lg {
+      margin-right: 120px;
+      padding: 143px 0 0 135px;
+    }
+
+    @include xl {
+      margin-right: 165px;
+      padding-left: 50px;
+    }
+  }
+}
+
+.solutionItem3 {
+  display: flex;
+  flex-direction: column;
+
+  @include sm {
+    flex-direction: row;
+  }
+
+  .solutionImgContainer {
+    width: 270px;
+    height: 169px;
+    margin: 0 auto 40px;
+
+    @include rwd(375) {
+      width: 325px;
+      height: 200px;
+    }
+
+    @include sm {
+      flex: 0 0 325px;
+      height: 227px;
+      margin: 0 44px 0 0;
+    }
+
+    @include md {
+      width: 444px;
+      height: 296px;
+      flex: 0 0 444px;
+      margin-right: 70px;
+    }
+
+    @include lg {
+      flex: 0 0 660px;
+      width: 660px;
+      height: 440px;
+      margin-right: 150px;
+    }
+
+    @include xl {
+      margin-right: 165px;
+    }
+
+    .bigImg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 245px;
+      height: 154px;
+
+      @include rwd(375) {
+        width: 310px;
+        height: 187px;
+      }
+
+      @include md {
+        width: 409px;
+        height: 245px;
+      }
+
+      @include lg {
+        width: 617px;
+        height: 370px;
+      }
+    }
+
+    .smallImg {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 102px;
+      height: 198px;
+      border-radius: 16px;
+      box-shadow: none;
+
+      @include sm {
+        height: 198px;
+      }
+
+      @include md {
+        width: 140px;
+        height: 272px;
+        border-radius: 22px;
+      }
+
+      @include lg {
+        width: 187px;
+        height: 363px;
+        border-radius: 26px;
+      }
+    }
+  }
+
+  .solutionTextContainer {
+    padding: 0 10px 0 15px;
+
+    @include sm {
+      padding: 0;
+    }
+
+    @include md {
+      padding: 41px 0 0 0;
+    }
+
+    @include lg {
+      padding: 114px 55px 0 0;
+    }
+
+    @include xl {
+      padding: 134px 0 0 0;
+    }
+  }
+}
+
+.expertiseSection {
+  background-color: $light24;
+
+  @include md {
+    background-color: $light20;
+  }
+}
+
+.expertiseBlock {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 40px;
+
+  @include sm {
+    padding: 60px 50px;
+  }
+
+  @include md {
+    padding: 70px 85px;
+  }
+
+  @include lg {
+    max-width: 1440px;
+    padding: 115px 110px 115px 85px;
+  }
+
+  @include xl {
+    max-width: 1800px;
+    padding: 115px 250px;
+  }
+}
+
+.expertiseContent {
+  position: relative;
+  padding-bottom: 98px;
+
+  @include sm {
+    padding: 0;
+    margin-bottom: 60px;
+  }
+
+  @include lg {
+    margin-bottom: 80px;
+    padding-left: 95px;
+  }
+
+  @include xl {
+    padding-left: 90px;
+  }
+}
+
+.expertiseHeader {
+  display: flex;
+  justify-content: space-between;
+
+  @include sm {
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+
+  @include md {
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+
+  @include lg {
+    margin-bottom: 3px;
+  }
+
+  span {
+    margin-bottom: 40px;
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 30px;
+    color: $dark3;
+
+    @include sm {
+      margin-bottom: 0;
+    }
+
+    @include md {
+      font-size: 22px;
+      line-height: 36px;
+    }
+
+    @include lg {
+      font-size: 28px;
+      line-height: 42px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      height: 4px;
+      width: 200px;
+      margin-top: 25px;
+      background-color: $dark3;
+
+      @include md {
+        height: 5px;
+      }
+
+      @include lg {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  a {
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+
+    @include sm {
+      position: static;
+      margin-top: 16px;
+    }
+
+    @include md {
+      margin: 0;
+    }
+
+    @include xl {
+      margin-right: 59px;
+    }
+  }
+}
+
+.expertiseText {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 29px;
+  color: $dark3;
+
+  @include md {
+    flex-direction: row;
+    font-size: 19px;
+    line-height: 35px;
+  }
+
+  @include lg {
+    justify-content: space-between;
+    font-size: 19px;
+    line-height: 35px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  p:first-child {
+    margin-bottom: 40px;
+
+    @include sm {
+      margin-bottom: 30px;
+    }
+
+    @include md {
+      width: auto;
+      flex: 1 1 370px;
+      padding-top: 35px;
+      margin: 0 83px 0 0;
+    }
+
+    @include lg {
+      flex: 1 1 490px;
+      margin-right: 140px;
+      padding-top: 37px;
+    }
+
+    @include xl {
+      margin-right: 200px;
+    }
+  }
+
+  p:last-child {
+    font-weight: 300;
+
+    @include md {
+      flex: 1 1 400px;
+      margin-bottom: 0;
+    }
+
+    @include lg {
+      flex: 1 1 520px;
+      margin-right: 40px;
+    }
+
+    @include xl {
+      margin-right: 0;
+    }
+  }
+}
+
+.approachBlock {
+  display: flex;
+  flex-direction: column;
+
+  @include lg {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.approachHeader {
+  display: flex;
+  margin-bottom: 40px;
+
+  @include sm {
+    margin-bottom: 30px;
+  }
+
+  @include md {
+    margin: 0 63px 50px 0;
+  }
+
+  @include lg {
+    flex: 1 1 680px;
+    margin: 0 60px 0 0;
+  }
+
+  @include xl {
+    margin-right: 100px;
+  }
+
+  svg {
+    flex-shrink: 0;
+    height: 18px;
+    width: 18px;
+    margin: auto 25px auto 0;
+
+    @include sm {
+      height: 20px;
+      width: 20px;
+    }
+
+    @include md {
+      height: 26px;
+      width: 26px;
+      margin-right: 40px;
+    }
+
+    @include lg {
+      height: 30px;
+      width: 30px;
+      margin-right: 60px;
+    }
+
+    path {
+      fill: $red2;
+    }
+  }
+
+  h2 {
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 36px;
+    color: $dark1;
+
+    @include sm {
+      font-size: 24px;
+    }
+
+    @include md {
+      font-size: 42px;
+      line-height: 66px;
+    }
+
+    @include lg {
+      font-size: 52px;
+      line-height: 83px;
+      padding: 0;
+    }
+  }
+}
+
+.approachText {
+  padding-left: 10px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+
+  @include sm {
+    padding-left: 45px;
+  }
+
+  @include md {
+    padding: 0 50px;
+    font-size: 26px;
+    line-height: 44px;
+  }
+
+  @include lg {
+    flex: 1 1 515px;
+    padding: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.dataSecuritySection {
+  background-color: $light9;
+}
+
+.dataSecurity {
+  padding: 35px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include md {
+    padding: 50px 0;
+  }
+
+  @include lg {
+    padding: 65px 0;
+  }
+
+  @include xl {
+    padding-bottom: 51px;
+  }
+
+  h2 {
+    margin-bottom: 25px;
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: $dark3;
+
+    @include sm {
+      font-size: 20px;
+    }
+
+    @include md {
+      margin-bottom: 30px;
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    @include lg {
+      margin-bottom: 35px;
+      font-size: 28px;
+      line-height: 44px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 150px;
+      height: 3px;
+      margin: 18px auto 0;
+      background-color: $dark3;
+
+      @include sm {
+        width: 200px;
+      }
+
+      @include md {
+        width: 200px;
+        height: 5px;
+        margin-top: 25px;
+      }
+
+      @include lg {
+        margin-top: 29px;
+      }
+    }
+  }
+
+  p {
+    width: 300px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 23px;
+    text-align: center;
+    color: $dark3;
+
+    @include sm {
+      width: auto;
+      margin-bottom: 18px;
+      font-size: 14px;
+    }
+
+    @include md {
+      margin-bottom: 40px;
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    @include lg {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
+
+.containerInsights {
+  margin: 0 auto;
+  background-color: $light11;
+
+  @include lg {
+    max-width: 1440px;
+  }
+
+  @include xl {
+    max-width: 1800px;
+  }
+}
