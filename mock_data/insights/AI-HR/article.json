@@ -1,0 +1,16 @@
+{
+  "id": 7,
+  "title": "AI Meets HR: The New Era of Global Team Management Is Here",
+  "url": "insight/AI-HR",
+  "description": "AI is transforming HR practices, from recruitment to performance management, and helping global teams work more efficiently. Understand better the AI’s role in streamlining processes, improving decision-making, and enhancing employee engagement for a more effective and connected global workforce.",
+  "categories": ["TECHNOLOGY", "HR", "TEAM_MANAGEMENT"],
+  "readingTime": 6,
+  "creationDate": "2024-01-20",
+  "contentFile": "/mock_data/insights/AI-HR/content.md",
+  "mainImage": {
+    "url": "/mock_data/insights/AI_HR/image.jpg"
+  },
+  "previewImage": {
+    "url": "/mock_data/insights/AI-HR/image.jpg"
+  }
+}

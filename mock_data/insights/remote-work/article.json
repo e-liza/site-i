@@ -1,0 +1,16 @@
+{
+  "id": 3,
+  "title": "How to Lead Remote Teams Around the World Like a Pro",
+  "url": "/insight/remote-work",
+  "description": "Learn how to effectively lead remote teams across different time zones and cultures. This guide covers essential strategies for fostering strong communication, building trust, embracing diversity, and setting clear goals to help you manage your global workforce like a pro.",
+  "categories": ["LEADERSHIP", "TEAM_MANAGEMENT", "WORK_AND_LIFE"],
+  "readingTime": 8,
+  "creationDate": "2025-03-20",
+  "contentFile": "/mock_data/insights/remote-work/content.md",
+  "mainImage": {
+    "url": "/mock_data/insights/remote-work/image.jpg"
+  },
+  "previewImage": {
+    "url": "/mock_data/insights/remote-work/image.jpg"
+  }
+}

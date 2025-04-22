@@ -1,0 +1,16 @@
+{
+  "id": 4,
+  "title": "SaaS, Slack & Sanity: The Modern Tech Stack for Global HR Leaders",
+  "url": "/insight/saas-slack",
+  "description": "How modern HR tools like SaaS platforms and Slack are streamlining global team management, enhancing collaboration, and promoting employee well-being across borders.",
+  "categories": ["TECHNOLOGY", "HR", "LEADERSHIP"],
+  "readingTime": 7,
+  "creationDate": "2024-04-08",
+  "contentFile": "/mock_data/insights/saas-slack/content.md",
+  "mainImage": {
+    "url": "/mock_data/insights/saas-slack/image.jpg"
+  },
+  "previewImage": {
+    "url": "/mock_data/insights/saas-slack/image.jpg"
+  }
+}
