@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useHistory } from 'react-router';
+import { useNavigate, useLocation } from 'react-router-dom'; // ✅ Import useLocation
 import smoothscroll from 'smoothscroll-polyfill';
 
 import Header from '../Header/Header';
@@ -10,12 +10,13 @@ import styles from './Layout.module.scss';
 
 smoothscroll.polyfill();
 
-const Layout: React.FC = ({ children }) => {
-  const history = useHistory();
+const Layout: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
+  const navigate = useNavigate(); // ✅ Renamed 'history' to 'navigate'
+  const location = useLocation(); // ✅ Correct way to access pathname
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [history.location.pathname]);
+  }, [location.pathname]); // ✅ Fixed dependency
 
   return (
     <div>
@@ -25,4 +26,5 @@ const Layout: React.FC = ({ children }) => {
     </div>
   );
 };
+
 export default Layout;

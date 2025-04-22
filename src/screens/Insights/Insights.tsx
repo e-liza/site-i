@@ -132,3 +132,75 @@ const Insights: React.FC = () => {
   );
 };
 export default Insights;
+// import React, { useEffect, useState } from 'react';
+// import { useParams, Link } from 'react-router-dom';
+
+// import { insightsApi, IInsight } from '../../api/insights';
+
+// const Insights: React.FC = () => {
+//   const { title } = useParams<{ title?: string }>();
+//   const [insights, setInsights] = useState<IInsight[]>([]);
+//   const [selectedArticle, setSelectedArticle] = useState<IInsight | null>(null);
+
+//   useEffect(() => {
+//     if (title) {
+//       insightsApi
+//         .getInsightByTitle(title)
+//         .then(setSelectedArticle)
+//         .catch(() => setSelectedArticle(null));
+//     } else {
+//       insightsApi
+//         .getInsights(1)
+//         .then((response) => setInsights(response.insights))
+//         .catch(() => setInsights([]));
+//     }
+//   }, [title]);
+
+//   if (title && selectedArticle) {
+//     return (
+//       <div>
+//         <h1>{selectedArticle.title}</h1>
+//         {selectedArticle.mainImage?.url && (
+//           <img src={selectedArticle.mainImage.url} alt={selectedArticle.title} />
+//         )}
+//         <p>{selectedArticle.content}</p>
+
+//         {selectedArticle.relatedInsights?.length ? (
+//           <>
+//             <h3>Related Insights</h3>
+//             <ul>
+//               {selectedArticle.relatedInsights.map((related) => (
+//                 <li key={related.id}>
+//                   <Link to={`/insight/${related.url}`}>{related.title}</Link>
+//                 </li>
+//               ))}
+//             </ul>
+//           </>
+//         ) : null}
+
+//         <Link to="/insights">⬅ Back to all insights</Link>
+//       </div>
+//     );
+//   }
+
+//   return (
+//     <div>
+//       <h1>Insights</h1>
+//       <ul>
+//         {insights.map((insight) => (
+//           <li key={insight.id}>
+//             <Link to={`/insight/${insight.url}`}>
+//               {insight.previewImage?.url && (
+//                 <img src={insight.previewImage.url} alt={insight.title} width="100" />
+//               )}
+//               <h2>{insight.title}</h2>
+//               <p>{insight.description}</p>
+//             </Link>
+//           </li>
+//         ))}
+//       </ul>
+//     </div>
+//   );
+// };
+
+// export default Insights;

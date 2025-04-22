@@ -51,7 +51,9 @@
   text-transform: uppercase;
   color: $dark3;
   pointer-events: none;
-  transition: top 0.3s, font-size 0.3s;
+  transition:
+    top 0.3s,
+    font-size 0.3s;
 }
 
 .active {

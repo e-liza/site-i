@@ -21,3 +21,13 @@
     clear: both;
   }
 }
+
+// Large tablets and desktops
+$screen-xl-min: 1440px;
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}

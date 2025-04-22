@@ -330,11 +330,11 @@
   }
 
   @include md {
-    max-width: 560px;
+    max-width: 760px;
   }
 
   @include lg {
-    max-width: 680px;
+    max-width: 980px;
   }
 
   p {
@@ -538,6 +538,7 @@
     position: relative;
     padding: 0 0 0 28px;
     margin-bottom: 30px;
+    line-height: 1.7;
 
     &:before {
       content: '';
@@ -922,4 +923,57 @@ i {
   @include md {
     height: 20px;
   }
+}
+
+// Notion-like Table Styling
+
+// General table styling
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif; // Mimic Notion's font style
+}
+
+// Table headers
+th {
+  background-color: #f4f6f8; // Light grey background for headers
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border: 1px solid #e0e0e0; // Light grey border to separate columns
+  border-radius: 6px 6px 0 0; // Rounded top corners
+}
+
+// Table body cells
+td {
+  background-color: #ffffff; // White background for table rows
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 400;
+  color: #555; // Slightly lighter text color for content
+  border: 1px solid #e0e0e0; // Light grey border to separate cells
+  border-radius: 0 0 6px 6px; // Rounded bottom corners
+}
+
+// Alternate row coloring (zebra striping effect)
+table tr:nth-child(even) {
+  background-color: #f9f9f9; // Light grey alternate rows
+}
+
+// Hover effect for rows
+table tr:hover {
+  background-color: #f1f1f1; // Slightly darker on hover
+}
+
+// Border radius for table corners
+table {
+  border-radius: 8px; // Rounded corners for the whole table
+  overflow: hidden; // Ensures the rounded corners show properly
+}
+
+// Adding a subtle box shadow for a cleaner look
+table {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Soft shadow for depth
 }

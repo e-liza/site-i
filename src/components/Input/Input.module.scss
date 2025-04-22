@@ -1,0 +1,59 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.root {
+  height: 40px;
+  padding: 7px 16px;
+  border: 0.75px solid $light10;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  color: $dark3;
+  border-radius: 0;
+
+  &:global(.ant-input-affix-wrapper-focused),
+  &:global(.ant-input-affix-wrapper-focused):focus {
+    border-color: $green9;
+    box-shadow: none;
+  }
+
+  &:global(.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled)):hover {
+    border-color: $green9;
+    box-shadow: none;
+    z-index: 0;
+  }
+
+  @include effects {
+    border-color: $green9;
+    box-shadow: none;
+    z-index: 0;
+  }
+
+  &[disabled] {
+    background-color: $light20;
+    border-color: $light10;
+
+    @include effects {
+      border-color: $light10;
+      box-shadow: none;
+    }
+  }
+
+  &:global(.ant-input-lg) {
+    height: 54px;
+    padding: 19px 18px;
+    font-size: 14px;
+  }
+
+  &:global(.ant-input-sm) {
+    height: 30px;
+    padding: 7px 12px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  &:global(.ant-form-item-has-error) {
+    border-width: 2px;
+  }
+}

@@ -41,7 +41,10 @@ const MainInsight: React.FC<IInsight> = ({
             creationDate,
             i18n.language,
           )} / ${readingTime} min read`}</span>
-          <Link className={styles.link} to={Routes.Article.replace(':title', url)}>
+          <Link
+            className={styles.link}
+            to={Routes.Article.replace(':title', url.replace(/^\/+/, ''))}
+          >
             {t('layout.insights.mainInsight.link')}
           </Link>
         </div>

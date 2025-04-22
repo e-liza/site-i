@@ -1,6 +1,5 @@
 import React from 'react';
 import { Form, Input } from 'antd';
-import { FormComponentProps } from 'antd/lib/form';
 import { useTranslation } from 'react-i18next';
 
 import Button from '../Button/Button';
@@ -11,42 +10,43 @@ interface ISubscriptionData {
   email: string;
 }
 
-interface ISubscriptionProps extends FormComponentProps {
+interface ISubscriptionProps {
   onAccept(object: ISubscriptionData): void;
 }
 
-const SubscriptionComponent: React.FC<ISubscriptionProps> = ({ form, onAccept }) => {
-  const { getFieldDecorator } = form;
-  const [t] = useTranslation();
+const Subscription: React.FC<ISubscriptionProps> = ({ onAccept }) => {
+  const { t } = useTranslation();
+  const [form] = Form.useForm();
 
-  const handleSubmit = () => {
-    form.validateFieldsAndScroll((err, values) => {
-      if (!err) {
-        onAccept(values);
-      }
-    });
+  const handleSubmit = async () => {
+    try {
+      const values = await form.validateFields();
+      onAccept(values);
+    } catch (errorInfo) {
+      console.error('Validation Failed:', errorInfo);
+    }
   };
 
   return (
-    <Form className={styles.subscription}>
-      <Form.Item extra={t('layout.subscription.inputField.extra')}>
-        {getFieldDecorator('email', {
-          rules: [
-            {
-              type: 'email',
-              message: t('layout.form.fields.errors.email.notCorrect'),
-            },
-            {
-              required: true,
-              message: t('layout.form.fields.errors.email.notFilled'),
-            },
-          ],
-        })(
-          <Input
-            className={styles.inputField}
-            placeholder={t('layout.subscription.inputField.name')}
-          />,
-        )}
+    <Form form={form} className={styles.subscription}>
+      <Form.Item
+        name="email"
+        extra={t('layout.subscription.inputField.extra')}
+        rules={[
+          {
+            type: 'email',
+            message: t('layout.form.fields.errors.email.notCorrect'),
+          },
+          {
+            required: true,
+            message: t('layout.form.fields.errors.email.notFilled'),
+          },
+        ]}
+      >
+        <Input
+          className={styles.inputField}
+          placeholder={t('layout.subscription.inputField.name')}
+        />
       </Form.Item>
       <Form.Item>
         <Button
@@ -58,8 +58,5 @@ const SubscriptionComponent: React.FC<ISubscriptionProps> = ({ form, onAccept })
     </Form>
   );
 };
-const Subscription = Form.create<ISubscriptionProps>({ name: 'subscription' })(
-  SubscriptionComponent,
-);
 
 export default Subscription;

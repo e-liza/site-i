@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { NavLink, useRouteMatch } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import { ReactComponent as DotsIcon } from '../../../../assets/dots-icon.svg';
@@ -27,25 +27,20 @@ interface IMenuItem {
 const Menu = () => {
   const [t] = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
-  const [activeItem, setActiveItem] = useState<IMenuItem>({
-    title: '',
-    route: '',
-  });
+  const [activeItem, setActiveItem] = useState<IMenuItem>(menu[0]);
   const [otherItems, setOtherItems] = useState<IMenuItem[]>([]);
-  const match = useRouteMatch('/solutions/:solution');
 
-  const matchUrl = match?.url;
+  const { pathname } = useLocation(); // ✅ REPLACING useMatch WITH useLocation
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   useEffect(() => {
-    let active: IMenuItem = menu[0];
+    let active = menu[0];
     const others: IMenuItem[] = [];
 
     menu.forEach((item) => {
-      if (item.route === matchUrl) {
+      if (pathname.startsWith(item.route)) {
+        // ✅ FIXED PATH MATCHING
         active = item;
       } else {
         others.push(item);
@@ -54,7 +49,7 @@ const Menu = () => {
 
     setActiveItem(active);
     setOtherItems(others);
-  }, [matchUrl]);
+  }, [pathname]);
 
   return (
     <div className={styles.root}>
@@ -71,8 +66,8 @@ const Menu = () => {
               <div className={styles.activeItem}>{t(activeItem.title)}</div>
               <div className={styles.otherItems}>
                 {otherItems.map(({ title, route }) => (
-                  <div className={styles.linkContainer}>
-                    <NavLink key={route} to={route} className={styles.link} onClick={toggleMenu}>
+                  <div className={styles.linkContainer} key={route}>
+                    <NavLink to={route} className={styles.link} onClick={toggleMenu}>
                       {t(title)}
                     </NavLink>
                   </div>
@@ -90,8 +85,9 @@ const Menu = () => {
               <div key={route} className={styles.tab}>
                 <NavLink
                   to={route}
-                  activeClassName={styles.activeTabLink}
-                  className={styles.tabLink}
+                  className={({ isActive }) =>
+                    isActive ? `${styles.tabLink} ${styles.activeTabLink}` : styles.tabLink
+                  }
                 >
                   {t(title)}
                 </NavLink>

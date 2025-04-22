@@ -9,23 +9,28 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: 'en',
-    whitelist: ['en'],
+    supportedLngs: ['en'], // ✅ Correct key instead of 'whitelist'
     debug: false,
     interpolation: {
       escapeValue: false,
     },
     backend: {
-      loadPath: '/locales/{{lng}}.json',
+      loadPath: '/locales/{{lng}}.json', // ✅ Fix the incorrect path
       crossDomain: false,
       withCredentials: false,
+      queryStringParams: { v: new Date().getTime() }, // 👈 Prevents caching issues
     },
     detection: {
       caches: [],
     },
   });
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
-// @ts-ignore
+declare global {
+  interface Window {
+    changeLang: (lng: string) => void;
+  }
+}
+
 window.changeLang = (lng: string) => {
   i18n.changeLanguage(lng);
 };

@@ -1,0 +1,39 @@
+@import 'src/styles/variables';
+
+.root {
+  display: inline-block;
+  color: $green9;
+  font-size: inherit;
+  transition: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $dark3;
+
+    svg {
+      fill: $dark3;
+    }
+  }
+}
+
+.rootDisabled {
+  color: $light21;
+  cursor: not-allowed;
+  pointer-events: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $light21;
+
+    svg {
+      fill: $light21;
+    }
+  }
+}
+
+.rootActive {
+  cursor: default;
+  color: $dark3;
+}

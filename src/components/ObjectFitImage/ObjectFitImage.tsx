@@ -23,7 +23,7 @@ const ObjectFitImage: React.FC<IObjectFitImageProps> = ({
   fit,
   position = 'center',
 }) => {
-  const callbackRef = useCallback((node) => {
+  const callbackRef = useCallback((node: HTMLImageElement | null) => {
     if (node !== null) {
       objectFitImages(node);
     }

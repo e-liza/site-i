@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { useHistory } from 'react-router';
+import { useNavigate } from 'react-router-dom'; // Correct import for v7
 
 import Button from '../../../../components/Button/Button';
 import { IPlan as IPlanProps } from '../../../../constants/plans';
@@ -10,7 +10,8 @@ import styles from './Plan.module.scss';
 
 const Plan: React.FC<IPlanProps> = ({ name, currency, description, pricePerMonth, type }) => {
   const [t] = useTranslation();
-  const history = useHistory();
+  const navigate = useNavigate(); // Correct variable name and function for v7
+
   return (
     <div className={styles.root}>
       <div className={styles.header}>
@@ -41,7 +42,7 @@ const Plan: React.FC<IPlanProps> = ({ name, currency, description, pricePerMonth
             className={styles.button}
             type="primary"
             name={t('layout.plans.getInTouch')}
-            onClick={() => history.push(Routes.GetInTouch)}
+            onClick={() => navigate(Routes.GetInTouch)} // ✅ Corrected navigation for v7
           />
         </div>
       </div>

@@ -207,3 +207,14 @@
     padding: 0 0 0 80px;
   }
 }
+
+@media (min-width: 1440px) and (max-width: 1700px) {
+  .header{
+    margin-bottom: 40px;
+    padding: 10px 0 0 210px;
+    }
+    .footer{
+      padding: 0 0 0 210px;
+    }
+}
+

@@ -1,4 +1,7 @@
 export const Routes = {
+  SignIn: '/sign-in',
+  ResetPassword: '/reset',
+  ConfirmEmailChange: '/confirm-email-change/:token',
   Home: '/',
   AboutUs: '/about-us',
   GetInTouch: '/get-in-touch',
@@ -7,7 +10,7 @@ export const Routes = {
   Insights: '/insights',
   Solutions: {
     Root: '/solutions',
-    Overview: '/solutions/overview',
+    Overview: '/solutions/overview', // ✅ FIXED - Prefixed with "/solutions/"
     Employee: '/solutions/employee',
     Payroll: '/solutions/payroll',
     Company: '/solutions/company',
@@ -17,7 +20,7 @@ export const Routes = {
   },
   DemoRequest: '/demo-request',
   ServiceRequest: '/service-request',
-  Article: '/:title',
+  Article: '/insights/:title',
   Careers: '/careers',
   JobDescription: '/job-description/:id',
   Security: '/security',

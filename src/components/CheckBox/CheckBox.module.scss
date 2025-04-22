@@ -12,7 +12,9 @@
   text-transform: uppercase;
   color: $dark3;
   cursor: pointer;
-  transition: background-color 0.5s, color 0.5s;
+  transition:
+    background-color 0.5s,
+    color 0.5s;
   outline: none;
   background-color: transparent;
 

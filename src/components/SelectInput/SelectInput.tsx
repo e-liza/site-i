@@ -1,5 +1,6 @@
 import React from 'react';
 import { Select } from 'antd';
+import type { BaseSelectRef } from 'rc-select'; // Correct type for ref
 import classNames from 'classnames';
 
 import { ReactComponent as ArrowIcon } from '../../assets/selectArrow.svg';
@@ -28,12 +29,11 @@ interface IInputFieldState {
 }
 
 class SelectInput extends React.Component<IInputFieldProps, IInputFieldState> {
-  private selectRef: Select<string> | null;
+  private selectRef = React.createRef<BaseSelectRef>(); // ✅ Corrected type
 
   constructor(props: IInputFieldProps) {
     super(props);
     this.state = { active: false, isFocused: false };
-    this.selectRef = null;
   }
 
   handleChange = (value: string) => {
@@ -42,21 +42,14 @@ class SelectInput extends React.Component<IInputFieldProps, IInputFieldState> {
   };
 
   toggleFocus = () => {
-    this.setState({
-      isFocused: !this.state.isFocused,
-    });
+    this.setState((prevState) => ({
+      isFocused: !prevState.isFocused,
+    }));
   };
 
   render() {
-    const {
-      mode,
-      maxTagTextLength,
-      maxTagCount,
-      selectItems,
-      value,
-      name,
-      showSearch,
-    } = this.props;
+    const { mode, maxTagTextLength, maxTagCount, selectItems, value, name, showSearch } =
+      this.props;
     const hasInput = mode;
     return (
       <div className={styles.inputContainer}>
@@ -65,13 +58,13 @@ class SelectInput extends React.Component<IInputFieldProps, IInputFieldState> {
             type="text"
             onFocus={() => {
               this.toggleFocus();
-              this.selectRef?.focus();
+              this.selectRef.current?.focus();
             }}
             className={styles.hidden}
           />
         )}
         <Select
-          ref={(ref) => (this.selectRef = ref)}
+          ref={this.selectRef}
           showSearch={showSearch}
           onChange={this.handleChange}
           className={classNames(styles.formSelect, {

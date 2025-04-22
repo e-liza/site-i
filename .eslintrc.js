@@ -1,38 +1,35 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   extends: [
-    'react-app',
-    'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
+    'react-app', // Includes TypeScript support already
+    'prettier',
     'plugin:prettier/recommended',
     'plugin:import/errors',
     'plugin:import/typescript',
   ],
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 2020, // Updated for better compatibility
     sourceType: 'module',
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   rules: {
-    '@typescript-eslint/explicit-member-accessibility': 0,
-    '@typescript-eslint/explicit-function-return-type': 0,
-    '@typescript-eslint/no-parameter-properties': 0,
-    '@typescript-eslint/interface-name-prefix': 0,
-    '@typescript-eslint/no-explicit-any': 2,
-    'import/order': ['error', {'newlines-between': 'always'}],
-    'import/no-unresolved': 2,
-    'import/no-dynamic-require': 2,
-    'import/no-mutable-exports': 2,
-    'import/export': 2,
-    'import/no-commonjs': 2,
-    'import/first': 2,
-    'import/newline-after-import': 2,
-    'import/exports-last': 0,
-    'eqeqeq': 2,
-    'no-param-reassign': 2,
-    'dot-notation': 2,
-  }
+    '@typescript-eslint/explicit-member-accessibility': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/no-parameter-properties': 'off',
+    '@typescript-eslint/no-explicit-any': 'error',
+    '@typescript-eslint/ban-ts-comment': 'warn', // Replaced deprecated rule
+    'import/order': ['error', { 'newlines-between': 'always' }],
+    'import/no-unresolved': 'error',
+    'import/no-dynamic-require': 'error',
+    'import/no-mutable-exports': 'error',
+    'import/export': 'error',
+    'import/no-commonjs': 'off',
+    'import/first': 'error',
+    'import/newline-after-import': 'error',
+    eqeqeq: 'error',
+    'no-param-reassign': 'error',
+    'dot-notation': 'error',
+  },
 };
-

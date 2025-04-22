@@ -125,7 +125,9 @@
   padding: 45px 40px 0;
   z-index: 10000;
   background-color: $light1;
-  box-shadow: inset 1px 20px 15px -20px rgba(0, 0, 0, 0.1), 0px 7px 15px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    inset 1px 20px 15px -20px rgba(0, 0, 0, 0.1),
+    0px 7px 15px rgba(0, 0, 0, 0.1);
 
   @include rwd(1024) {
     width: 600px;

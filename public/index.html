@@ -1,18 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <title>IVY</title>
     <% if (process.env.REACT_APP_COOKIE_BOT_KEY) { %>
-      <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="%REACT_APP_COOKIE_BOT_KEY%" data-blockingmode="auto" type="text/javascript"></script>
-      <script id="CookieDeclaration" src="https://consent.cookiebot.com/%REACT_APP_COOKIE_BOT_KEY%/cd.js" type="text/javascript" async></script>
+    <script
+      id="Cookiebot"
+      src="https://consent.cookiebot.com/uc.js"
+      data-cbid="%REACT_APP_COOKIE_BOT_KEY%"
+      data-blockingmode="auto"
+      type="text/javascript"
+    ></script>
+    <script
+      id="CookieDeclaration"
+      src="https://consent.cookiebot.com/%REACT_APP_COOKIE_BOT_KEY%/cd.js"
+      type="text/javascript"
+      async
+    ></script>
     <% } %>
   </head>
   <body>
     <div id="root"></div>
+    <div id="portal-root"></div>
   </body>
 </html>

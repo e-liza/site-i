@@ -1,9 +1,9 @@
 import React from 'react';
-
 import styles from './InfoBlock.module.scss';
 
 interface IInfoBlockProps {
   images: string[];
+  children?: React.ReactNode; // ✅ Fix: Add children prop
 }
 
 const InfoBlock: React.FC<IInfoBlockProps> = ({ children, images }) => (

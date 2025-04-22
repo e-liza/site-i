@@ -565,7 +565,7 @@
         "title": "Open Positions",
         "link": "see job description"
       },
-      "nothingToShow": "Sorry, we have nothing to show you here"
+      "nothingToShow": "We don't have any open positions at the moment"
     },
     "jobDescription": {
       "emplType": "employment type",

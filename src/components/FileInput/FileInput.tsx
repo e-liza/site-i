@@ -32,7 +32,9 @@ class FileInput extends React.Component<IFileInputProps> {
     return (
       <div className={styles.buttonContainer}>
         <input
-          ref={(ref) => (this.fileInput = ref)}
+          ref={(ref) => {
+            this.fileInput = ref;
+          }}
           id={this.props.id}
           accept={this.props.acceptFileTypes}
           type="file"

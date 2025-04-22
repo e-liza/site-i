@@ -29,4 +29,4 @@ pipelines:
     dev:
       - step:
           script:
-          - echo "Skip this branch"
+            - echo "Skip this branch"

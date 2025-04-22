@@ -1,13 +1,15 @@
 @import '../../styles/variables';
 @import '../../styles/breakpoints';
 
+
+
 .formContainer {
   position: relative;
 }
 
 .form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 
   :global(.ant-form-explain) {
     margin-top: 8px;
@@ -151,7 +153,41 @@
   height: unset;
 }
 
-.сontrolsContainer {
+// .сontrolsContainer {
+//   display: flex;
+//   flex-direction: column-reverse;
+//   align-items: center;
+//   margin-top: 30px;
+
+//   @include sm {
+//     flex-direction: row;
+//     justify-content: space-between;
+//   }
+
+//   @include md {
+//     margin-top: 40px;
+//   }
+
+//   .sendButton {
+//     margin-bottom: 15px;
+
+//     @include sm {
+//       max-width: 120px;
+//       margin-bottom: 0;
+//     }
+//   }
+
+//   .link {
+//     max-width: 200px;
+
+//     @include sm {
+//       max-width: 100%;
+//     }
+//   }
+// }
+
+
+.controlsContainer {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -184,6 +220,7 @@
   }
 }
 
+
 .link {
   font-weight: 300;
   font-size: 10px;
@@ -205,7 +242,7 @@
   align-items: center;
 }
 
-.sendButton {
+.controlsContainer button{
   width: 100%;
   height: 40px !important;
   margin-bottom: 15px;
@@ -219,6 +256,7 @@
   color: $dark3 !important;
   border: 1px solid $dark3 !important;
   box-sizing: border-box !important;
+  border-radius: 0% !important;
 
   @include rwd(1024) {
     width: auto;
@@ -227,7 +265,8 @@
   }
 
   &:active,
-  &:focus {
+  &:focus,
+  &:hover {
     border-color: $light29 !important;
     background-color: $light29 !important;
   }
@@ -240,4 +279,68 @@
   width: 100%;
   background-color: $light1;
   opacity: 0.5;
+}
+.successOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($dark3, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+  .successModal {
+    background-color: $light1;
+    padding: 40px 60px;
+    border-radius: 0.3px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba($dark3, 0.2);
+    animation: fadeInUp 0.4s ease-out;
+
+    // Flexbox to align the icon and heading horizontally at the center
+    display: flex;
+    flex-direction: column;  // This ensures the icon and h2 are aligned vertically in the flex container
+    align-items: center;     // Centers the icon and h2 horizontally
+
+    .iconHeadingContainer {
+      display: flex;
+      align-items: center;    // Centers both icon and heading vertically
+      justify-content: center; // Centers them horizontally
+      margin-bottom: 20px; // Space between the heading and the paragraph
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+      color: #1a4c53;
+      margin-left: 12px;
+      margin-top: 0;
+      font-family: Poppins;
+    }
+
+    svg {
+      color: $green8;
+      font-size: 38px;
+    }
+
+    p {
+      font-size: 16px;
+      color: $dark3;
+      margin-top: 16px;
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

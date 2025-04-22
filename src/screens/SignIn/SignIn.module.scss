@@ -1,0 +1,99 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.root {
+  min-height: 100vh;
+  background-color: $light1;
+  display: flex;
+
+  &::before {
+    content: '';
+    @include xl {
+      width: 50%;
+      background-color: $light22;
+    }
+  }
+
+  &::after {
+    content: '';
+    @include xl {
+      width: 50%;
+      background-color: $light1;
+    }
+  }
+}
+
+.loginFormContainer {
+  background-color: $light22;
+  flex: 1 1 663px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 117px 24px;
+  min-height: 100vh;
+  @include xl {
+    min-width: 663px;
+  }
+}
+
+.signInTitle {
+  font-family: $title-font;
+  font-weight: 700;
+  margin-bottom: 31px;
+  font-size: 35px;
+  line-height: 68px;
+}
+
+.form {
+  margin-right: 31px;
+}
+
+.loginImgContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 1 777px;
+  padding: 34px 25px 39px 23px;
+  min-height: 100vh;
+  @include xl {
+    min-width: 777px;
+  }
+}
+
+.loginImgContainer img {
+  width: 100%;
+}
+
+.solutionsLink {
+  display: block;
+  align-self: flex-end;
+  border-left: solid 7px $red1;
+  margin: 0 13px 30px auto;
+  padding: 6px 13px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: $blue10;
+}
+
+.contactUs {
+  align-self: flex-end;
+  margin: 0 26px 0 auto;
+}
+
+.contactUs span {
+  margin-right: 25px;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  line-height: 19px;
+  color: $gray5;
+}
+
+.contactUs a {
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $blue10;
+}

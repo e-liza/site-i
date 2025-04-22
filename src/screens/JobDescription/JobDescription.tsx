@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useHistory, RouteChildrenProps } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { notification, Alert } from 'antd';
 
@@ -14,45 +14,45 @@ import Spinner from '../../components/Spinner/Spinner';
 
 import styles from './JobDescription.module.scss';
 
-const JobPosition: React.FC<RouteChildrenProps<{ id: string }>> = ({ match }) => {
+const JobPosition: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<Error | null>(null);
   const [jobData, setJobData] = useState<IPositionDetailed | null>(null);
   const [submitStatus, setSubmitStatus] = useState(false);
   const [t] = useTranslation();
-  const history = useHistory();
-  const id = match ? parseInt(match.params.id, 10) : null;
+  const navigate = useNavigate();
+  const { id } = useParams<{ id: string }>();
+
+  const jobId = id ? parseInt(id, 10) : null;
 
   useEffect(() => {
-    if (id) {
+    if (jobId) {
       setIsLoading(true);
       setError(null);
-      getPositionById(id)
+      getPositionById(jobId)
         .then(setJobData)
         .catch((err) => {
           setError(err);
-          history.push(Routes.Careers);
+          navigate(Routes.Careers);
         })
         .finally(() => {
           setIsLoading(false);
         });
     } else {
-      history.push(Routes.Careers);
+      navigate(Routes.Careers);
     }
-  }, [history, id]);
+  }, [navigate, jobId]);
 
   const handleSubmit = (
     data: IJobDescriptionFormData,
     captchaValue: string,
     finishedLoadCallback: () => void,
   ) => {
-    if (!id) {
-      return;
-    }
+    if (!jobId) return;
 
     postJobPositionFormData({
       ...data,
-      positionId: id,
+      positionId: jobId,
       recaptchaToken: captchaValue,
     })
       .then(() => {
@@ -84,9 +84,9 @@ const JobPosition: React.FC<RouteChildrenProps<{ id: string }>> = ({ match }) =>
               <div className={styles.infoBlock}>
                 <div className={styles.info}>
                   <span className={styles.location}>{`${jobData.city} / ${jobData.country}`}</span>
-                  <span className={styles.employmentType}>{`${t(
-                    'layout.jobDescription.emplType',
-                  )}: ${jobData.employmentType}`}</span>
+                  <span
+                    className={styles.employmentType}
+                  >{`${t('layout.jobDescription.emplType')}: ${jobData.employmentType}`}</span>
                 </div>
               </div>
               <div

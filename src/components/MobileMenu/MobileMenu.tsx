@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import classNames from 'classnames';
-import { Link, useHistory, useLocation } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import Button from '../Button/Button';
@@ -17,8 +17,9 @@ interface IMobileMenu {
 
 const MobileMenu: React.FC<IMobileMenu> = ({ active, onItemClick }) => {
   const [t] = useTranslation();
-  const history = useHistory();
+  const navigate = useNavigate();
   const location = useLocation();
+
   const menu = useMemo(
     () =>
       mainMenu.map((menuItem: IMenuItem) => (
@@ -58,8 +59,8 @@ const MobileMenu: React.FC<IMobileMenu> = ({ active, onItemClick }) => {
           type="primary"
           name={t('layout.headerButton.requestDemo')}
           onClick={() => {
-            onItemClick && onItemClick();
-            history.push(Routes.DemoRequest);
+            if (onItemClick) onItemClick();
+            navigate(Routes.DemoRequest); // ✅ Corrected navigation
           }}
         />
       </div>

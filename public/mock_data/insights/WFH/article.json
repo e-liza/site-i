@@ -1,0 +1,16 @@
+{
+  "id": 6,
+  "title": "WFH Was Just the Start: What’s Next for the Global Workforce?",
+  "url": "/insight/WFH",
+  "description": "Remote work was just the beginning. Discover 10 key trends reshaping the global workforce — from borderless hiring to async collaboration — and learn how companies can thrive in the new era of work.",
+  "categories": ["WORLD", "BUSINESS"],
+  "readingTime": 7,
+  "creationDate": "2024-06-13",
+  "contentFile": "/mock_data/insights/WFH/content.md",
+  "mainImage": {
+    "url": "/mock_data/insights/WFH/image.jpg"
+  },
+  "previewImage": {
+    "url": "/mock_data/insights/WFH/image.jpg"
+  }
+}

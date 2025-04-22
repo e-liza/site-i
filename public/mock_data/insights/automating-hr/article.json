@@ -1,0 +1,16 @@
+{
+  "id": 2,
+  "title": "Quick Wins: Automating HR Tasks for Global Efficiency",
+  "url": "/insight/automating-hr",
+  "description": "Discover 10 actionable tips for automating HR tasks and boosting global efficiency. From onboarding workflows to compliance tracking, this guide offers practical ways to streamline operations, reduce manual work, and enhance the employee experience across borders",
+  "categories": ["QUICK_TIPS", "TECHNOLOGY", "BUSINESS"],
+  "readingTime": 6,
+  "creationDate": "2025-03-20",
+  "contentFile": "/mock_data/insights/automating-hr/content.md",
+  "mainImage": {
+    "url": "/mock_data/insights/automating-hr/image.jpg"
+  },
+  "previewImage": {
+    "url": "/mock_data/insights/automating-hr/image.jpg"
+  }
+}

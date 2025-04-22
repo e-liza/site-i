@@ -1,0 +1,41 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: $max-z-index + 1;
+  background-color: $light1;
+}
+
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 80px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+
+  @include effects {
+    outline: none;
+    svg {
+      fill: $dark3;
+    }
+  }
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}

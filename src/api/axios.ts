@@ -60,4 +60,4 @@ axiosInstance.interceptors.response.use(undefined, (error: IServerError) => {
   throw localizedError;
 });
 
-export default axiosInstance as IAxiosInstance;
+export default axiosInstance as unknown as IAxiosInstance;

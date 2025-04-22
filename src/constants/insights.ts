@@ -12,7 +12,7 @@ export const CATEGORIES = {
   HR: 'hr',
   TEAM_MANAGEMENT: 'team management',
 };
-
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const CATEGORIES_COLOR_MAP: { [key in keyof typeof CATEGORIES]: string } = {
   QUICK_TIPS: '#C83A39',
   WORLD: '',

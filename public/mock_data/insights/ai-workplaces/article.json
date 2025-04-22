@@ -1,0 +1,16 @@
+{
+  "id": 1,
+  "title": "How AI is Transforming Workplaces",
+  "url": "insight/ai-workplaces",
+  "description": "Explore how AI is transforming workplaces by automating routine tasks, enhancing decision-making, improving collaboration, and reshaping talent management. Find out how companies can leverage these technologies to stay competitive and foster innovation.",
+  "categories": ["TECHNOLOGY"],
+  "readingTime": 6,
+  "creationDate": "2025-03-24",
+  "contentFile": "/mock_data/insights/remote-work/content.md",
+  "mainImage": {
+    "url": "/mock_data/insights/ai-workplaces/image.jpg"
+  },
+  "previewImage": {
+    "url": "/mock_data/insights/ai-workplaces/image.jpg"
+  }
+}

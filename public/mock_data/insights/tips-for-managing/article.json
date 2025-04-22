@@ -1,0 +1,16 @@
+{
+  "id": 5,
+  "title": "10 Tips for Managing a Global Workforce with HR Tech",
+  "url": "/insight/tips-for-managing",
+  "description": "Struggling to manage a global team across time zones, cultures, and compliance hurdles? Discover 10 quick, practical tips to streamline global workforce management using HR tech—from async collaboration to data-driven decisions. A must-read for modern HR leaders and global team managers.",
+  "categories": ["QUICK_TIPS", "HR", "TECHNOLOGY"],
+  "readingTime": 6,
+  "creationDate": "2024-02-11",
+  "contentFile": "/mock_data/insights/tips-for-managing/content.md",
+  "mainImage": {
+    "url": "/mock_data/insights/tips-for-managing/image.jpg"
+  },
+  "previewImage": {
+    "url": "/mock_data/insights/tips-for-managing/image.jpg"
+  }
+}

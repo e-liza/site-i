@@ -1,1 +1,3 @@
-export default () => window.devicePixelRatio > 1;
+const isRetina = (): boolean => window.devicePixelRatio > 1;
+
+export default isRetina;

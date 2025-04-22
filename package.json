@@ -2,7 +2,6 @@
   "name": "ivy-landing",
   "version": "0.0.1",
   "private": true,
-  "homepage": "https://e-liza.github.io/site-i",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -73,6 +72,7 @@
   "dependencies": {
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
+    "@emailjs/browser": "^4.4.1",
     "@juggle/resize-observer": "^3.4.0",
     "@types/classnames": "^2.3.4",
     "@types/node": "^22.13.0",
@@ -84,13 +84,10 @@
     "@types/react-router": "^5.1.20",
     "@types/react-router-dom": "^5.3.3",
     "@types/smoothscroll-polyfill": "^0.3.4",
-    "@typescript-eslint/eslint-plugin": "^8.22.0",
-    "@typescript-eslint/parser": "^8.22.0",
     "antd": "^5.23.3",
     "axios": "^1.7.9",
     "class-validator": "^0.14.1",
     "classnames": "^2.5.1",
-    "eslint": "^9.19.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-prettier": "^5.2.3",
@@ -108,9 +105,11 @@
     "react-google-recaptcha": "^3.1.0",
     "react-helmet": "^6.1.0",
     "react-i18next": "^15.4.0",
+    "react-markdown": "^10.1.0",
     "react-router": "^7.1.5",
     "react-router-dom": "^7.1.5",
     "react-scripts": "5.0.1",
+    "remark-gfm": "^4.0.1",
     "sass": "^1.83.4",
     "smoothscroll-polyfill": "^0.4.4",
     "source-map-explorer": "^2.5.3",
@@ -119,10 +118,15 @@
     "stylelint-config-recommended": "^15.0.0",
     "stylelint-config-recommended-scss": "^14.1.0",
     "stylelint-prettier": "^5.0.3",
-    "stylelint-scss": "^6.11.0",
-    "typescript": "^5.7.3"
+    "stylelint-scss": "^6.11.0"
   },
   "devDependencies": {
-    "concurrently": "^9.1.2"
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^8.24.0",
+    "concurrently": "^9.1.2",
+    "eslint": "^8.57.1",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-jest": "^25.7.0",
+    "typescript": "^5.7.3"
   }
 }
