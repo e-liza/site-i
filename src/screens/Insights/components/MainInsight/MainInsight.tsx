@@ -8,6 +8,7 @@ import { IInsight } from '../../../../api/insights';
 import { Routes } from '../../../../constants/routes';
 import { formatDate } from '../../../../utils/format';
 import i18n from '../../../../i18n';
+import { BASE_PATH } from '../../../../config';
 
 import styles from './MainInsight.module.scss';
 
@@ -21,9 +22,10 @@ const MainInsight: React.FC<IInsight> = ({
   description,
 }) => {
   const [t] = useTranslation();
+  const imageUrl = mainImage?.url ? `${BASE_PATH}${mainImage.url}` : '';
   return (
     <div className={styles.container}>
-      <div className={styles.image} style={{ backgroundImage: `url(${mainImage?.url})` }} />
+      <div className={styles.image} style={{ backgroundImage: `url(${imageUrl})` }} />
       <div className={styles.info}>
         <div className={styles.tags}>
           {categories.map((category) => (
