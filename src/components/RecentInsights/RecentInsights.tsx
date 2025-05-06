@@ -8,9 +8,9 @@ import { Routes } from '../../constants/routes';
 import { formatDate } from '../../utils/format';
 import i18n from '../../i18n';
 
-import styles from './RecentInsights.module.scss';
-
 import { BASE_PATH } from '../../config';
+
+import styles from './RecentInsights.module.scss';
 
 const RecentInsights = () => {
   const [t] = useTranslation();
