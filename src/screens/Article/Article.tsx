@@ -161,7 +161,6 @@ import Spinner from '../../components/Spinner/Spinner';
 import UpFooter from '../../components/UpFooter/UpFooter';
 import { IInsight } from '../../api/insights';
 import { CATEGORIES_COLOR_MAP, CATEGORIES } from '../../constants/insights';
-
 import { BASE_PATH } from '../../config';
 
 import styles from './Article.module.scss';
