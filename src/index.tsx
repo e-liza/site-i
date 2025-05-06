@@ -10,6 +10,7 @@ import 'antd/dist/reset.css';
 
 import './styles/global.scss';
 import routes from './routes';
+import { BASE_PATH } from './config';
 
 window.recaptchaOptions = {
   useRecaptchaNet: process.env.REACT_APP_USE_RECAPTCHA_NET === 'true',
@@ -21,7 +22,7 @@ if (container) {
   const root = ReactDOM.createRoot(container); // ✅ Use createRoot
   root.render(
     <Suspense fallback={null}>
-      <BrowserRouter basename="/site-i">{routes}</BrowserRouter>
+      <BrowserRouter basename={BASE_PATH}>{routes}</BrowserRouter>
     </Suspense>,
   );
 }
