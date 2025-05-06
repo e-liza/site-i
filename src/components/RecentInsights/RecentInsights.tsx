@@ -7,7 +7,6 @@ import Spinner from '../Spinner/Spinner';
 import { Routes } from '../../constants/routes';
 import { formatDate } from '../../utils/format';
 import i18n from '../../i18n';
-
 import { BASE_PATH } from '../../config';
 
 import styles from './RecentInsights.module.scss';
