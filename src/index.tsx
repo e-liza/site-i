@@ -21,7 +21,7 @@ if (container) {
   const root = ReactDOM.createRoot(container); // ✅ Use createRoot
   root.render(
     <Suspense fallback={null}>
-      <BrowserRouter>{routes}</BrowserRouter>
+      <BrowserRouter basename="/site-i">{routes}</BrowserRouter>
     </Suspense>,
   );
 }

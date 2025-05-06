@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 import Home from './screens/Home/Home';
@@ -27,7 +27,6 @@ import IvySupport from './screens/Solutions/screens/IvySupport/IvySupport';
 import SignIn from './screens/SignIn/SignIn'; // Import your SignIn component
 
 export default (
-  <Router basename="/site-i">
     <Layout>
       <Helmet>
         <title>IVY</title>
@@ -62,5 +61,4 @@ export default (
         <Route path="*" element={<Navigate to={AppRoutes.Home} />} />
       </Routes>
     </Layout>
-  </Router>
 );
