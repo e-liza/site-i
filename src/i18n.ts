@@ -15,7 +15,7 @@ i18n
       escapeValue: false,
     },
     backend: {
-      loadPath: '/locales/{{lng}}.json', // ✅ Fix the incorrect path
+      loadPath: '/site-i/locales/{{lng}}.json', // ✅ Fix the incorrect path
       crossDomain: false,
       withCredentials: false,
       queryStringParams: { v: new Date().getTime() }, // 👈 Prevents caching issues
