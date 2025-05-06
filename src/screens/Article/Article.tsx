@@ -193,7 +193,8 @@ const Article: React.FC = () => {
         .then((data) => {
           setArticleData(data);
           if (data.contentFile) {
-            return fetch(data.contentFile)
+            const contentUrl = `${BASE_PATH}${data.contentFile}`;
+            return fetch(contentUrl)
               .then((res) => res.text())
               .then((mdContent) => setMarkdownContent(mdContent));
           }
@@ -244,7 +245,7 @@ const Article: React.FC = () => {
               {articleData.mainImage && (
                 <div
                   className={styles.articleImgContainer}
-                  style={{ backgroundImage: `url(${articleData.mainImage.url})` }}
+                  style={{ backgroundImage: `url(${BASE_PATH}${articleData.mainImage.url})` }}
                 />
               )}
 
