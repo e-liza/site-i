@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/site-i/static/css/main.5f383b9c.css",
-    "main.js": "/site-i/static/js/main.7b0e0d20.js",
+    "main.js": "/site-i/static/js/main.d0cc3fe4.js",
     "static/media/ivy-office.jpg": "/site-i/static/media/ivy-office.1a6e40bc9ebae3cc7609.jpg",
     "static/media/custom-approach.jpg": "/site-i/static/media/custom-approach.e8fa4bbb1736108a8a67.jpg",
     "static/media/business-abroad.jpg": "/site-i/static/media/business-abroad.c2874c5559507f8c8027.jpg",
@@ -117,10 +117,10 @@
     "static/media/menuArrow.svg": "/site-i/static/media/menuArrow.c01964bcf60688f19a2369af2141be66.svg",
     "static/media/selectArrow.svg": "/site-i/static/media/selectArrow.ea6bdf3a897a2a935de6c66c8035cf48.svg",
     "main.5f383b9c.css.map": "/site-i/static/css/main.5f383b9c.css.map",
-    "main.7b0e0d20.js.map": "/site-i/static/js/main.7b0e0d20.js.map"
+    "main.d0cc3fe4.js.map": "/site-i/static/js/main.d0cc3fe4.js.map"
   },
   "entrypoints": [
     "static/css/main.5f383b9c.css",
-    "static/js/main.7b0e0d20.js"
+    "static/js/main.d0cc3fe4.js"
   ]
 }
