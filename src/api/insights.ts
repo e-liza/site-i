@@ -53,6 +53,7 @@
 //   },
 // };
 import { PAGE_SIZE, CATEGORIES } from '../constants/insights';
+import { BASE_PATH } from '../config';
 
 export interface IInsights {
   insights: IInsight[];
@@ -97,7 +98,7 @@ async function loadMockArticles(): Promise<IInsight[]> {
 
   const articles = await Promise.all(
     articleSlugs.map(async (slug) => {
-      const response = await fetch(`${MOCK_ARTICLES_PATH}${slug}/article.json`);
+      const response = await fetch(`${BASE_PATH}${MOCK_ARTICLES_PATH}${slug}/article.json`);
       return response.json();
     }),
   );
