@@ -9,6 +9,7 @@ import { formatDate } from '../../utils/format';
 import i18n from '../../i18n';
 
 import styles from './RecentInsights.module.scss';
+
 import { BASE_PATH } from '../../config';
 
 const RecentInsights = () => {
@@ -53,7 +54,11 @@ const RecentInsights = () => {
                 to={Routes.Article.replace(':title', url)}
               >
                 <div
-                  style={previewImage && { backgroundImage: `url(${BASE_PATH}${previewImage.url})` }}
+                  style={
+                    previewImage && {
+                      backgroundImage: `url(${BASE_PATH}${previewImage.url})`,
+                    }
+                  }
                   className={styles.insightItemImage}
                 />
                 <p className={styles.insightItemInfo}>
