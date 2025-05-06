@@ -162,6 +162,8 @@ import UpFooter from '../../components/UpFooter/UpFooter';
 import { IInsight } from '../../api/insights';
 import { CATEGORIES_COLOR_MAP, CATEGORIES } from '../../constants/insights';
 
+import { BASE_PATH } from '../../config';
+
 import styles from './Article.module.scss';
 
 interface IInsightDetailed extends IInsight {
@@ -184,7 +186,7 @@ const Article: React.FC = () => {
       setIsLoading(true);
       setError(null);
 
-      fetch(`/mock_data/insights/${title}/article.json`)
+      fetch(`${BASE_PATH}/mock_data/insights/${title}/article.json`)
         .then((response) => {
           if (!response.ok) throw new Error('Insight not found');
           return response.json();
