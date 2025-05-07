@@ -1,2 +1,2 @@
 // src/config.ts
-export const BASE_PATH = process.env.PUBLIC_URL || '/site-i';
+export const BASE_PATH = '/';
